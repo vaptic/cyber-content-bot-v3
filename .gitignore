@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# API keys — NEVER commit these
+.env.local
+secrets.py
+
+# Keep output folder structure but not generated files locally
+# (GitHub Actions commits images directly to repo)
+# Uncomment below if you want to keep local runs out of git:
+# output/images/
+# output/prompts/
+
+# OS
+.DS_Store
+Thumbs.db

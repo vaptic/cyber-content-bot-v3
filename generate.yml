@@ -1,0 +1,151 @@
+name: Generate Cybersecurity Images
+
+on:
+  # ── Scheduled runs ───────────────────────────────────────────────────────
+  schedule:
+    - cron: "0 7 * * 1"    # Every Monday    07:00 UTC — DragonForce series
+    - cron: "0 7 * * 3"    # Every Wednesday 07:00 UTC — Phishing series
+    - cron: "0 7 * * 5"    # Every Friday    07:00 UTC — Ransomware series
+
+  # ── Manual trigger (run any series on demand from GitHub UI) ─────────────
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Series to generate"
+        required: true
+        default: "dragonforce"
+        type: choice
+        options:
+          - dragonforce
+          - phishing
+          - zero_trust
+          - ransomware
+      platform:
+        description: "Target platform (affects aspect ratio)"
+        required: true
+        default: "linkedin"
+        type: choice
+        options:
+          - linkedin
+          - instagram
+          - facebook
+      limit:
+        description: "Number of images to generate (blank = full series)"
+        required: false
+        default: ""
+      test_mode:
+        description: "Test mode — generate 3 images only"
+        required: false
+        default: "false"
+        type: boolean
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120    # Full 20-image series takes ~12 min
+
+    permissions:
+      contents: write       # Allow workflow to commit images back to repo
+
+    steps:
+      # ── 1. Checkout ───────────────────────────────────────────────────────
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. Python setup ───────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ── 3. Determine args ─────────────────────────────────────────────────
+      - name: Set run arguments
+        id: args
+        run: |
+          # Scheduled runs use fixed topics per day
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            DAY=$(date +%u)   # 1=Mon 3=Wed 5=Fri
+            case $DAY in
+              1) TOPIC="dragonforce" ;;
+              3) TOPIC="phishing"    ;;
+              5) TOPIC="ransomware"  ;;
+              *) TOPIC="dragonforce" ;;
+            esac
+            echo "topic=$TOPIC"           >> $GITHUB_OUTPUT
+            echo "platform=linkedin"      >> $GITHUB_OUTPUT
+            echo "extra_args="            >> $GITHUB_OUTPUT
+          else
+            # Manual dispatch
+            TOPIC="${{ github.event.inputs.topic }}"
+            PLATFORM="${{ github.event.inputs.platform }}"
+            LIMIT="${{ github.event.inputs.limit }}"
+            TEST="${{ github.event.inputs.test_mode }}"
+            echo "topic=$TOPIC"           >> $GITHUB_OUTPUT
+            echo "platform=$PLATFORM"     >> $GITHUB_OUTPUT
+
+            EXTRA=""
+            [ "$TEST" = "true" ]  && EXTRA="--test"
+            [ -n "$LIMIT" ]       && EXTRA="--limit $LIMIT"
+            echo "extra_args=$EXTRA"      >> $GITHUB_OUTPUT
+          fi
+
+      # ── 4. Generate ───────────────────────────────────────────────────────
+      - name: Generate images
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_API_KEY:    ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          python run.py \
+            --topic    ${{ steps.args.outputs.topic }}    \
+            --platform ${{ steps.args.outputs.platform }} \
+            ${{ steps.args.outputs.extra_args }}
+
+      # ── 5. Commit images back to repo ─────────────────────────────────────
+      - name: Commit generated images
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add output/
+
+          # Only commit if something actually changed
+          if git diff --staged --quiet; then
+            echo "No new images to commit."
+          else
+            TOPIC="${{ steps.args.outputs.topic }}"
+            DATE=$(date +%Y-%m-%d)
+            COUNT=$(git diff --staged --name-only | grep '\.png$' | wc -l | tr -d ' ')
+            git commit -m "🖼 Auto-generate: $TOPIC | $COUNT images | $DATE"
+            git push
+            echo "✓ Pushed $COUNT images to repo"
+          fi
+
+      # ── 6. Upload as downloadable artifact (available 7 days) ─────────────
+      - name: Upload images as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-images-${{ steps.args.outputs.topic }}-${{ github.run_number }}
+          path: output/images/**
+          retention-days: 7
+          if-no-files-found: warn
+
+      # ── 7. Summary ────────────────────────────────────────────────────────
+      - name: Write job summary
+        if: always()
+        run: |
+          echo "## 🖼 Image Generation Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Setting | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|---------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Topic | ${{ steps.args.outputs.topic }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Platform | ${{ steps.args.outputs.platform }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Run | #${{ github.run_number }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Date | $(date +%Y-%m-%d) |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Images are committed to \`output/images/\` and available as a workflow artifact." >> $GITHUB_STEP_SUMMARY
