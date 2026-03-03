@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "topic": "Identity & Brand \u2014 The Circuit Dragon",
+    "error": "404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-pro-image-preview is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+  },
+  {
+    "id": 2,
+    "topic": "The Binary Signature \u2014 Ransom Note Decoded",
+    "error": "404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-pro-image-preview is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+  },
+  {
+    "id": 3,
+    "topic": "The Origin Nobody Can Confirm",
+    "error": "404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3.1-pro-image-preview is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}"
+  }
+]

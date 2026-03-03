@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3.1-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260303_204150",
+  "started_at": "2026-03-03T20:41:50.688883",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": null,
+      "caption": "They didn't just build ransomware. They built a brand.\n\nDragonForce launched on BreachForums on December 6, 2023 — not as a tool, but as a cartel. By March 2025 they announced an open affiliate model. By April 2025, they absorbed RansomHub's entire network.\n\n363 confirmed victims. 30+ countries. 212.5% attack surge.\n\nThis is what a cybercrime franchise looks like at scale.\n\n#DragonForce #Ransomware #CyberSecurity #ThreatIntelligence #RaaS",
+      "hook": "A mythologized threat actor rendered as a living corporate brand reveals how DragonForce weaponized identity to recruit affiliates and dominate the dark web cartel economy.",
+      "success": false
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": null,
+      "caption": "At some point, an IT administrator walked into work and saw this.\n\nDragonForce's ransomware is cross-platform — Windows, Linux, ESXi — all hit with ChaCha8 encryption. Before the ransom note appears, their BYOVD technique kills your EDR using vulnerable drivers: truesight.sys and rentdrv2.sys.\n\nBy the time you see the message, it's already over.\n\nM&S, Co-op, Harrods. £300M+ in losses. Summer 2025.\n\nThe note isn't the attack. The note is the receipt.\n\n#DragonForce #Ransomware #IncidentResponse #CyberAttack #BlueTeam",
+      "hook": "Placing the viewer inside the exact moment a victim's screen goes dark — with real technical artifacts burned into the scene — makes abstract ransomware attacks viscerally real and shareable.",
+      "success": false
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": null,
+      "caption": "Where did DragonForce actually come from?\n\nA Malaysia-linked hacktivist group by the same name existed years before the RaaS cartel appeared on BreachForums in December 2023. Coincidence? Rebrand? Deliberate misdirection?\n\nNo confirmed attribution. No identified operators. No country pinned.\n\nThey absorbed RansomHub's affiliates in April 2025. They partnered with Scattered Spider for social engineering. They hit M&S, Co-op, and Harrods in the same summer.\n\nThe most dangerous threat actors are the ones you can't find.\n\n#DragonForce #ThreatIntelligence #Attribution #CyberEspionage #OSINT",
+      "hook": "The unresolved mystery of DragonForce's true origin — Malaysia-linked hacktivist roots versus sophisticated RaaS cartel evolution — creates irresistible intrigue that drives comments and shares from security professionals debating attribution.",
+      "success": false
+    }
+  ],
+  "finished_at": "2026-03-03T20:43:00.927069",
+  "success": 0,
+  "failed": 3
+}
