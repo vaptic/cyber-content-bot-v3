@@ -39,8 +39,18 @@ from pathlib import Path
 # ⚙️  CONFIGURATION  — set your two keys here
 # ─────────────────────────────────────────────────────────────────────────────
 
-ANTHROPIC_API_KEY = "YOUR_ANTHROPIC_API_KEY"   # console.anthropic.com → API Keys
-GOOGLE_API_KEY    = "YOUR_GOOGLE_API_KEY"       # aistudio.google.com  → Get API Key
+# Keys are read from environment variables (set by GitHub Actions secrets,
+# or export them in your shell for local runs):
+#   export ANTHROPIC_API_KEY=sk-ant-...
+#   export GOOGLE_API_KEY=AIza...
+import os as _os
+ANTHROPIC_API_KEY = _os.environ.get("ANTHROPIC_API_KEY", "")
+GOOGLE_API_KEY    = _os.environ.get("GOOGLE_API_KEY", "")
+
+if not ANTHROPIC_API_KEY:
+    raise SystemExit("❌ ANTHROPIC_API_KEY not set. Export it or add it to GitHub secrets.")
+if not GOOGLE_API_KEY:
+    raise SystemExit("❌ GOOGLE_API_KEY not set. Export it or add it to GitHub secrets.")
 
 # Claude model (prompt generation)
 CLAUDE_MODEL      = "claude-sonnet-4-6"
