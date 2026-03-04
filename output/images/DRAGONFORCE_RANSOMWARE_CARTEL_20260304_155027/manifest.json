@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-2.5-flash-image",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260304_155027",
+  "started_at": "2026-03-04T15:50:27.923135",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260304_155027/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't just build ransomware. They built a BRAND.\n\nDragonForce launched on BreachForums on December 6, 2023 — and within 18 months had claimed 363 victims across 30+ countries.\n\nThis wasn't a smash-and-grab crew. This was a cartel with corporate structure:\n→ 80/20 affiliate revenue split\n→ Dedicated RaaS portal\n→ Cross-platform encryption (Windows, Linux, ESXi)\n→ Absorbed RansomHub on April 8, 2025\n\nThe dragon has a logo. The dragon has a pitch deck. The dragon has a support team.\n\nWhen threat actors start operating like startups, the game has fundamentally changed.\n\n#DragonForce #Ransomware #CyberSecurity #ThreatIntelligence #RaaS",
+      "hook": "A mythic dragon forged from ransomware code stops the scroll and signals an elite threat actor with its own terrifying brand identity.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260304_155027/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "This is what £300,000,000 in damage looks like on a screen.\n\nMarks & Spencer. Co-op. Harrods. Three British retail giants. One summer. One cartel.\n\nDragonForce's Summer 2025 UK campaign — executed with Scattered Spider's social engineering and vishing expertise — caused over £300M in documented impact.\n\nThe ransom note isn't just a demand. It's a product:\n→ ChaCha8 encryption deployed across Windows, Linux, and ESXi\n→ BYOVD drivers (truesight.sys + rentdrv2.sys) used to blind EDR tools before detonation\n→ Double extortion: encrypt AND exfiltrate\n→ 72-hour payment windows\n→ Dedicated negotiation portal — customer service for criminals\n\nEvery line of that note is engineered to manufacture panic and compliance.\n\nRead the note. Understand the adversary.\n\n#DragonForce #RansomNote #CyberExtortion #ScatteredSpider #IncidentResponse",
+      "hook": "A glowing ransom note dissected under forensic light transforms a financial extortion moment into a masterclass in threat actor psychology and RaaS mechanics.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260304_155027/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Nobody knows who built DragonForce.\n\nAnd that's exactly how they want it.\n\nMalaysia-linked forum activity. Pro-Palestinian hacktivist messaging in early operations. Sudden pivot to pure financially-motivated RaaS. A cartel structure announced on March 19, 2025 out of nowhere.\n\nThe threat intelligence community cannot agree on:\n→ Country of origin\n→ Core team size\n→ Whether early hacktivism was cover or genuine ideology\n→ Connections to other established RaaS families\n\nWhat we DO know:\n→ BreachForums debut: December 6, 2023\n→ 363 victims in under 2 years\n→ Absorbed RansomHub April 8, 2025 — expanding affiliate network overnight\n→ Peak activity: 35 organizations in a single month (December 2025)\n\nAttribution is hard. Damage is not.\n\nThe dragon doesn't need you to know its name. It just needs you to pay.\n\n#ThreatIntelligence #DragonForce #Attribution #CyberSecurity #DarkWeb",
+      "hook": "An anonymous figure standing at the crossroads of unverifiable origin stories forces the audience to confront the most dangerous adversary trait: total attribution ambiguity.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-04T15:52:05.717674",
+  "success": 3,
+  "failed": 0
+}
