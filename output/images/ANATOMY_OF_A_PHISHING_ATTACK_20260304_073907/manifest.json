@@ -1,0 +1,52 @@
+{
+  "series_title": "ANATOMY OF A PHISHING ATTACK",
+  "platform": "linkedin",
+  "model": "gemini-2.5-flash-image",
+  "output_dir": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260304_073907",
+  "started_at": "2026-03-04T07:39:07.257440",
+  "results": [
+    {
+      "id": 6,
+      "topic": "Vishing — The Convincing Call",
+      "file": null,
+      "caption": "Your IT department never calls asking for your password. But what if you believed they did?\n\nVishing — voice phishing — is exploding. Attackers impersonate banks, help desks, and executives with AI-cloned voices indistinguishable from the real person.\n\nIn 82 seconds, your credentials are gone.\n\nTrain your team to verify. Always. Every call. No exceptions.\n\n#CyberSecurity #Vishing #PhishingAwareness #SocialEngineering #InfoSec",
+      "hook": "The chilling intimacy of a voice in your ear makes vishing the most underestimated phishing vector — this image makes that danger visceral and shareable.",
+      "success": false
+    },
+    {
+      "id": 7,
+      "topic": "Smishing — The Text That Seemed Real",
+      "file": null,
+      "caption": "It came in at 2am. It looked exactly like a FedEx tracking alert.\n\nOne tap. One compromised device. One breached network.\n\nSmishing attacks surged 328% in 2023. They exploit the platform you trust most — your personal phone — and the moment you're least guarded: off-hours, half-asleep, distracted.\n\nReal carriers never ask for credentials via SMS. Real banks never send password reset links by text.\n\nWhen in doubt — don't tap. Go direct.\n\n#Smishing #MobileSecurity #PhishingAwareness #CyberSecurity #ZeroTrust",
+      "hook": "A glowing phone in a dark room is the most relatable threat image possible — everyone has received a suspicious text, making this instantly personal and shareable.",
+      "success": false
+    },
+    {
+      "id": 8,
+      "topic": "MFA Fatigue — The Approval Flood",
+      "file": null,
+      "caption": "They didn't break your password. They broke your patience.\n\nMFA Fatigue attacks work like this:\n→ Attacker has your credentials (already stolen)\n→ They trigger 50+ MFA push notifications in minutes\n→ You approve one just to make it stop\n→ They're in.\n\nThis exact technique compromised Uber, Microsoft, and Okta in 2022.\n\nThe fix: FIDO2 passkeys and number-matching MFA eliminate push bombing entirely.\n\nFatigue is a vulnerability. Patch it.\n\n#MFAFatigue #PushBombing #CyberSecurity #IdentitySecurity #ZeroTrust",
+      "hook": "A wall of identical push notifications — perfectly visualizing the psychological warfare of MFA fatigue — creates immediate recognition and visceral discomfort in any security professional.",
+      "success": false
+    },
+    {
+      "id": 9,
+      "topic": "Spot a Phish in 30 Seconds",
+      "file": null,
+      "caption": "30 seconds is all you need to spot a phishing email. Most people spend 3.\n\nHere are the 6 red flags every employee must know:\n\n① Urgency + fear language\n② Sender domain slightly wrong (micros0ft.com)\n③ Hover reveals mismatched URL\n④ Requests credentials or wire transfer\n⑤ Generic greeting ('Dear Customer')\n⑥ Unexpected attachment (.html, .exe, .zip)\n\nPrint this. Pin it. Train on it. Every quarter.\n\nBecause the attacker only needs one person to miss it.\n\n#PhishingAwareness #CyberTraining #SecurityAwareness #InfoSec #CyberSecurity",
+      "hook": "A practical, visually scannable 'threat detection checklist' image earns massive saves and shares because it delivers immediate, actionable value professionals can screenshot and keep.",
+      "success": false
+    },
+    {
+      "id": 10,
+      "topic": "Phishing-Resistant MFA — Your Last Line",
+      "file": null,
+      "caption": "Password stolen? Doesn't matter.\nPush notification bombed? Doesn't matter.\nCredentials phished? Doesn't matter.\n\nNot if you\\'ve deployed phishing-resistant MFA.\n\nFIDO2 passkeys and hardware security keys (YubiKey) are cryptographically bound to the legitimate domain. A fake login page cannot intercept them. Period.\n\nThis is the technical end state every organization must reach:\n→ Eliminate SMS OTP\n→ Eliminate push-based MFA\n→ Deploy FIDO2 / WebAuthn enterprise-wide\n→ Require hardware keys for privileged access\n\nThe wall exists. Build it.\n\n#FIDO2 #PhishingResistant #MFA #YubiKey #ZeroTrust",
+      "hook": "A literal 'last line of defense' visual — an impenetrable digital barrier holding back a wave of attacks — gives security leaders a shareable hero image that encapsulates their entire defensive posture.",
+      "success": false
+    }
+  ],
+  "finished_at": "2026-03-04T07:41:27.921498",
+  "success": 0,
+  "failed": 5
+}
