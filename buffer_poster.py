@@ -1,27 +1,22 @@
 """
 buffer_poster.py — Step 3 of the pipeline
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Reads manifest.json from the latest image generation run,
-then schedules each image + caption to Buffer (LinkedIn + Instagram).
+Reads the latest manifest.json and schedules each image + caption
+to Buffer via the new GraphQL API (https://api.buffer.com).
 
-Posting schedule:
-  - LinkedIn:  1 post/day at 12:00pm IST (06:30 UTC)
-  - Instagram: 1 post/day at 12:30pm IST (07:00 UTC), offset by 1 day
-  Images are served from GitHub raw URLs — no upload needed.
+Posting schedule (IST = UTC+5:30):
+  LinkedIn:  1/day at 12:00pm IST → 06:30 UTC  (starting tomorrow)
+  Instagram: 1/day at 12:00pm IST → 06:30 UTC  (starting day after tomorrow)
+  Facebook:  1/day at 12:00pm IST → 06:30 UTC  (starting 3 days out)
 
-Setup:
-  1. Add BUFFER_API_KEY to GitHub secrets
-  2. Add GITHUB_REPO to GitHub secrets (e.g. "vaptic/cyber-content-bot-v3")
-  3. Set LINKEDIN_CHANNEL_ID and INSTAGRAM_CHANNEL_ID below
-     (run with --list-channels once to find them)
+Images are served as GitHub raw URLs — no file upload needed.
 
-Usage:
-  python buffer_poster.py --list-channels          # find your channel IDs
-  python buffer_poster.py --manifest PATH          # post from specific manifest
-  python buffer_poster.py                          # post from latest manifest
-  python buffer_poster.py --dry-run                # preview without posting
-  python buffer_poster.py --linkedin-only          # skip Instagram
-  python buffer_poster.py --instagram-only         # skip LinkedIn
+GitHub Secrets required:
+  BUFFER_API_KEY        — from publish.buffer.com/settings/api
+  LINKEDIN_CHANNEL_ID   — 696db7391214300f602bbdd6
+  INSTAGRAM_CHANNEL_ID  — 696db6dd1214300f602bbd5a
+  FACEBOOK_CHANNEL_ID   — 696bbf4b457dae6a34192505
+  GITHUB_REPO           — vaptic/cyber-content-bot-v3  (set automatically)
 """
 
 import argparse
@@ -35,260 +30,234 @@ from pathlib import Path
 import requests
 
 # ─────────────────────────────────────────────────────────────────────────────
-# ⚙️  CONFIGURATION
+# CONFIG
 # ─────────────────────────────────────────────────────────────────────────────
 
-BUFFER_API_KEY    = os.environ.get("BUFFER_API_KEY", "")
-GITHUB_REPO       = os.environ.get("GITHUB_REPO", "vaptic/cyber-content-bot-v3")
-GITHUB_BRANCH     = "main"
+BUFFER_API_KEY        = os.environ.get("BUFFER_API_KEY", "")
+GITHUB_REPO           = os.environ.get("GITHUB_REPO", "vaptic/cyber-content-bot-v3")
+GITHUB_BRANCH         = "main"
 
-# ── Paste your channel IDs here after running --list-channels ──
-LINKEDIN_CHANNEL_ID  = os.environ.get("LINKEDIN_CHANNEL_ID", "")
-INSTAGRAM_CHANNEL_ID = os.environ.get("INSTAGRAM_CHANNEL_ID", "")
+LINKEDIN_CHANNEL_ID   = os.environ.get("LINKEDIN_CHANNEL_ID",  "696db7391214300f602bbdd6")
+INSTAGRAM_CHANNEL_ID  = os.environ.get("INSTAGRAM_CHANNEL_ID", "696db6dd1214300f602bbd5a")
+FACEBOOK_CHANNEL_ID   = os.environ.get("FACEBOOK_CHANNEL_ID",  "696bbf4b457dae6a34192505")
 
-# ── Posting times (UTC) ───────────────────────────────────────
-# 12:00pm IST = 06:30 UTC  →  LinkedIn
-# 12:30pm IST = 07:00 UTC  →  Instagram (30 min offset)
-LINKEDIN_POST_HOUR   = 6
-LINKEDIN_POST_MINUTE = 30
-INSTAGRAM_POST_HOUR  = 7
-INSTAGRAM_POST_MINUTE = 0
+# 12:00pm IST = 06:30 UTC
+POST_HOUR   = 6
+POST_MINUTE = 30
 
-# Buffer old API base
-BUFFER_API_BASE = "https://api.bufferapp.com/1"
+BUFFER_GRAPHQL = "https://api.buffer.com"
 
 # ─────────────────────────────────────────────────────────────────────────────
-# HELPERS
+# GRAPHQL HELPERS
 # ─────────────────────────────────────────────────────────────────────────────
 
-def check_config():
-    if not BUFFER_API_KEY:
-        sys.exit("❌ BUFFER_API_KEY not set. Add it to GitHub secrets.")
-    if not GITHUB_REPO:
-        sys.exit("❌ GITHUB_REPO not set (e.g. 'vaptic/cyber-content-bot-v3').")
+def gql(query: str, variables: dict = None) -> dict:
+    """Execute a Buffer GraphQL mutation/query."""
+    payload = {"query": query}
+    if variables:
+        payload["variables"] = variables
 
-
-def buffer_get(endpoint: str) -> dict:
-    r = requests.get(
-        f"{BUFFER_API_BASE}/{endpoint}",
-        headers={"Authorization": f"Bearer {BUFFER_API_KEY}"},
-    )
-    r.raise_for_status()
-    return r.json()
-
-
-def buffer_post(endpoint: str, data: dict) -> dict:
     r = requests.post(
-        f"{BUFFER_API_BASE}/{endpoint}",
-        headers={"Authorization": f"Bearer {BUFFER_API_KEY}"},
-        data=data,
+        BUFFER_GRAPHQL,
+        json=payload,
+        headers={
+            "Authorization": f"Bearer {BUFFER_API_KEY}",
+            "Content-Type":  "application/json",
+        },
+        timeout=30,
     )
     r.raise_for_status()
-    return r.json()
+    data = r.json()
 
+    # Surface GraphQL-level errors
+    if "errors" in data:
+        raise RuntimeError(f"GraphQL error: {data['errors']}")
+    return data
+
+
+CREATE_POST_MUTATION = """
+mutation CreatePost($input: PostInput!) {
+  createPost(input: $input) {
+    ... on PostActionSuccess {
+      post {
+        id
+        text
+        dueAt
+        status
+      }
+    }
+    ... on MutationError {
+      message
+    }
+  }
+}
+"""
+
+
+def schedule_post(channel_id: str, caption: str, image_url: str,
+                  due_at: str, dry_run: bool = False) -> dict:
+    """
+    Schedule one post to Buffer via GraphQL.
+    due_at: ISO 8601 UTC string e.g. "2026-03-06T06:30:00Z"
+    """
+    if dry_run:
+        return {"dry_run": True, "channel": channel_id, "due_at": due_at}
+
+    variables = {
+        "input": {
+            "channelId":     channel_id,
+            "text":          caption,
+            "schedulingType": "custom",
+            "dueAt":          due_at,
+            # Attach image as a media URL
+            "mediaUrls":     [image_url],
+        }
+    }
+
+    result = gql(CREATE_POST_MUTATION, variables)
+    payload = result.get("data", {}).get("createPost", {})
+
+    if "message" in payload:
+        raise RuntimeError(payload["message"])
+
+    return payload.get("post", {})
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# UTILITIES
+# ─────────────────────────────────────────────────────────────────────────────
 
 def github_raw_url(image_path: str) -> str:
-    """
-    Convert a local output path like:
-      output/images/DRAGONFORCE.../image_01_foo.png
-    to a GitHub raw URL the Buffer API can fetch.
-    """
-    # Normalise path separators
     clean = image_path.replace("\\", "/").lstrip("./")
     return f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/{clean}"
 
 
-def schedule_time(base_date: datetime, hour: int, minute: int) -> str:
-    """Return ISO 8601 UTC timestamp for a given date at hour:minute UTC."""
-    dt = base_date.replace(hour=hour, minute=minute, second=0, microsecond=0,
-                           tzinfo=timezone.utc)
+def schedule_time(base_date: datetime, hour: int = POST_HOUR,
+                  minute: int = POST_MINUTE) -> str:
+    dt = base_date.replace(hour=hour, minute=minute, second=0,
+                           microsecond=0, tzinfo=timezone.utc)
     return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def find_latest_manifest() -> str:
-    """Find the most recently modified manifest.json under output/images/."""
     manifests = sorted(
         Path("output/images").glob("*/manifest.json"),
         key=lambda p: p.stat().st_mtime,
         reverse=True,
     )
     if not manifests:
-        sys.exit("❌ No manifest.json found in output/images/. Run the image generator first.")
+        sys.exit("❌  No manifest.json found. Run the image generator first.")
     return str(manifests[0])
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# CHANNEL DISCOVERY
-# ─────────────────────────────────────────────────────────────────────────────
-
-def list_channels():
-    """Print all Buffer channels — run once to find your IDs."""
-    check_config()
-    print("\nFetching your Buffer channels...\n")
-    try:
-        profiles = buffer_get("profiles.json")
-    except requests.HTTPError as e:
-        sys.exit(f"❌ Buffer API error: {e}")
-
-    print(f"{'ID':<30} {'Service':<15} {'Username'}")
-    print("─" * 70)
-    for p in profiles:
-        svc      = p.get("service", "unknown")
-        username = p.get("formatted_username") or p.get("service_username", "")
-        pid      = p.get("id", "")
-        print(f"{pid:<30} {svc:<15} {username}")
-
-    print("\n📋 Copy the IDs above into your GitHub secrets:")
-    print("   LINKEDIN_CHANNEL_ID  = the 'linkedin' row ID")
-    print("   INSTAGRAM_CHANNEL_ID = the 'instagram' row ID\n")
+def check_config():
+    if not BUFFER_API_KEY:
+        sys.exit("❌  BUFFER_API_KEY not set.")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# POSTING
+# MAIN POSTER
 # ─────────────────────────────────────────────────────────────────────────────
 
 def post_to_buffer(
     manifest_path: str,
-    dry_run: bool = False,
-    linkedin_only: bool = False,
-    instagram_only: bool = False,
-    limit: int = None,
+    dry_run: bool      = False,
+    linkedin: bool     = True,
+    instagram: bool    = True,
+    facebook: bool     = False,   # opt-in
+    limit: int         = None,
 ):
     check_config()
-
-    if not linkedin_only and not instagram_only:
-        if not LINKEDIN_CHANNEL_ID:
-            sys.exit("❌ LINKEDIN_CHANNEL_ID not set. Run --list-channels first.")
-        if not INSTAGRAM_CHANNEL_ID:
-            sys.exit("❌ INSTAGRAM_CHANNEL_ID not set. Run --list-channels first.")
-    elif not linkedin_only and not INSTAGRAM_CHANNEL_ID:
-        sys.exit("❌ INSTAGRAM_CHANNEL_ID not set.")
-    elif not instagram_only and not LINKEDIN_CHANNEL_ID:
-        sys.exit("❌ LINKEDIN_CHANNEL_ID not set.")
 
     with open(manifest_path, encoding="utf-8") as f:
         manifest = json.load(f)
 
-    series   = manifest.get("series_title", "Cybersecurity Series")
-    results  = [r for r in manifest.get("results", []) if r.get("success")]
-
+    series  = manifest.get("series_title", "Cybersecurity Series")
+    results = [r for r in manifest.get("results", []) if r.get("success")]
     if limit:
         results = results[:limit]
-
     total = len(results)
+
     if total == 0:
-        sys.exit("❌ No successful images found in manifest.")
+        sys.exit("❌  No successful images in manifest.")
+
+    platforms = []
+    if linkedin:  platforms.append(("LinkedIn",  LINKEDIN_CHANNEL_ID))
+    if instagram: platforms.append(("Instagram", INSTAGRAM_CHANNEL_ID))
+    if facebook:  platforms.append(("Facebook",  FACEBOOK_CHANNEL_ID))
 
     print(f"\n{'═'*62}")
-    print(f"  STEP 3 — Buffer auto-poster")
-    print(f"  Series  : {series}")
-    print(f"  Images  : {total}")
-    print(f"  LinkedIn : {'✓' if not instagram_only else '✗'}")
-    print(f"  Instagram: {'✓' if not linkedin_only else '✗'}")
-    print(f"  Dry run : {'YES — no posts will be created' if dry_run else 'NO — posting live'}")
+    print(f"  STEP 3 — Buffer scheduler")
+    print(f"  Series   : {series}")
+    print(f"  Images   : {total}")
+    print(f"  Platforms: {', '.join(p[0] for p in platforms)}")
+    print(f"  Schedule : 12:00pm IST daily (06:30 UTC)")
+    print(f"  Dry run  : {'YES' if dry_run else 'NO — posting live'}")
     print(f"{'═'*62}\n")
 
-    # Start scheduling from tomorrow
-    today     = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
-    li_day    = today + timedelta(days=1)   # LinkedIn starts tomorrow
-    ig_day    = today + timedelta(days=2)   # Instagram starts day after (offset)
+    today    = datetime.now(timezone.utc).replace(
+                 hour=0, minute=0, second=0, microsecond=0)
 
-    li_posted = 0
-    ig_posted = 0
-    errors    = []
+    # Each platform starts on a different day to avoid overlap
+    platform_start = {}
+    for i, (name, cid) in enumerate(platforms):
+        platform_start[name] = today + timedelta(days=1 + i)
+
+    posted = 0
+    errors = []
 
     for idx, item in enumerate(results):
         img_id   = item["id"]
         topic    = item["topic"]
-        caption  = item.get("caption", f"#{series.replace(' ','')}")
+        caption  = item.get("caption", f"#{series.replace(' ', '')}")
         img_file = item.get("file", "")
 
         if not img_file:
-            print(f"  [{idx+1}/{total}] ⚠ Image {img_id:02d} has no file path — skipping")
+            print(f"  [{idx+1}/{total}] ⚠  Image {img_id:02d} missing file — skipped")
             continue
 
-        raw_url  = github_raw_url(img_file)
-
+        raw_url = github_raw_url(img_file)
         print(f"  [{idx+1}/{total}] Image {img_id:02d}: {topic}")
-        print(f"           URL: {raw_url}")
 
-        # ── LinkedIn ──────────────────────────────────────────
-        if not instagram_only:
-            li_time = schedule_time(li_day, LINKEDIN_POST_HOUR, LINKEDIN_POST_MINUTE)
-            print(f"           LinkedIn → {li_time}")
+        for name, channel_id in platforms:
+            due_at = schedule_time(platform_start[name])
+            print(f"           {name:<12} → {due_at}")
 
             if not dry_run:
                 try:
-                    resp = buffer_post("updates/create.json", {
-                        "profile_ids[]": LINKEDIN_CHANNEL_ID,
-                        "text":          caption,
-                        "media[photo]":  raw_url,
-                        "scheduled_at":  li_time,
-                    })
-                    if resp.get("success"):
-                        print(f"           ✓ LinkedIn scheduled")
-                        li_posted += 1
-                    else:
-                        print(f"           ✗ LinkedIn error: {resp}")
-                        errors.append({"id": img_id, "platform": "linkedin", "error": str(resp)})
-                except requests.HTTPError as e:
-                    print(f"           ✗ LinkedIn HTTP error: {e}")
-                    errors.append({"id": img_id, "platform": "linkedin", "error": str(e)})
+                    schedule_post(channel_id, caption, raw_url,
+                                  due_at, dry_run=False)
+                    print(f"           {'✓'} Scheduled")
+                    posted += 1
+                except Exception as e:
+                    print(f"           ✗  Error: {e}")
+                    errors.append({"id": img_id, "platform": name, "error": str(e)})
             else:
-                li_posted += 1
+                posted += 1
 
-            li_day += timedelta(days=1)
+            # Advance this platform's date by 1 day
+            platform_start[name] += timedelta(days=1)
 
-        # ── Instagram ─────────────────────────────────────────
-        if not linkedin_only:
-            ig_time = schedule_time(ig_day, INSTAGRAM_POST_HOUR, INSTAGRAM_POST_MINUTE)
-            print(f"           Instagram → {ig_time}")
-
-            if not dry_run:
-                try:
-                    resp = buffer_post("updates/create.json", {
-                        "profile_ids[]": INSTAGRAM_CHANNEL_ID,
-                        "text":          caption,
-                        "media[photo]":  raw_url,
-                        "scheduled_at":  ig_time,
-                    })
-                    if resp.get("success"):
-                        print(f"           ✓ Instagram scheduled")
-                        ig_posted += 1
-                    else:
-                        print(f"           ✗ Instagram error: {resp}")
-                        errors.append({"id": img_id, "platform": "instagram", "error": str(resp)})
-                except requests.HTTPError as e:
-                    print(f"           ✗ Instagram HTTP error: {e}")
-                    errors.append({"id": img_id, "platform": "instagram", "error": str(e)})
-            else:
-                ig_posted += 1
-
-            ig_day += timedelta(days=1)
-
-        # Small pause between API calls
         if not dry_run and idx < total - 1:
-            time.sleep(0.5)
+            time.sleep(0.3)   # gentle rate limiting
 
     # ── Summary ───────────────────────────────────────────────
     print(f"\n{'═'*62}")
     if dry_run:
-        print(f"  DRY RUN COMPLETE")
-        print(f"  Would schedule: {li_posted} LinkedIn + {ig_posted} Instagram posts")
-        print(f"  LinkedIn:  {total} posts over {total} days starting tomorrow at 12:00pm IST")
-        print(f"  Instagram: {total} posts over {total} days starting in 2 days at 12:30pm IST")
+        print(f"  DRY RUN — would schedule {posted} posts across "
+              f"{len(platforms)} platform(s)")
+        print(f"  First LinkedIn post : {schedule_time(today + timedelta(days=1))}")
+        print(f"  Last  LinkedIn post : {schedule_time(today + timedelta(days=total))}")
     else:
-        print(f"  POSTED: {li_posted} LinkedIn + {ig_posted} Instagram")
+        print(f"  ✓ Scheduled {posted} posts")
         if errors:
-            print(f"  ERRORS: {len(errors)}")
+            print(f"  ✗ {len(errors)} errors:")
             for e in errors:
-                print(f"    Image {e['id']} [{e['platform']}]: {e['error']}")
+                print(f"      Image {e['id']} [{e['platform']}]: {e['error']}")
+        print(f"\n  📱 Check queue → https://publish.buffer.com")
     print(f"{'═'*62}\n")
 
-    if not dry_run:
-        print("📱 Check your Buffer queue at: https://publish.buffer.com")
-
-    return li_posted + ig_posted
+    return posted
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -297,51 +266,44 @@ def post_to_buffer(
 
 def main():
     ap = argparse.ArgumentParser(
-        description="Step 3: Post generated images to Buffer (LinkedIn + Instagram)",
+        description="Step 3: Auto-schedule generated images to Buffer",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-First-time setup:
-  1. python buffer_poster.py --list-channels
-  2. Copy LinkedIn and Instagram IDs into GitHub secrets:
-       LINKEDIN_CHANNEL_ID
-       INSTAGRAM_CHANNEL_ID
-  3. python buffer_poster.py --dry-run   ← preview schedule
-  4. python buffer_poster.py             ← go live
-
 Examples:
-  python buffer_poster.py --list-channels
-  python buffer_poster.py --dry-run
-  python buffer_poster.py --manifest output/images/DRAGONFORCE_.../manifest.json
-  python buffer_poster.py --linkedin-only
-  python buffer_poster.py --limit 5
+  python buffer_poster.py --dry-run              # preview without posting
+  python buffer_poster.py                        # post LinkedIn + Instagram
+  python buffer_poster.py --facebook             # also post to Facebook
+  python buffer_poster.py --linkedin-only        # LinkedIn only
+  python buffer_poster.py --limit 5              # first 5 images only
+  python buffer_poster.py --manifest PATH        # specific manifest
 """)
-
-    ap.add_argument("--list-channels",  action="store_true",
-                    help="List all Buffer channels and their IDs")
     ap.add_argument("--manifest",       metavar="FILE",
-                    help="Path to manifest.json (default: latest in output/images/)")
+                    help="Path to manifest.json (default: latest)")
     ap.add_argument("--dry-run",        action="store_true",
                     help="Preview schedule without creating posts")
     ap.add_argument("--linkedin-only",  action="store_true")
     ap.add_argument("--instagram-only", action="store_true")
+    ap.add_argument("--facebook",       action="store_true",
+                    help="Also post to Facebook (off by default)")
     ap.add_argument("--limit",          type=int,
                     help="Only schedule first N images")
 
     args = ap.parse_args()
 
-    if args.list_channels:
-        list_channels()
-        return
-
     manifest = args.manifest or find_latest_manifest()
-    print(f"  Using manifest: {manifest}")
+    print(f"  Manifest: {manifest}")
+
+    li = not args.instagram_only
+    ig = not args.linkedin_only
+    fb = args.facebook
 
     post_to_buffer(
-        manifest_path  = manifest,
-        dry_run        = args.dry_run,
-        linkedin_only  = args.linkedin_only,
-        instagram_only = args.instagram_only,
-        limit          = args.limit,
+        manifest_path = manifest,
+        dry_run       = args.dry_run,
+        linkedin      = li,
+        instagram     = ig,
+        facebook      = fb,
+        limit         = args.limit,
     )
 
 
