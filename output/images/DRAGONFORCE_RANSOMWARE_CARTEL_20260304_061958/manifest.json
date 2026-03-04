@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-2.5-flash-image",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260304_061958",
+  "started_at": "2026-03-04T06:19:58.829409",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": null,
+      "caption": "They didn't build a ransomware group. They built a cartel with a brand, a revenue model, and a franchise.\n\nDecember 6, 2023 — BreachForums. A new name surfaces.\nMarch 19, 2025 — The cartel is formally announced.\nApril 8, 2025 — RansomHub absorbed. The empire expands.\n\n363 confirmed victims. 30+ countries. Affiliates keep 80%.\n\nThis isn't crime. This is a SaaS business with dragons.\n\n#DragonForce #Ransomware #RaaS #CyberThreatIntelligence #Cybersecurity",
+      "hook": "A mythologized threat actor portrait that makes cybersecurity professionals stop scrolling because it frames DragonForce as a corporation, not a gang.",
+      "success": false
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": null,
+      "caption": "When DragonForce hits, the first thing you see is a note.\n\nThe last thing you see is your data.\n\nChaCha8 encryption. Cross-platform. Windows. Linux. ESXi.\nBYOVD — truesight.sys + rentdrv2.sys — your EDR is already dead before the note appears.\n\nMarks & Spencer. Co-op. Harrods. Summer 2025. £300M+ impact.\n\nThe note is not a warning. It's a receipt.\n\n#DragonForce #RansomwareAttack #BYOVD #EDRKilling #ThreatIntelligence",
+      "hook": "The ransomware note reconstructed as a crime scene artifact makes viewers lean in to read every detail — triggering engagement through visceral authenticity.",
+      "success": false
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": null,
+      "caption": "Where is DragonForce from?\n\nMalaysia? The initial hacktivist phase points east.\nRussia? The RaaS model, the timing, the affiliate structure.\nSomewhere else entirely? The cartel doesn't say.\n\nWhat we know:\n📍 BreachForums debut — December 6, 2023\n📍 Cartel model declared — March 19, 2025\n📍 RansomHub absorbed — April 8, 2025\n📍 363 victims. 30+ countries. No confirmed origin.\n\nIn ransomware, the most dangerous actor is the one with no fixed address.\n\n#DragonForce #ThreatActorAttribution #RansomwareCartel #CyberEspionage #InfoSec",
+      "hook": "The geographic mystery of DragonForce's origin — visualized as a shadowed map room — triggers engagement because attribution ambiguity is the scariest truth in threat intelligence.",
+      "success": false
+    }
+  ],
+  "finished_at": "2026-03-04T06:21:09.235122",
+  "success": 0,
+  "failed": 3
+}
