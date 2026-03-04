@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260304_053944",
+  "started_at": "2026-03-04T05:39:44.760581",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": null,
+      "caption": "They didn't just build ransomware. They built a brand.\n\nDragonForce launched on BreachForums on December 6, 2023 — not as a tool, but as a cartel. Complete with logo, affiliate portal, and a revenue model that would make a startup founder jealous: 80% to affiliates, 20% to the house.\n\nBy March 2025, they weren't just a group — they were an ecosystem.\n363 confirmed victims. 30+ countries. £300M+ in damage to UK retail alone.\n\nThis is what happens when cybercrime gets a brand strategy.\n\n#DragonForce #Ransomware #RaaS #CyberSecurity #ThreatIntelligence",
+      "hook": "A mythic creature built from malware code instantly signals danger and sophistication, stopping the LinkedIn scroll cold.",
+      "success": false
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": null,
+      "caption": "The note arrives after everything is already gone.\n\nDragonForce's ransom notes aren't sloppy. They're engineered.\nChaCha8 encryption — cross-platform. Windows. Linux. ESXi. Everything.\nBYOVD drivers truesight.sys and rentdrv2.sys loaded to blind your EDR before a single file is touched.\n\nMarks & Spencer. Co-op. Harrods. Summer 2025.\nOne cartel. Three household names. £300M+ in damage.\n\nBy the time your IR team reads the note, the encryption is done.\nThe question is never 'how did they get in?' — it's 'why were we still blind?'\n\n#DragonForce #RansomwareAttack #BYOVD #IncidentResponse #CyberThreat",
+      "hook": "A shattered retail trading floor with an actual ransom note mid-decode creates visceral financial dread that every business leader recognizes immediately.",
+      "success": false
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": null,
+      "caption": "No confirmed nation-state. No arrested operators. No verified identity.\n\nDragonForce claimed Malaysian origins in early messaging — but the cartel structure, the RansomHub absorption on April 8 2025, and the collaboration with Scattered Spider tell a more complicated story.\n\nScattered Spider brought the social engineering — vishing attacks so convincing they bypassed MFA at three of the UK's most recognized brands.\nDragonForce brought the encryption and the infrastructure.\n\nTogether: one of the most damaging retail cyber events in British history.\n\nThe dragon has no fixed home. That's the point.\n\n#DragonForce #ScatteredSpider #ThreatAttribution #CyberIntelligence #RansomwareCartel",
+      "hook": "Attribution ambiguity visualized as a shadowy war room of masked figures around a globe sparks the unsettling question every CISO asks: who is actually behind this?",
+      "success": false
+    }
+  ],
+  "finished_at": "2026-03-04T05:40:55.151459",
+  "success": 0,
+  "failed": 3
+}
