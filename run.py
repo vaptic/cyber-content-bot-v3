@@ -56,11 +56,11 @@ if not GOOGLE_API_KEY:
 CLAUDE_MODEL      = "claude-sonnet-4-6"
 CLAUDE_MAX_TOKENS = 8000
 
-# Nano Banana Pro (gemini-3.1-pro-image-preview)
+# Nano Banana Pro (gemini-3-pro-image-preview)
 # Included in your Gemini Advanced subscription via API.
 # Key upgrades: 4K resolution, near-perfect text-in-image rendering,
 #               thinking mode for composition planning.
-GEMINI_IMAGE_MODEL = "gemini-3.1-pro-image-preview"
+GEMINI_IMAGE_MODEL = "gemini-3-pro-image-preview"
 
 # Nano Banana Pro preview rate limit: ~2 IPM
 # 35s gap keeps you safely within the limit.
@@ -201,10 +201,11 @@ Average ransom demand 2025: $2.73M. Average recovery cost: $4.88M.
 }
 
 # Aspect ratio map — Gemini supports: 1:1, 3:4, 4:3, 9:16, 16:9
+# gemini-3-pro-image-preview natively supports all these ratios
 ASPECT_MAP = {
-    "1:1": "1:1", "3:4": "3:4", "4:3": "4:3",
-    "9:16": "9:16", "16:9": "16:9",
-    "4:5": "3:4",   # 4:5 → use 3:4 (closest supported)
+    "1:1": "1:1", "2:3": "2:3", "3:2": "3:2",
+    "3:4": "3:4", "4:3": "4:3", "4:5": "4:5",
+    "5:4": "5:4", "9:16": "9:16", "16:9": "16:9", "21:9": "21:9",
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
