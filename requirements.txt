@@ -1,3 +1,9 @@
-anthropic>=0.40.0
-google-genai>=1.0.0
-Pillow>=10.0.0
+# requirements.txt — Option 3
+# Install: pip install -r requirements.txt
+
+anthropic>=0.40.0     # Claude API — prompt generation (~$0.05/series)
+google-genai>=1.0.0   # Gemini API — image rendering (FREE tier, 500/day)
+Pillow>=10.0.0        # image saving
+
+# NOTE: do NOT install google-generativeai — it is deprecated (EOL Nov 2025)
+requests>=2.31.0       # Buffer API HTTP calls
