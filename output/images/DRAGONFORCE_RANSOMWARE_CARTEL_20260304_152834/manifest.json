@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-2.5-flash-image",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260304_152834",
+  "started_at": "2026-03-04T15:28:34.292576",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": null,
+      "caption": "They didn't just build ransomware. They built a BRAND. 🐉\n\nDragonForce launched on BreachForums on December 6, 2023 — not as a tool, but as a cartel. A franchise. A business.\n\n80% revenue share for affiliates. Professional negotiation portals. A logo. A manifesto.\n\nBy March 2025 they announced full Cartel status — absorbing RansomHub affiliates on April 8, 2025.\n\n363 confirmed victims. 30+ countries. £300M+ in damage to UK retail alone.\n\nThis is not a hacker group. This is organised crime with a brand strategy.\n\nHow prepared is your organisation for a threat actor that thinks like a CEO?\n\n#DragonForce #RansomwareAsAService #CyberSecurity #ThreatIntelligence #CyberCrime",
+      "hook": "A mythological brand identity visualized as corporate threat intelligence — the dragon as a criminal franchise logo burns into memory and demands a share.",
+      "success": false
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": null,
+      "caption": "This is what lands in your inbox after the breach. 📄💀\n\nA DragonForce ransom note isn't just a demand. It's a forensic artifact — and every line tells you exactly how they got in, what they took, and why your EDR missed it.\n\nChaCha8 encryption. Cross-platform. Windows, Linux, ESXi — all hit simultaneously.\n\nBYOVD: They brought their OWN vulnerable driver (truesight.sys / rentdrv2.sys) to kill your endpoint protection before detonating the payload.\n\nIn Summer 2025, Marks & Spencer, Co-op, and Harrods all received variants of this note. Combined impact: £300M+.\n\nThe scariest part? The note is polite. Professional. It has a support portal.\n\nBecause to them — this is customer service.\n\n#DragonForce #Ransomware #IncidentResponse #MITRE #CyberThreat",
+      "hook": "A forensic autopsy of a ransom note — real MITRE codes, real encryption specs, real victim data — makes abstract cyber threats devastatingly concrete and shareable.",
+      "success": false
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": null,
+      "caption": "Where does DragonForce actually come from? Nobody can agree. 🌍🔍\n\nMalaysian hacktivist origins? Russian RaaS infrastructure? A rebranded operation absorbing RansomHub's displaced affiliates after its collapse?\n\nThe answer: probably all three — and that's exactly the point.\n\nOn April 8, 2025, DragonForce absorbed RansomHub's entire affiliate network following its shutdown. Within weeks, attack volume was climbing again under a new banner.\n\nIn collaboration with Scattered Spider — a group known for native-English vishing attacks — they hit the UK's biggest retailers in a coordinated summer campaign.\n\nDragonForce is not a place. It's not a person. It's a business model that survives because attribution is nearly impossible.\n\nAnd that's the most dangerous thing about it.\n\nWhere do YOU think they operate from? Drop your assessment below 👇\n\n#DragonForce #ThreatAttribution #RansomwareCartel #ScatteredSpider #CyberIntelligence",
+      "hook": "Attribution ambiguity as visual suspense — a fractured identity map that cybersecurity professionals will screenshot and debate, driving massive organic reach.",
+      "success": false
+    }
+  ],
+  "finished_at": "2026-03-04T15:29:44.652729",
+  "success": 0,
+  "failed": 3
+}
