@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_051406",
+  "started_at": "2026-03-05T05:14:06.831828",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_051406/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "DragonForce isn't a hacker. It's a business. Launched on BreachForums December 6, 2023 — within 18 months it had carved up 363 victims across 30+ countries, absorbed RansomHub, and was running an 80/20 affiliate revenue split like a Fortune 500 franchise. This is what industrialized ransomware looks like when it grows up. Study the model. Know the enemy. 🐉 #Ransomware #DragonForce #CyberSecurity #ThreatIntelligence #RaaS",
+      "hook": "A mythologized threat actor portrait that makes cybersecurity professionals stop scrolling — the dragon as corporate cartel boss demands attention.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_051406/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "On a Tuesday morning in May 2025, Marks & Spencer employees couldn't process a payment. By the time IT understood what had happened, DragonForce had deployed ChaCha8 across Windows, Linux, and ESXi — encrypting M&S, Co-op, and Harrods simultaneously. Estimated impact: £300M+. The ransom note wasn't a threat. It was an invoice. 🔐 #DragonForce #Ransomware #MarksAndSpencer #IncidentResponse #CyberAttack",
+      "hook": "A ransomware note rendered as crime-scene forensic evidence triggers visceral dread — retail executives who lived through M&S will recognize the feeling immediately.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_051406/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Where does DragonForce come from? Malaysia? A rebranded LockBit? A new collective? Nobody can confirm. What we know: it debuted on BreachForums on December 6, 2023. By March 19, 2025, it announced itself as a full cartel. By April 8, 2025, it had absorbed RansomHub. Attribution remains open. The fog is the feature — not the bug. 🌐 #ThreatIntelligence #DragonForce #CyberWarfare #Attribution #Ransomware",
+      "hook": "An unresolved attribution mystery wrapped in geopolitical fog — the 'who built this weapon?' question drives massive engagement from threat intel professionals and executives alike.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-05T05:16:51.665987",
+  "success": 3,
+  "failed": 0
+}
