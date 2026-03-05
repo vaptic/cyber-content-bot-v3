@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_055140",
+  "started_at": "2026-03-05T05:51:40.554020",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_055140/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't just build malware. They built a brand.\n\nDragonForce launched on BreachForums on December 6, 2023 — not as a group, but as a cartel. A franchise. A business.\n\n363 confirmed victims. 30+ countries. A revenue split that rivals Silicon Valley startup equity: affiliates keep 80%, the cartel takes 20%.\n\nThis is organized crime with a pitch deck.\n\nBy March 2025 they announced their cartel model. By April 2025 they absorbed RansomHub. By Summer 2025 they had hit Marks & Spencer, Co-op, and Harrods — costing the UK economy £300M+.\n\nThe dragon has a logo. A brand guide. Recruitment materials.\n\nThat should terrify you more than the encryption ever could.\n\n#DragonForce #Ransomware #CyberSecurity #RaaS #ThreatIntelligence",
+      "hook": "A mythic dragon made of ransomware code commands instant visual recognition and forces the viewer to confront how sophisticated criminal branding has become.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_055140/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "This is what lands in your inbox when DragonForce wins.\n\nA ransom note isn't just a demand. It's a product. Engineered for maximum psychological pressure. Timed to the minute. Customized per victim.\n\nDragonForce's technical stack is forensic-grade offensive capability:\n→ BYOVD attack using truesight.sys + rentdrv2.sys to blind your EDR\n→ ChaCha8 encryption across Windows, Linux, AND ESXi simultaneously\n→ Vishing campaigns run in collaboration with Scattered Spider\n→ Double extortion: encrypt AND exfiltrate before you even know they're there\n\nBy the time you read the note, they've been inside for days.\n\nThe UK's three biggest retail chains found out the hard way. £300M later, the ransom note is exhibit A in a Parliamentary inquiry.\n\nKnowing the anatomy of the attack is your first line of defense.\n\nWhat does your IR plan say about ChaCha8?\n\n#DragonForce #RansomNote #IncidentResponse #BYOVD #CyberThreat",
+      "hook": "A ransom note dissected like a crime scene autopsy makes the invisible mechanics of extortion viscerally real for every business professional scrolling LinkedIn.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_055140/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Where does DragonForce actually come from?\n\nNobody can confirm it.\n\nThey first surfaced publicly on BreachForums on December 6, 2023. Attribution attempts have pointed toward Malaysia. Some researchers flag linguistic patterns. Others point to infrastructure overlaps.\n\nBut DragonForce itself? Silent on origin. By design.\n\nThis is the new threat actor playbook:\n→ Launch under a brand, not a nation\n→ Recruit globally through affiliate programs\n→ Operate through layered anonymization\n→ Let the mystery amplify the fear\n\nWhen Scattered Spider — a group of English-speaking teenagers — starts running vishing ops for a cartel with no confirmed origin, the traditional nation-state attribution model breaks down completely.\n\nDragonForce doesn't need a flag. It has a franchise.\n\n363 victims. 30+ countries. Zero confirmed attribution.\n\nThat's not a bug. That's the product.\n\n#ThreatIntelligence #DragonForce #CyberAttribution #DarkWeb #InfoSec",
+      "hook": "An anonymous figure behind a world map covered in question marks and shadow nations forces the uncomfortable question every threat intelligence team is asking — and nobody can answer.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-05T05:54:15.763879",
+  "success": 3,
+  "failed": 0
+}
