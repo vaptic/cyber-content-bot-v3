@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_143041",
+  "started_at": "2026-03-05T14:30:41.552174",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_143041/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't just build ransomware. They built a BRAND.\n\nDragonForce launched on BreachForums on December 6, 2023 — not as a tool, but as a cartel with a logo, a revenue model, and a recruitment pitch.\n\n363 confirmed victims. 30+ countries. A 212.5% attack surge. And a business split that made affiliates rich: 80% to attackers, 20% to the house.\n\nThis wasn't cybercrime. This was a franchise.\n\nBy March 19, 2025, they formalized it. By April 8, 2025, they absorbed RansomHub. By summer 2025, they had taken down Marks & Spencer, Co-op, and Harrods — £300M+ in damage to British retail alone.\n\nThe dragon wasn't hiding. It was recruiting.\n\n#DragonForce #RansomwareAsAService #CyberSecurity #ThreatIntelligence #InfoSec",
+      "hook": "A mythological predator rendered in silicon and code demands immediate attention — the visual identity of the most aggressive RaaS cartel of 2025.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_143041/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "The note appears. The clock starts.\n\nDragonForce's ransom notes aren't accidents — they're engineered psychological weapons. ChaCha8 encryption deployed across Windows, Linux, and ESXi simultaneously. EDR killed before the note even prints, using vulnerable drivers truesight.sys and rentdrv2.sys in a BYOVD attack that most defenses never see coming.\n\nBy the time the ransom note appears on screen, your detection tools are already dead.\n\nMark & Spencer. Co-op. Harrods. Three British retail giants. One summer. £300M+ in confirmed impact.\n\nThe note always looks the same. The damage never does.\n\nKnow the signature before it finds you.\n\n#DragonForce #Ransomware #BYOVD #CyberThreat #IncidentResponse",
+      "hook": "A ransom note pinned to a corporate desk under forensic light transforms abstract cybercrime into visceral human consequence — the moment a CISO's nightmare becomes real.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_143041/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Where did DragonForce come from?\n\nNobody can confirm it.\n\nAttributed to threat actors in Malaysia by some researchers. Linked to hacktivist roots before pivoting to pure financial crime. Using infrastructure that bounces through jurisdictions no extradition treaty can reach.\n\nWhat we DO know: They debuted on BreachForums December 6, 2023. They formalized as a cartel March 19, 2025. They recruited Scattered Spider affiliates for social engineering and vishing. They absorbed RansomHub on April 8, 2025.\n\nThe origin is deliberately obscured. The impact is not.\n\n212.5% attack surge. 363 victims. The dragon doesn't need a home country. It needs a network connection.\n\nAnd it already has yours.\n\n#DragonForce #ThreatAttribution #CyberEspionage #RaaSCartel #CyberSecurity",
+      "hook": "A shadowed figure at a global map with no confirmed origin pin creates the unsettling truth: the most dangerous threat actors don't have an address.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-05T14:33:27.553457",
+  "success": 3,
+  "failed": 0
+}
