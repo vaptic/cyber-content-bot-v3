@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_133735",
+  "started_at": "2026-03-05T13:37:35.415977",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_133735/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't hack in the dark. They built a brand.\n\nDragonForce launched on BreachForums December 6, 2023 — not as a tool, but as a franchise. A cartel with a logo, a revenue split, and a recruitment pitch.\n\n363 confirmed victims. 30+ countries. Affiliates keep 80%. The dragon takes its 20% cut — every time.\n\nThis is ransomware as a business model. And business is booming.\n\n#DragonForce #Ransomware #RaaS #CyberSecurity #ThreatIntelligence",
+      "hook": "A mythological predator rendered in circuit board anatomy triggers primal threat recognition while the cartel's real business metrics reframe it as a corporate horror story.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_133735/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "Every encryption leaves a signature. Every ransom note tells a story.\n\nDragonForce uses ChaCha8 encryption — fast, cross-platform, ruthless. Windows. Linux. ESXi. Nothing is out of scope.\n\nTheir BYOVD technique weaponizes legitimate drivers — truesight.sys and rentdrv2.sys — to kill your EDR before you even know they're inside.\n\nMarks & Spencer. Co-op. Harrods. £300M+ in impact. Summer 2025.\n\nThe note always arrives. The question is: were you ready for the silence before it?\n\n#DragonForce #BYOVD #RansomwareAnalysis #EDRKill #CyberThreat",
+      "hook": "Placing an actual decoded ransom note under forensic examination transforms abstract cybercrime into a visceral crime scene that stops every security professional mid-scroll.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260305_133735/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "No confirmed nation-state. No definitive attribution. No face behind the mask.\n\nDragonForce emerged December 6, 2023 on BreachForums — and the trail goes cold fast.\n\nSome indicators point to Malaysia. Others point nowhere. The cartel structure, the 80/20 affiliate split, the collaboration with Scattered Spider — it all suggests sophisticated organization without a clear passport.\n\nIn cybersecurity, the most dangerous threat actor is the one you can't place on a map.\n\n363 victims. 30+ countries. Origin: unknown.\n\n#DragonForce #ThreatAttribution #RaaS #CyberIntelligence #ScatteredSpider",
+      "hook": "A shadowed figure behind a fractured world map with disputed attribution markers exploits the most uncomfortable truth in threat intelligence — sometimes you genuinely don't know who is behind the attack.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-05T13:40:17.604837",
+  "success": 3,
+  "failed": 0
+}
