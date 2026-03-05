@@ -135,11 +135,6 @@ jobs:
           FACEBOOK_CHANNEL_ID:  ${{ secrets.FACEBOOK_CHANNEL_ID }}
           GITHUB_REPO:          ${{ github.repository }}
         run: |
-          TEST="${{ github.event.inputs.test_mode }}"
-          if [ "$TEST" = "true" ]; then
-            echo "Test mode - skipping Buffer posting"
-            exit 0
-          fi
           if [ -z "$BUFFER_API_KEY" ]; then
             echo "BUFFER_API_KEY not set - skipping Buffer posting"
             exit 0
