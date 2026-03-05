@@ -126,7 +126,27 @@ jobs:
             echo "✓ Pushed $COUNT images to repo"
           fi
 
-      # ── 6. Upload as downloadable artifact (available 7 days) ─────────────
+      # ── 6. Post to Buffer (LinkedIn + Instagram) ──────────────────────────
+      - name: Post to Buffer
+        env:
+          BUFFER_API_KEY:       ${{ secrets.BUFFER_API_KEY }}
+          LINKEDIN_CHANNEL_ID:  ${{ secrets.LINKEDIN_CHANNEL_ID }}
+          INSTAGRAM_CHANNEL_ID: ${{ secrets.INSTAGRAM_CHANNEL_ID }}
+          FACEBOOK_CHANNEL_ID:  ${{ secrets.FACEBOOK_CHANNEL_ID }}
+          GITHUB_REPO:          ${{ github.repository }}
+        run: |
+          TEST="${{ github.event.inputs.test_mode }}"
+          if [ "$TEST" = "true" ]; then
+            echo "Test mode - skipping Buffer posting"
+            exit 0
+          fi
+          if [ -z "$BUFFER_API_KEY" ]; then
+            echo "BUFFER_API_KEY not set - skipping Buffer posting"
+            exit 0
+          fi
+          python buffer_poster.py
+
+      # ── 7. Upload as downloadable artifact (available 7 days) ─────────────
       - name: Upload images as workflow artifact
         uses: actions/upload-artifact@v4
         with:
