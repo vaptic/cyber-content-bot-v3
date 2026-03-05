@@ -66,7 +66,12 @@ def gql(query: str, variables: dict = None) -> dict:
         },
         timeout=30,
     )
-    r.raise_for_status()
+    if not r.ok:
+        try:
+            err_body = r.json()
+        except Exception:
+            err_body = r.text
+        raise RuntimeError(f"HTTP {r.status_code}: {err_body}")
     data = r.json()
 
     # Surface GraphQL-level errors
