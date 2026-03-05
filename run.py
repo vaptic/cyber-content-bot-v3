@@ -54,13 +54,13 @@ if not GOOGLE_API_KEY:
 
 # Claude model (prompt generation)
 CLAUDE_MODEL      = "claude-sonnet-4-6"
-CLAUDE_MAX_TOKENS = 8000
+CLAUDE_MAX_TOKENS = 16000   # increased: long batches need more tokens
 
-# Nano Banana Pro (gemini-2.5-flash-image)
+# Nano Banana Pro (gemini-3-pro-image-preview)
 # Included in your Gemini Advanced subscription via API.
 # Key upgrades: 4K resolution, near-perfect text-in-image rendering,
 #               thinking mode for composition planning.
-GEMINI_IMAGE_MODEL = "gemini-2.5-flash-image"
+GEMINI_IMAGE_MODEL = "gemini-3-pro-image-preview"
 
 # Nano Banana Pro preview rate limit: ~2 IPM
 # 35s gap keeps you safely within the limit.
@@ -201,7 +201,7 @@ Average ransom demand 2025: $2.73M. Average recovery cost: $4.88M.
 }
 
 # Aspect ratio map — Gemini supports: 1:1, 3:4, 4:3, 9:16, 16:9
-# gemini-2.5-flash-image natively supports all these ratios
+# gemini-3-pro-image-preview natively supports all these ratios
 ASPECT_MAP = {
     "1:1": "1:1", "2:3": "2:3", "3:2": "3:2",
     "3:4": "3:4", "4:3": "4:3", "4:5": "4:5",
@@ -299,40 +299,49 @@ Return ONLY this JSON object (no markdown, no text before or after):
   ]
 }}"""
 
-        try:
-            response = client.messages.create(
-                model=CLAUDE_MODEL,
-                max_tokens=CLAUDE_MAX_TOKENS,
-                system=CLAUDE_SYSTEM,
-                messages=[{"role": "user", "content": user_msg}],
-            )
+        raw = ""
+        for attempt in range(3):
+            try:
+                response = client.messages.create(
+                    model=CLAUDE_MODEL,
+                    max_tokens=CLAUDE_MAX_TOKENS,
+                    system=CLAUDE_SYSTEM,
+                    messages=[{"role": "user", "content": user_msg}],
+                )
 
-            raw = response.content[0].text.strip()
+                raw = response.content[0].text.strip()
 
-            # Strip any markdown fences that snuck in
-            raw = re.sub(r"^```(?:json)?\s*", "", raw)
-            raw = re.sub(r"\s*```$",          "", raw).strip()
+                # Strip any markdown fences that snuck in
+                raw = re.sub(r"^```(?:json)?\s*", "", raw)
+                raw = re.sub(r"\s*```$",          "", raw).strip()
 
-            data = json.loads(raw)
-            imgs = data.get("images", [])
+                data = json.loads(raw)
+                imgs = data.get("images", [])
 
-            # Correct IDs and aspect ratios to match our spec
-            for i, img in enumerate(imgs):
-                img["id"]           = int(batch[i][0])
-                img["aspect_ratio"] = ASPECT_MAP.get(batch[i][2], "3:4")
+                # Correct IDs and aspect ratios to match our spec
+                for i, img in enumerate(imgs):
+                    img["id"]           = int(batch[i][0])
+                    img["aspect_ratio"] = ASPECT_MAP.get(batch[i][2], "3:4")
 
-            all_images.extend(imgs)
-            usage = response.usage
-            print(f"  ✓ {len(imgs)} prompts  |  "
-                  f"{usage.input_tokens} in / {usage.output_tokens} out tokens")
+                all_images.extend(imgs)
+                usage = response.usage
+                print(f"  ✓ {len(imgs)} prompts  |  "
+                      f"{usage.input_tokens} in / {usage.output_tokens} out tokens")
+                break  # success
 
-        except json.JSONDecodeError as e:
-            print(f"  ✗ JSON error in batch {b_num+1}: {e}")
-            print(f"    First 400 chars: {raw[:400]}")
-        except anthropic.APIError as e:
-            print(f"  ✗ Claude API error: {e}")
-        except Exception as e:
-            print(f"  ✗ Unexpected error: {e}")
+            except json.JSONDecodeError as e:
+                if attempt < 2:
+                    print(f"  ⚠ JSON truncated (attempt {attempt+1}/3), retrying...")
+                    time.sleep(3)
+                else:
+                    print(f"  ✗ JSON error in batch {b_num+1} after 3 attempts: {e}")
+                    print(f"    First 400 chars: {raw[:400]}")
+            except anthropic.APIError as e:
+                print(f"  ✗ Claude API error: {e}")
+                break
+            except Exception as e:
+                print(f"  ✗ Unexpected error: {e}")
+                break
 
         if b_num < len(batches) - 1:
             time.sleep(1)   # small pause between Claude calls
