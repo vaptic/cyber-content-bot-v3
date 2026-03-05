@@ -83,7 +83,6 @@ mutation CreatePost($input: PostInput!) {
         id
         text
         dueAt
-        status
       }
     }
     ... on MutationError {
@@ -103,14 +102,17 @@ def schedule_post(channel_id: str, caption: str, image_url: str,
     if dry_run:
         return {"dry_run": True, "channel": channel_id, "due_at": due_at}
 
+    # Append image URL to caption so Buffer generates a preview
+    # (full image upload via separate API call is a future enhancement)
+    full_text = f"{caption}\n\n{image_url}"
+
     variables = {
         "input": {
-            "channelId":     channel_id,
-            "text":          caption,
-            "schedulingType": "custom",
+            "channelId":      channel_id,
+            "text":           full_text,
+            "schedulingType": "automatic",
+            "mode":           "customSchedule",
             "dueAt":          due_at,
-            # Attach image as a media URL
-            "mediaUrls":     [image_url],
         }
     }
 
