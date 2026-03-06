@@ -1,0 +1,92 @@
+{
+  "series_title": "HOW RANSOMWARE REALLY WORKS",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905",
+  "started_at": "2026-03-06T07:39:05.499819",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Spear Phish That Started Everything",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_01_The_Spear_Phish_That_Started_Everything.png",
+      "caption": "It didn't start with a hacker in a hoodie. It started with an email. One carefully crafted message — your name, your boss's name, a deadline that felt real. The average employee has 3.2 seconds of hesitation before clicking. The attacker had 3 weeks to prepare. Day 0 of 21 begins here. How many emails did your team open this morning? \n\n#Ransomware #CyberSecurity #PhishingAwareness #InfoSec #CyberAwareness",
+      "hook": "A single email sitting unopened in an inbox is the most terrifying image in cybersecurity — because everyone has seen one just like it.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "Credential Harvested in 82 Seconds",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_02_Credential_Harvested_in_82_Seconds.png",
+      "caption": "The link opened a login page that looked exactly like Microsoft 365. Font. Logo. Layout. Everything. David typed his credentials. The fake page captured them in 82 seconds and silently redirected him to the real portal. He never knew. The attacker now had domain credentials, VPN access, and 20 days to move undetected. This is Adversary-in-the-Middle phishing. It's not new. It's just devastatingly effective. \n\n#CredentialTheft #Phishing #ZeroTrust #CyberSecurity #Ransomware",
+      "hook": "82 seconds to steal your password — a countdown timer on a credential harvesting screen makes the audience feel the terrifying speed of compromise in real time.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "Foothold — Living Off The Land",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_03_Foothold___Living_Off_The_Land.png",
+      "caption": "No malware was installed. No antivirus alert fired. The attacker used PowerShell. WMI. PsExec. Tools already living inside your Windows environment. This is called 'Living off the Land' — and it's why 68% of ransomware attacks evade signature-based detection entirely. The attacker spent 4 days quietly mapping the network. Your SIEM saw nothing unusual. Your EDR was silent. Day 4 of 21. \n\n#LivingOffTheLand #LOLBins #ThreatHunting #CyberDefense #Ransomware",
+      "hook": "The most chilling ransomware visual is NOT a masked hacker — it's a totally legitimate Windows command prompt being weaponized from inside your own network.",
+      "success": true
+    },
+    {
+      "id": 4,
+      "topic": "Lateral Movement — Room by Room",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_04_Lateral_Movement___Room_by_Room.png",
+      "caption": "Think of your network as a building. The attacker is already inside. Now they're moving through every room — Finance, HR, Legal, Operations — testing every door, copying every key. Over 9 days, they mapped 847 endpoints, escalated privileges on 23 servers, and identified every backup system. IT saw nothing. This is lateral movement. It's methodical. Patient. Devastating. Day 13 of 21. \n\n#LateralMovement #NetworkSecurity #MITRE #PenTest #Ransomware",
+      "hook": "Visualizing a network as a dark corporate office floor being systematically stalked room by room transforms an abstract technical concept into something viscerally human and terrifying.",
+      "success": true
+    },
+    {
+      "id": 5,
+      "topic": "Silent Exfiltration — Terabytes Gone",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_05_Silent_Exfiltration___Terabytes_Gone.png",
+      "caption": "Before a single file was encrypted, 4.7 terabytes of data were already gone. Customer records. IP. Legal documents. Financial models. Uploaded to a bulletproof hosting server in Eastern Europe over 6 quiet nights between 2AM and 4AM — perfectly timed to avoid anomaly detection thresholds. This is double extortion. Encrypt AND threaten to publish. Average ransom 2025: $2.73M. Average recovery cost: $4.88M. The encryption hasn't even started yet. Day 19 of 21. \n\n#DataExfiltration #DoubleExtortion #RansomwareResponse #DataBreach #CyberSecurity",
+      "hook": "A progress bar silently completing at 99% while the whole world sleeps is the most visceral image of digital theft ever conceived — and it's happening to companies right now.",
+      "success": true
+    },
+    {
+      "id": 6,
+      "topic": "Backup Destruction — Safety Net Removed",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_06_Backup_Destruction___Safety_Net_Removed.png",
+      "caption": "Day 18. Your backups were already gone.\n\nMost organizations discover their backups were silently destroyed 48–72 hours before encryption ever begins. The attacker didn't just lock your data — they made sure you had nowhere to run first.\n\nThis is the step that turns a bad day into a catastrophic one.\n\nT1490. Volume Shadow Copy deletion. One command. Thirty seconds. Gone.\n\nKnow your attack surface before they do. 🔒\n\n#Ransomware #CyberSecurity #BackupStrategy #IncidentResponse #CyberResilience",
+      "hook": "The image of a physical safety net being cut by invisible hands triggers visceral fear in every IT leader who has ever trusted their backup schedule.",
+      "success": true
+    },
+    {
+      "id": 7,
+      "topic": "Encryption Day — Everything Goes Black",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_07_Encryption_Day___Everything_Goes_Black.png",
+      "caption": "Day 21. 6:47 AM. Everything stopped.\n\nThe encryption event is never a surprise to the attacker. It's been choreographed for 3 weeks. They know your org chart. They've read your emails. They've mapped every server.\n\nThen, in one coordinated command, 847 machines encrypt simultaneously.\n\nThe average victim doesn't discover it for another 4.3 hours.\n\nBy then, $4.88M in recovery costs has already begun accumulating.\n\nThis is the moment everyone fears. It was preventable at step one. 🖤\n\n#RansomwareAttack #CyberSecurity #EncryptionAttack #SOC #CyberAwareness",
+      "hook": "A wide cinematic blackout moment — every screen going dark simultaneously — is the universal nightmare that makes security teams and executives stop scrolling instantly.",
+      "success": true
+    },
+    {
+      "id": 8,
+      "topic": "The Ransom Note — $2.73M or Goodbye",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_08_The_Ransom_Note____2_73M_or_Goodbye.png",
+      "caption": "Then came the note.\n\n'Your network has been compromised. All files are encrypted. You have 72 hours.'\n\nAverage ransom demand in 2025: $2.73 million.\nAverage recovery cost even if you pay: $4.88 million.\nAverage downtime: 22 days.\n\n37% of organizations that pay never fully recover their data.\n\nThis is the bill for 21 days of silence. For one phishing email. For one unpatched VPN.\n\nThe note is not the problem. The note is just the invoice.\n\n#RansomNote #Ransomware #CyberRisk #DataBreach #CyberSecurityAwareness",
+      "hook": "A ransom note rendered as hyper-real physical art triggers immediate emotional response — the number $2.73M printed large makes executives and board members stop and share.",
+      "success": true
+    },
+    {
+      "id": 9,
+      "topic": "72 Hours on the Clock — The Negotiation",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_09_72_Hours_on_the_Clock___The_Negotiation.png",
+      "caption": "72 hours. That's all you get.\n\nWhile your IR team scrambles, your lawyers are on the phone, your board is demanding answers, and your customers are noticing the outage — there's a threat actor on a Tor chat window, patiently waiting.\n\nThey've done this before. You haven't.\n\nThe average negotiation reduces the ransom by only 28%. You still pay $1.96M. You still lose 22 days of operations.\n\nNegotiation is not a strategy. Prevention is.\n\n⏱️ The clock doesn't care about your IR retainer.\n\n#CyberNegotiation #IncidentResponse #RansomwareResponse #CISO #CyberInsurance",
+      "hook": "A physical countdown clock combined with a visible negotiation chat interface creates a universally understood pressure scenario that drives massive engagement from both technical and executive audiences.",
+      "success": true
+    },
+    {
+      "id": 10,
+      "topic": "What Would Have Stopped It",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260306_073905/image_10_What_Would_Have_Stopped_It.png",
+      "caption": "It didn't have to end this way.\n\nEvery single ransomware attack in this case study had at least 4 moments where it could have been stopped completely.\n\n✅ MFA on the VPN — stops initial access\n✅ EDR with behavioral detection — catches lateral movement on Day 3\n✅ Immutable backups, air-gapped — removes the leverage entirely\n✅ Network segmentation — limits blast radius to 1 subnet, not 847 machines\n✅ Privileged access management — blocks credential harvesting\n\n$2.73M ransom. $4.88M recovery. $0 if you patch the VPN and enforce MFA.\n\nSave this. Share it. The next attack is already in progress somewhere. 🔐\n\n#CyberDefense #RansomwarePrevention #MFA #ZeroTrust #CyberSecurity",
+      "hook": "Transforming inevitable catastrophe into preventable clarity — a visual checklist of what could have stopped everything creates immediate save-and-share behavior from security professionals.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-06T07:49:28.029078",
+  "success": 10,
+  "failed": 0
+}
