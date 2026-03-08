@@ -111,13 +111,17 @@ def schedule_post(channel_id: str, caption: str, image_url: str,
     # (full image upload via separate API call is a future enhancement)
     full_text = f"{caption}\n\n{image_url}"
 
-    variables = {
+variables = {
         "input": {
             "channelId":      channel_id,
-            "text":           full_text,
+            "text":           caption,
             "schedulingType": "automatic",
             "mode":           "customScheduled",
             "dueAt":          due_at,
+            "mediaUrls":      [image_url],
+            "instagramOptions": {
+                "type": "post"
+            },
         }
     }
 
