@@ -81,7 +81,7 @@ def gql(query: str, variables: dict = None) -> dict:
 
 
 CREATE_POST_MUTATION = """
-mutation CreatePost($input: PostInput!) {
+mutation CreatePost($input: CreatePostInput!) {
   createPost(input: $input) {
     ... on PostActionSuccess {
       post {
