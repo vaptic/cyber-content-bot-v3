@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_183024",
+  "started_at": "2026-03-08T18:30:24.363387",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_183024/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't build a virus. They built a BRAND.\n\nDragonForce launched on BreachForums December 6, 2023 — not as a piece of malware, but as a cartel with a logo, a revenue split, and a recruitment pipeline.\n\n80% to affiliates. 20% to the house.\n363 victims. 30+ countries. £300M+ impact.\n\nThis is organized crime with a pitch deck.\n\n📌 Save this post — full DragonForce case study thread incoming.\n\n#Ransomware #DragonForce #CyberSecurity #ThreatIntelligence #RaaS",
+      "hook": "A mythologized threat actor visualized as corporate evil — the dragon as a franchise logo makes ransomware feel terrifyingly legitimate.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_183024/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "The note arrives AFTER everything is already gone.\n\nDragonForce's ransom note isn't a virus — it's a contract.\nEncrypted with ChaCha8 across Windows, Linux, and ESXi.\nDeployed after BYOVD killed your EDR using truesight.sys.\n\nBy the time you're reading it, MITRE T1562 already happened.\nBy the time you're reading it, your backups are already gone.\n\nMarks & Spencer. Co-op. Harrods. Summer 2025.\n£300 million in damages. Real companies. Real boards. Real consequences.\n\nThe technical kill chain is in the thread below ⬇️\n\n#DragonForce #Ransomware #DFIR #CyberThreat #IncidentResponse",
+      "hook": "The ransom note as crime scene evidence — treating cybercrime artifacts with forensic reverence makes the threat visceral and real for executive audiences.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_183024/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Nobody knows who built DragonForce.\n\nMalaysia-linked hacktivist roots? A rebrand? A false flag?\nThe group appeared on BreachForums December 6, 2023 — fully formed, with branding, with infrastructure, with a business model.\n\nBy March 19, 2025, they announced a cartel structure.\nBy April 8, 2025, they absorbed RansomHub's entire affiliate network.\n\n212.5% attack surge in under 18 months.\nNo confirmed nation-state attribution.\nNo arrests.\n\nThe most dangerous threat actors aren't the ones you understand — they're the ones you can't place.\n\n🔁 Share this if attribution gaps keep you up at night.\n\n#ThreatIntelligence #DragonForce #CyberAttribution #NationStateCyber #CyberSecurity",
+      "hook": "Attribution uncertainty is cybersecurity's most uncomfortable truth — visualizing the fog of origin makes threat intelligence feel urgent and unsolved for decision-makers.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-08T18:33:02.418299",
+  "success": 3,
+  "failed": 0
+}
