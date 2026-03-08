@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_190433",
+  "started_at": "2026-03-08T19:04:33.210167",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_190433/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't just build ransomware. They built a brand.\n\nDragonForce launched on BreachForums on December 6, 2023 — not as a tool, but as a cartel with a logo, a revenue model, and a mythology.\n\n363 victims. 30+ countries. £300M+ in documented damage.\n\nThis is what happens when ransomware operators start thinking like franchise CEOs.\n\nThe dragon isn't just a mascot. It's a warning.\n\n#DragonForce #RansomwareAsAService #ThreatIntelligence #CyberSecurity #RaaS",
+      "hook": "A mythologized threat actor origin visual that transforms dry threat intel into a dragon-mythology brand identity piece — making cybersecurity professionals stop scrolling.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_190433/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "This is what your team sees at 3AM.\n\nA DragonForce ransom note. ChaCha8 encryption. ESXi hosts locked. EDR killed via BYOVD — truesight.sys and rentdrv2.sys weaponized against your own defenses.\n\nMarks & Spencer. Co-op. Harrods. £300M+ in damages across one summer.\n\nThe note isn't the end of the attack. It's the receipt.\n\nKnow the signature before it lands in your inbox.\n\n#DragonForce #Ransomware #IncidentResponse #DFIR #CyberThreatIntelligence",
+      "hook": "Placing a real-context ransomware note reconstruction inside a forensic lab scene makes abstract malware technical — visceral, urgent, and shareable to every SOC professional and CISO on LinkedIn.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_190433/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Nobody knows who runs DragonForce.\n\nMalaysian hacktivist roots? A rebrand? A front for something larger? The cartel absorbed RansomHub on April 8, 2025 — growing faster than most threat intel teams can track.\n\nScattered Spider collaboration. Vishing campaigns. 52% of victims in the US alone.\n\nWhen attribution fails, defenders lose their most important tool: context.\n\nThe dragon has no confirmed face. That's the point.\n\n#ThreatIntelligence #DragonForce #AttributionGap #CyberEspionage #RedTeam",
+      "hook": "The unresolved attribution mystery of DragonForce — shown as competing intelligence threads converging on a redacted identity — triggers the professional paranoia that makes cybersecurity content go viral.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-08T19:07:09.172822",
+  "success": 3,
+  "failed": 0
+}
