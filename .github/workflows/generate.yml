@@ -130,9 +130,6 @@ jobs:
       - name: Post to Buffer
         env:
           BUFFER_API_KEY:       ${{ secrets.BUFFER_API_KEY }}
-          LINKEDIN_CHANNEL_ID:  ${{ secrets.LINKEDIN_CHANNEL_ID }}
-          INSTAGRAM_CHANNEL_ID: ${{ secrets.INSTAGRAM_CHANNEL_ID }}
-          FACEBOOK_CHANNEL_ID:  ${{ secrets.FACEBOOK_CHANNEL_ID }}
           GITHUB_REPO:          ${{ github.repository }}
         run: |
           if [ -z "$BUFFER_API_KEY" ]; then
