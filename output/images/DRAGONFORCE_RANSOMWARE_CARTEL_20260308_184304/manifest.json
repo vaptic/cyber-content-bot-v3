@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_184304",
+  "started_at": "2026-03-08T18:43:04.872173",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_184304/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They gave ransomware a face. A brand. A revenue model.\n\nDragonForce didn't just build malware — they built a cartel.\n\n363 confirmed victims. 30+ countries. An 80/20 affiliate split that made cybercrime feel like a franchise.\n\nThis is what happens when threat actors start thinking like CEOs.\n\nFull case study dropping this week. Follow for every frame.\n\n#DragonForce #Ransomware #CyberSecurity #ThreatIntelligence #RaaS",
+      "hook": "A mythic dragon rendered in circuit-board flesh demands attention and signals elite threat actor sophistication that security professionals will stop scrolling to examine.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_184304/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "At 2:47 AM, someone in your organization opened the wrong attachment.\n\nBy 3:15 AM, every ESXi host was encrypted.\n\nBy 6:00 AM, the ransom note was live.\n\nDragonForce used ChaCha8 encryption — cross-platform, blindingly fast, and effective on Windows, Linux, and ESXi simultaneously. Their BYOVD technique killed your EDR before you knew the attack started.\n\nTruesight.sys. Rentdrv2.sys. Gone.\n\nThe note wasn't the end. It was the invoice.\n\n#DragonForce #Ransomware #BYOVD #IncidentResponse #CyberThreat",
+      "hook": "A real ransom note dissected under forensic light — with actual technical details burned in — makes every CISO feel the visceral reality of what ChaCha8 encryption looks like after midnight.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_184304/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Nobody knows where DragonForce comes from.\n\nMalaysia? Russia? A distributed collective with no fixed geography?\n\nThey absorbed RansomHub's entire affiliate network on April 8, 2025. They collaborated with Scattered Spider for voice phishing attacks on Marks & Spencer, Co-op, and Harrods — £300M+ in damage.\n\nYet attribution remains unconfirmed.\n\nIn a world of APTs and nation-state actors, DragonForce might be scarier: a stateless, profit-driven cartel that owes allegiance to no flag.\n\nOnly the invoice.\n\n#DragonForce #ThreatActors #CyberEspionage #Attribution #Ransomware",
+      "hook": "A shadowed war room where identity is deliberately erased — multiple operator screens, no faces — captures the unknowable origin mystery that makes DragonForce uniquely dangerous and endlessly debated.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-08T18:45:39.248287",
+  "success": 3,
+  "failed": 0
+}
