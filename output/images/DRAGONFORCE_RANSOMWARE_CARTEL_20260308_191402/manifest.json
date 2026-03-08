@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_191402",
+  "started_at": "2026-03-08T19:14:02.757036",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_191402/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't just build ransomware. They built a BRAND.\n\nDragonForce emerged on BreachForums on December 6, 2023 — not as a tool, but as a cartel. Complete with a logo, an affiliate program, and a revenue model that Fortune 500 companies would recognize.\n\n80% to affiliates. 20% to the house. 363 victims. 30+ countries.\n\nThis is what happens when cybercrime adopts startup culture.\n\n#DragonForce #Ransomware #RaaS #CyberSecurity #ThreatIntelligence",
+      "hook": "A mythic cybercriminal brand rendered as dark corporate identity art stops the scroll and demands attribution questions.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_191402/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "This is what £300,000,000 in damage looks like on a screen.\n\nDragonForce's ransom note arrives after ChaCha8 encryption has already locked Windows, Linux, and ESXi systems simultaneously. By the time you read it, your EDR is already dead — killed by BYOVD using truesight.sys and rentdrv2.sys.\n\nMarks & Spencer. Co-op. Harrods. Summer 2025. One cartel. Three retail giants. One season of chaos.\n\nKnow the signature before you see the note.\n\n#DragonForce #RansomNote #BYOVD #ChaCha8 #CyberThreat",
+      "hook": "A forensic close-up of an actual ransom note with MITRE codes and encryption signatures burns the technical reality of ChaCha8 cross-platform ransomware into the viewer's memory.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260308_191402/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Where is DragonForce?\n\nNobody knows for certain.\n\nThey appeared on BreachForums on December 6, 2023. They absorbed RansomHub on April 8, 2025. They partnered with Scattered Spider for vishing attacks on UK retail. They operate as a cartel — not a nation-state, not a lone actor, not a known APT group.\n\nThe origin is unconfirmed. The infrastructure is distributed. The affiliates are global.\n\nThat ambiguity is a weapon.\n\n363 victims. 30+ countries. No confirmed flag.\n\n#DragonForce #ThreatAttribution #CyberCartel #ScatteredSpider #InfoSec",
+      "hook": "A ghost-map showing attribution uncertainty across continents creates the visceral discomfort of fighting an enemy with no confirmed face or flag.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-08T19:16:40.941170",
+  "success": 3,
+  "failed": 0
+}
