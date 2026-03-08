@@ -116,7 +116,7 @@ def schedule_post(channel_id: str, caption: str, image_url: str,
             "channelId":      channel_id,
             "text":           full_text,
             "schedulingType": "automatic",
-            "mode":           "customSchedule",
+            "mode":           "customScheduled",
             "dueAt":          due_at,
         }
     }
