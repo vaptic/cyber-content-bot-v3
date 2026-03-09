@@ -81,7 +81,7 @@ def gql(query: str, variables: dict = None) -> dict:
 
 
 CREATE_POST_MUTATION = """
-mutation CreatePost($input: PostInput!) {
+mutation CreatePost($input: CreatePostInput!) {
   createPost(input: $input) {
     ... on PostActionSuccess {
       post {
@@ -107,10 +107,6 @@ def schedule_post(channel_id: str, caption: str, image_url: str,
     if dry_run:
         return {"dry_run": True, "channel": channel_id, "due_at": due_at}
 
-    # Append image URL to caption so Buffer generates a preview
-    # (full image upload via separate API call is a future enhancement)
-    full_text = f"{caption}\n\n{image_url}"
-
     variables = {
         "input": {
             "channelId":      channel_id,
@@ -118,10 +114,11 @@ def schedule_post(channel_id: str, caption: str, image_url: str,
             "schedulingType": "automatic",
             "mode":           "customScheduled",
             "dueAt":          due_at,
-            "mediaUrls":      [image_url],
-            "instagramOptions": {
-                "type": "post"
-            },
+            "assets": {
+                "images": [
+                    {"url": image_url}
+                ]
+            }
         }
     }
 
