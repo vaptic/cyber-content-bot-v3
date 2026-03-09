@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_180039",
+  "started_at": "2026-03-09T18:00:39.513687",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_180039/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't just build ransomware. They built a BRAND.\n\nDecember 6, 2023 — a new threat actor debuts on BreachForums. No fanfare. No warning.\n\nBy March 2025, DragonForce wasn't just a group — it was a CARTEL. A full RaaS franchise offering 80/20 revenue splits, affiliate toolkits, and a negotiation portal.\n\n363 confirmed victims. 30+ countries. £300M+ in damages to UK retail alone.\n\nThis is what a criminal empire looks like when it goes corporate.\n\n#DragonForce #Ransomware #CyberSecurity #ThreatIntelligence #RaaS",
+      "hook": "A mythic beast rendered in circuit-board flesh forces LinkedIn feeds to stop scrolling — the brand identity of a criminal empire made viscerally real.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_180039/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "What does a DragonForce ransom note actually look like?\n\nChaCha8 encryption. Cross-platform. Windows, Linux, ESXi — all hit.\n\nBYOVD technique: they weaponize your own trusted drivers against you. truesight.sys and rentdrv2.sys — legitimate files turned into EDR killers.\n\nYour endpoint protection? Blind. Your backups? Targeted. Your clock? Ticking.\n\nThe note appears. The negotiation portal opens. The 80/20 split kicks in.\n\nThis is not opportunistic crime. This is an engineered revenue machine.\n\n#IncidentResponse #Ransomware #MITRE #CyberThreat #DragonForce",
+      "hook": "A forensic analyst's desk drowning in real ransom note artifacts and MITRE codes creates the visceral feeling of being inside an active incident response — professionals will share this immediately.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_180039/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Malaysia? Pro-Palestine hacktivism? RansomHub absorbed? Scattered Spider collaboration?\n\nDragonForce's origin is one of cybersecurity's most debated questions.\n\nWhat we KNOW:\n→ BreachForums debut: December 6, 2023\n→ Cartel model announced: March 19, 2025\n→ RansomHub infrastructure absorbed: April 8, 2025\n→ Collaborated with Scattered Spider on vishing campaigns\n→ Hit Marks & Spencer, Co-op, Harrods in Summer 2025\n\nWhat we DON'T know: Who is really behind the curtain?\n\nIn ransomware, attribution is everything — and DragonForce has made sure you can't be certain.\n\n#ThreatAttribution #CyberIntelligence #DragonForce #ScatteredSpider #OSINT",
+      "hook": "A shadowy map room with contradictory attribution pins and redacted intelligence files captures the unsettling truth that nobody knows who DragonForce really is — mystery drives massive engagement.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-09T18:03:16.508748",
+  "success": 3,
+  "failed": 0
+}
