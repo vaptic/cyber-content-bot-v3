@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_165059",
+  "started_at": "2026-03-09T16:50:59.332464",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_165059/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't just build ransomware. They built a BRAND.\n\nDragonForce launched on BreachForums December 6, 2023 — not as a tool, but as a cartel with a logo, a revenue model, and a recruitment pitch.\n\n80% to affiliates. 20% to the house.\n363 victims. 30+ countries. £300M+ in damage.\n\nThis is ransomware-as-a-service operating like a Fortune 500 franchise.\n\nThe dragon isn't mythology. It's a business model.\n\n#Cybersecurity #Ransomware #DragonForce #ThreatIntelligence #RaaS",
+      "hook": "A mythic dragon forged from ransomware code stops LinkedIn scrollers cold — brand identity as threat actor propaganda made visceral.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_165059/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "The ransom note arrived before IT even knew the network was down.\n\nDragonForce's ChaCha8 encryption hit Windows, Linux, AND ESXi simultaneously.\nFirst they killed the EDR — using truesight.sys and rentdrv2.sys.\nThen they encrypted everything.\n\nMarks & Spencer. Co-op. Harrods.\nThree British retail giants. One summer. £300M+ in impact.\n\nThe note wasn't the end of the attack.\nIt was the opening negotiation.\n\nThis is what BYOVD looks like when it lands in a boardroom.\n\n#Ransomware #DragonForce #CyberAttack #IncidentResponse #BYOVD",
+      "hook": "A ransomware note splayed across a shattered boardroom screen makes the abstract financial horror of £300M devastatingly concrete.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_165059/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "No confirmed nation-state. No arrested operators. No verified faces.\n\nDragonForce emerged from the dark on December 6, 2023 — and attribution remains officially UNKNOWN.\n\nMalaysia-linked forum activity. Pro-Palestinian messaging in early samples. Scattered Spider collaboration for English-language vishing. RansomHub absorbed April 8, 2025.\n\nIs it a hacktivist collective turned cartel?\nA state-sponsored proxy with plausible deniability?\nOr just very sophisticated independent criminals?\n\nThe most dangerous threat actors are the ones you can't pin to a map.\n\n#ThreatIntelligence #DragonForce #AttributionAnalysis #Cybersecurity #NationState",
+      "hook": "A shadowed figure behind a fragmented map of competing attribution theories forces the unsettling truth — we still don't know who built DragonForce.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-09T16:53:35.980663",
+  "success": 3,
+  "failed": 0
+}
