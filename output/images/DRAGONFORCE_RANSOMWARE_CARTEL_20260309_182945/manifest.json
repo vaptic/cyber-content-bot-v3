@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_182945",
+  "started_at": "2026-03-09T18:29:45.569418",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_182945/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't build a virus. They built a cartel.\n\nDecember 6, 2023 — a post appears on BreachForums. No fanfare. No warning. Just a name: DragonForce.\n\nWithin 18 months:\n🔴 363 confirmed victims\n🔴 30+ countries\n🔴 212.5% surge in attacks\n🔴 £300M+ impact on UK retail alone\n\nThis isn't a hacker. It's a franchise.\n\nAffiliates keep 80%. The cartel takes 20%. Everyone wins — except the victim.\n\nThe circuit dragon is awake. Is your organization on its list?\n\n#DragonForce #Ransomware #CyberSecurity #ThreatIntelligence #RaaS",
+      "hook": "A mythologized threat actor portrait transforms abstract malware into a visceral, recognizable villain — triggering fear and fascination simultaneously.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_182945/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "The file is called READ_IT.txt\n\nYou open it. The world stops.\n\nDragonForce doesn't just encrypt your data — it does it on Windows, Linux, AND ESXi simultaneously using ChaCha8 encryption. Before you even noticed, truesight.sys and rentdrv2.sys had already killed your EDR.\n\nYou were blind. They were inside.\n\nATT&CK techniques on file:\n⚠️ T1486 — Data Encrypted for Impact\n⚠️ T1562.001 — Disable or Modify Tools (BYOVD)\n⚠️ T1071 — Application Layer Protocol C2\n⚠️ T1657 — Financial Theft\n\nThe ransom note is just paperwork. The real damage was done days ago.\n\nKnow the kill chain before they run it.\n\n#MITREATTACK #Ransomware #DragonForce #BYOVD #IncidentResponse",
+      "hook": "Recreating the actual moment a victim opens the ransom note makes abstract threat intelligence viscerally personal — every security professional sees their own screen in this image.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_182945/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Nobody knows who they really are.\n\nDragonForce publicly emerged on BreachForums on December 6, 2023. By March 19, 2025, they declared themselves a full cartel — absorbing RansomHub affiliates on April 8, 2025.\n\nThe attribution map is deliberately blurred:\n🌐 Claimed Malaysian hacktivist roots — disputed\n🌐 Operational English fluency suggesting Western exposure\n🌐 Collaborated with Scattered Spider — a known English-speaking threat group\n🌐 RaaS infrastructure complexity suggests nation-state adjacent capability\n\nThey want you confused. Confusion buys time.\n\nWhat we know for certain:\n✅ 363 victims confirmed\n✅ 52% of victims in the United States\n✅ £300M+ impact in UK retail in a single summer\n\nThe dragon has no confirmed lair. That's the point.\n\n#ThreatAttribution #DragonForce #CyberEspionage #RansomwareCartel #CyberThreatIntel",
+      "hook": "Geopolitical ambiguity rendered as visual mystery forces the audience to lean in — the 'who is behind this?' question is the most engaging in all of threat intelligence.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-09T18:32:19.381741",
+  "success": 3,
+  "failed": 0
+}
