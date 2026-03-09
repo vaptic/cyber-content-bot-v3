@@ -1,0 +1,36 @@
+{
+  "series_title": "DRAGONFORCE RANSOMWARE CARTEL",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_165917",
+  "started_at": "2026-03-09T16:59:17.523655",
+  "results": [
+    {
+      "id": 1,
+      "topic": "Identity & Brand — The Circuit Dragon",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_165917/image_01_Identity___Brand___The_Circuit_Dragon.png",
+      "caption": "They didn't just build ransomware. They built a brand.\n\nDragonForce debuted on BreachForums on December 6, 2023 — not as a tool, but as a cartel. Complete with a logo, an affiliate program, and a revenue split that would make a startup founder jealous.\n\n80% to affiliates. 20% to the house.\n363 confirmed victims. 30+ countries. £300M+ in damage.\n\nThis is what happens when cybercrime goes corporate.\n\n#DragonForce #RansomwareAsAService #CyberSecurity #ThreatIntelligence #LinkedInSecurity",
+      "hook": "A mythologized villain origin card for a real criminal cartel stops the scroll by treating ransomware like a blockbuster franchise reveal.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "The Binary Signature — Ransom Note Decoded",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_165917/image_02_The_Binary_Signature___Ransom_Note_Decod.png",
+      "caption": "This is what $300 million in damage looks like on a screen.\n\nDragonForce's ransom notes aren't accidents — they're engineered psychological weapons. ChaCha8 encryption runs across Windows, Linux, and ESXi simultaneously. BYOVD drivers kill your EDR before you know you're compromised.\n\ntruesight.sys + rentdrv2.sys — your security stack, turned against you.\n\nBy the time the note appears, it's already over.\n\nMarks & Spencer. Co-op. Harrods. Summer 2025.\n\nRead the note. Then read it again.\n\n#DragonForce #Ransomware #BYOVD #ChaCha8 #CyberThreat",
+      "hook": "Placing a real-anatomy ransom note under a forensic microscope makes the invisible mechanics of extortion viscerally tangible to every security professional scrolling past.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The Origin Nobody Can Confirm",
+      "file": "output/images/DRAGONFORCE_RANSOMWARE_CARTEL_20260309_165917/image_03_The_Origin_Nobody_Can_Confirm.png",
+      "caption": "Nobody knows who built DragonForce.\n\nMalaysian hacktivist roots? Russian RaaS infrastructure? A rebranded cartel absorbing RansomHub's collapse?\n\nAll three.\n\nOn April 8, 2025, RansomHub went dark and DragonForce absorbed its affiliates overnight. On March 19, 2025, they announced a full cartel structure. On December 6, 2023, they appeared on BreachForums as if they'd always existed.\n\nAttribution is the hardest problem in cybersecurity. DragonForce built their empire on that fact.\n\nWho are they? The answer changes depending on which mirror you look into.\n\n#ThreatIntelligence #DragonForce #CyberAttribution #RansomwareCartel #CyberSecurity",
+      "hook": "The ambiguity of attribution — rendered as a masked figure behind fractured mirrors — taps directly into the intelligence community's greatest frustration and every CISO's nightmare.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-09T17:01:52.345990",
+  "success": 3,
+  "failed": 0
+}
