@@ -118,6 +118,12 @@ def schedule_post(channel_id: str, caption: str, image_url: str,
                 "images": [
                     {"url": image_url}
                 ]
+            },
+            "metadata": {
+                "instagram": {
+                    "type":              "post",
+                    "shouldShareToFeed": True,
+                }
             }
         }
     }
