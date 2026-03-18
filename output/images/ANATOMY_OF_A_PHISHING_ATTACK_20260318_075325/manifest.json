@@ -1,0 +1,92 @@
+{
+  "series_title": "ANATOMY OF A PHISHING ATTACK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325",
+  "started_at": "2026-03-18T07:53:25.377517",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Perfect Spear Phish — Anatomy",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_01_The_Perfect_Spear_Phish___Anatomy.png",
+      "caption": "You read it three times. It had your name, your boss's name, and the name of a project you started last Tuesday.\n\nThat wasn't luck. That was reconnaissance.\n\nSpear phishing isn't spray-and-pray. It's a surgical strike built from your LinkedIn, your email signatures, your out-of-office replies, and your company's org chart.\n\nThe attacker spent 3 days on you before you spent 3 seconds on their email.\n\n82 seconds later, your credentials were already being tested on your VPN.\n\nKnowing the anatomy is your only defense.\n\n#CyberSecurity #PhishingAwareness #SpearPhishing #MITRE #SecurityAwareness",
+      "hook": "Dissecting a real spear phish frame-by-frame triggers the visceral recognition that every professional has felt opening a suspicious email — and stops the scroll cold.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "Pretexting — The Story They Told You",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_02_Pretexting___The_Story_They_Told_You.png",
+      "caption": "They weren't a hacker sitting in a dark room running scripts.\n\nThey were a storyteller.\n\nThey called you as 'David from IT Security.' They had a ticket number. They knew your manager's name. They knew you'd had a system issue last week.\n\nThey built a character before they ever dialed your number.\n\nPretexting is identity theater — and you were the audience.\n\nVishing attacks increased 550% in 2023. The script they used took 20 minutes to write. The breach it caused took 6 months to contain.\n\nThe best firewall in the world can't stop a convincing voice.\n\n#SocialEngineering #Vishing #Pretexting #CyberAwareness #InfoSec",
+      "hook": "A shadowy figure constructing an elaborate fake identity surrounded by their tools of deception makes the invisible art of social engineering terrifyingly tangible.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "Urgency Engineering — Why You Clicked",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_03_Urgency_Engineering___Why_You_Clicked.png",
+      "caption": "You didn't click because you were dumb.\n\nYou clicked because you were human.\n\nAttackers study cognitive psychology. They know that urgency bypasses your prefrontal cortex — the part that asks 'wait, is this legitimate?'\n\nThey engineer panic:\n— 'Your account will be suspended in 15 minutes'\n— 'Immediate action required'\n— 'CEO is waiting on this transfer'\n\nYour threat-response brain takes over. Amygdala hijack. Click.\n\nAverage time from email open to credential submission: 82 seconds.\n\nThat's not enough time to think. That's the point.\n\n#PhishingPsychology #UrgencyEngineering #CyberSecurity #HumanFirewall #SecurityAwareness",
+      "hook": "Visualizing the neuroscience of the panic click — a brain scan overlaid with an email countdown timer — makes the psychological manipulation of phishing feel uncomfortably personal and scientifically undeniable.",
+      "success": true
+    },
+    {
+      "id": 4,
+      "topic": "The Credential Harvest Page",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_04_The_Credential_Harvest_Page.png",
+      "caption": "You landed on the page. It looked exactly right.\n\nMicrosoft logo. Correct font. Real-looking URL. A pre-filled email address — your email address — already waiting in the field.\n\nYou typed your password.\n\nThe page said 'Verification successful. Redirecting...'\n\nIt wasn't Microsoft. It was a cloned page hosted on a compromised WordPress site, proxied through Evilginx2, capturing your session token in real time — MFA included.\n\nBy the time you were redirected to the real Microsoft portal, the attacker had your password, your session cookie, and a shell on your endpoint.\n\nThe page lived for 4 hours before it was taken down.\n4 hours. 847 victims.\n\n#CredentialHarvesting #Evilginx #MFABypass #PhishingPage #CyberSecurity",
+      "hook": "A pixel-perfect fake Microsoft login page displayed in an evidence locker aesthetic forces every viewer to confront how flawlessly believable the trap actually is.",
+      "success": true
+    },
+    {
+      "id": 5,
+      "topic": "Business Email Compromise — CEO Fraud",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_05_Business_Email_Compromise___CEO_Fraud.png",
+      "caption": "The email was three sentences long.\n\nIt came from the CEO. It referenced an active acquisition deal. It said the wire needed to happen before market open.\n\n$2.3 million. Gone in 11 minutes.\n\nBusiness Email Compromise isn't sophisticated malware. It's a spoofed email address, a convincing story, and an employee who didn't want to bother the CEO with a verification call.\n\nBEC cost businesses $2.9 billion in 2023 alone. The FBI calls it the most financially damaging cybercrime in the world.\n\nThe most expensive attacks in history were started with a sentence.\n\nAlways verify. Always call. Always question urgency from leadership.\n\n#BEC #CEOFraud #BusinessEmailCompromise #CyberCrime #CISO",
+      "hook": "A wire transfer confirmation screen next to a forensic reconstruction of a spoofed CEO email — with the dollar amount visible — triggers the gut-punch recognition of how routine the most expensive cybercrime in history actually looks.",
+      "success": true
+    },
+    {
+      "id": 6,
+      "topic": "Vishing — The Convincing Call",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_06_Vishing___The_Convincing_Call.png",
+      "caption": "You answered. They won.\n\nA caller says they're from IT. They know your name, your manager's name, even your last helpdesk ticket number. They just need to 'verify' your credentials to fix an urgent issue.\n\n82 seconds later — your account belongs to them.\n\nVishing (voice phishing) costs enterprises an average of $14M per incident. The script is polished. The urgency is manufactured. The damage is real.\n\nNever verify identity over an inbound call. Call back on a number YOU look up.\n\n#CyberSecurity #Vishing #PhishingAwareness #SocialEngineering #InfoSec",
+      "hook": "The moment a voice becomes a weapon — capturing the exact second a professional unknowingly hands over their credentials over the phone.",
+      "success": true
+    },
+    {
+      "id": 7,
+      "topic": "Smishing — The Text That Seemed Real",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_07_Smishing___The_Text_That_Seemed_Real.png",
+      "caption": "It came in at 7:43 AM. Between the coffee and the commute.\n\n'Your package has been delayed. Verify your delivery address here: fxd-track-usps[.]net'\n\nIt looked real. The logo looked right. The urgency felt normal.\n\n5 minutes later, banking credentials harvested. 5 days later, $2.1M wired offshore.\n\nSmishing (SMS phishing) attacks increased 328% in 2023. One tap is all it takes.\n\nRule: Never tap links in texts. Go directly to the official app or website.\n\n#Smishing #CyberSecurity #PhishingAttack #MobileSecurity #CyberAwareness",
+      "hook": "A single text message on a glowing phone screen — the most intimate device we own — becomes the entry point for a million-dollar breach.",
+      "success": true
+    },
+    {
+      "id": 8,
+      "topic": "MFA Fatigue — The Approval Flood",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_08_MFA_Fatigue___The_Approval_Flood.png",
+      "caption": "They didn't break your password. They broke your patience.\n\nMFA fatigue (push bombing) works like this:\n→ Attacker already has your credentials\n→ They trigger 50, 60, 80 MFA push requests in a row\n→ At 2 AM, half-asleep, you tap 'Approve' just to make it stop\n→ They're in.\n\nThis exact technique took down Uber in 2022. One approval. $billions in damage.\n\nThe fix: Number matching MFA. FIDO2 passkeys. Never tap Approve on unexpected requests.\n\n#MFAFatigue #PushBombing #CyberSecurity #ZeroTrust #PhishingDefense",
+      "hook": "Dozens of MFA push notifications flooding a phone at 2 AM — the psychological torture of 'notification bombing' visualized as a digital siege.",
+      "success": true
+    },
+    {
+      "id": 9,
+      "topic": "Spot a Phish in 30 Seconds",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_09_Spot_a_Phish_in_30_Seconds.png",
+      "caption": "30 seconds. That's all you need to catch a phish.\n\nHere's what to check EVERY time:\n\n🔴 Sender domain — does it match exactly? (micros0ft.com ≠ microsoft.com)\n🔴 Urgency language — 'Act NOW or your account closes in 24 hours'\n🔴 Hover the link — where does it ACTUALLY go?\n🔴 Generic greeting — 'Dear Customer' instead of your name\n🔴 Mismatched branding — logo looks slightly off, colors wrong\n\nPhishing emails cost businesses $1.8B in 2023. Your eyes are your first firewall.\n\nSave this. Share this. Train your team.\n\n#PhishingAwareness #CyberTraining #EmailSecurity #CyberHygiene #InfoSec",
+      "hook": "A forensic breakdown of a phishing email dissected like a crime scene — every red flag labeled and lit like evidence under a detective's magnifying glass.",
+      "success": true
+    },
+    {
+      "id": 10,
+      "topic": "Phishing-Resistant MFA — Your Last Line",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260318_075325/image_10_Phishing-Resistant_MFA___Your_Last_Line.png",
+      "caption": "Passwords were never enough. Regular MFA almost wasn't either.\n\nPhishing-resistant MFA is the answer:\n\n🔐 FIDO2 / Passkeys — cryptographic proof, can't be phished\n🔐 Hardware security keys — physical device required\n🔐 Certificate-based auth — tied to your device, not a code\n\nThe difference? A push code can be intercepted. A FIDO2 key CANNOT be replicated or phished — ever.\n\nThe U.S. Government mandated phishing-resistant MFA for all federal agencies in 2022 (OMB M-22-09). Your organization should follow.\n\nThis is your last line. Make it count.\n\n#FIDO2 #PhishingResistant #MFA #ZeroTrust #CyberDefense",
+      "hook": "A FIDO2 security key glowing like a holy relic against a siege of failed attack notifications — hope and defense visualized as a single physical object.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-03-18T08:04:01.972096",
+  "success": 10,
+  "failed": 0
+}
