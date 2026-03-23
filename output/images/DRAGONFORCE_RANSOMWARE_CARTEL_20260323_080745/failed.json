@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "topic": "Identity & Brand \u2014 The Circuit Dragon",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 2,
+    "topic": "The Binary Signature \u2014 Ransom Note Decoded",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 3,
+    "topic": "The Origin Nobody Can Confirm",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 4,
+    "topic": "Dark Web Emergence \u2014 BreachForums Dec 2023",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 5,
+    "topic": "The Cartel Announcement \u2014 March 19 2025",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 6,
+    "topic": "RaaS Franchise \u2014 The 80/20 Split",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 7,
+    "topic": "363 Victims \u2014 212.5% Surge",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 8,
+    "topic": "Global Reach \u2014 30+ Countries",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 9,
+    "topic": "BYOVD \u2014 Your EDR Just Died",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 10,
+    "topic": "Scattered Spider \u2014 No Zero-Day Required",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 11,
+    "topic": "9 Days Undetected \u2014 Lateral Movement",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 12,
+    "topic": "Silent Exfiltration \u2014 6TB Stolen",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 13,
+    "topic": "Backup Destruction \u2014 Last Hope Gone",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 14,
+    "topic": "The Encryption Wave \u2014 ChaCha8",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 15,
+    "topic": "Post-Attack Intimidation \u2014 They Call You",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 16,
+    "topic": "RansomHub Absorbed \u2014 Cartel Grew Overnight",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 17,
+    "topic": "UK Retail Assault \u2014 \u00a3300M Impact",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 18,
+    "topic": "Full MITRE Kill Chain \u2014 All 10 Steps",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 19,
+    "topic": "The 5 Defenses That Stop Them",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 20,
+    "topic": "The Dragon Is Already Inside The Walls",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  }
+]
