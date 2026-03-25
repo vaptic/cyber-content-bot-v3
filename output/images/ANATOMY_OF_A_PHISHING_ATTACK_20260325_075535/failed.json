@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "topic": "The Perfect Spear Phish \u2014 Anatomy",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 2,
+    "topic": "Pretexting \u2014 The Story They Told You",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 3,
+    "topic": "Urgency Engineering \u2014 Why You Clicked",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 4,
+    "topic": "The Credential Harvest Page",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 5,
+    "topic": "Business Email Compromise \u2014 CEO Fraud",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 6,
+    "topic": "Vishing \u2014 The Convincing Call",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 7,
+    "topic": "Smishing \u2014 The Text That Seemed Real",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 8,
+    "topic": "MFA Fatigue \u2014 The Approval Flood",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 9,
+    "topic": "Spot a Phish in 30 Seconds",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 10,
+    "topic": "Phishing-Resistant MFA \u2014 Your Last Line",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  }
+]
