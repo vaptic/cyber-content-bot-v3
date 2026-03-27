@@ -1,0 +1,92 @@
+{
+  "series_title": "HOW RANSOMWARE REALLY WORKS",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260327_080646",
+  "started_at": "2026-03-27T08:06:46.811875",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Spear Phish That Started Everything",
+      "file": null,
+      "caption": "Day 0. One click. 21 days of silence before your world ends.\n\nThis is how 91% of ransomware attacks begin — not with a zero-day exploit, not with a nation-state hacking team. With a PDF. A logo you recognize. A sender name that looks almost right.\n\nThe attacker spent 3 weeks researching your company before sending this. They knew your CFO's name. They knew your invoicing vendor. They knew you were closing a deal this week.\n\nYou were targeted. Not random.\n\nAnd the encryption? That's 21 days away. Right now, all they need is one click.\n\n#Ransomware #CyberSecurity #PhishingAwareness #ThreatIntelligence #InfoSec",
+      "hook": "The moment of click is visceral and relatable — every professional has hovered over a suspicious email, making this image personally threatening rather than abstractly technical.",
+      "success": false
+    },
+    {
+      "id": 2,
+      "topic": "Credential Harvested in 82 Seconds",
+      "file": null,
+      "caption": "You clicked at 11:47:03 PM.\n\nBy 11:48:25 PM, the attacker had your username, your password hash, and your Active Directory domain name.\n\n82 seconds.\n\nThe macro in that PDF silently executed a PowerShell command. No antivirus alert. No pop-up. No warning. Your credentials were exfiltrated to a C2 server in Moldova before you even closed the email.\n\nThis is MITRE ATT&CK T1003 — Credential Dumping. It happens in the background while you're still reading the email.\n\nThe attacker now has the keys. They're not rushing. They're patient. They have 20 more days.\n\nAverage time to detect a breach in 2025: 194 days.\nAverage time for attacker to harvest credentials: 82 seconds.\n\nThe math doesn't lie.\n\n#CredentialTheft #Ransomware #ActiveDirectory #CyberSecurity #ZeroTrust",
+      "hook": "The specific '82 seconds' timestamp transforms an abstract credential theft concept into a horrifying real-time countdown that professionals will screenshot and share.",
+      "success": false
+    },
+    {
+      "id": 3,
+      "topic": "Foothold — Living Off The Land",
+      "file": null,
+      "caption": "They're inside your network. And they're using YOUR tools against you.\n\nNo malware dropped. No suspicious executables. No antivirus alerts.\n\nJust PowerShell. WMI. PsExec. Scheduled tasks. Tools that were already there. Tools your IT team uses every single day.\n\nThis is 'Living off the Land' — the reason modern EDR tools miss up to 40% of advanced persistent threats. The attacker blends in perfectly because they ARE using legitimate software.\n\nFrom Day 1 to Day 7, they're mapping your environment. Every server. Every backup. Every domain admin account. Every pathway to your crown jewels.\n\nYou can't detect what you can't distinguish from normal.\n\nThis is why behavior-based detection matters. This is why zero-trust matters. This is why your SIEM needs tuning.\n\nThey're already home. They're just unpacking.\n\n#LivingOffTheLand #LOTL #ThreatHunting #CyberSecurity #MITREAttack",
+      "hook": "Visualizing 'Living off the Land' as a predator hiding in plain sight using the environment as camouflage creates a metaphor that security professionals and executives alike will viscerally understand and share.",
+      "success": false
+    },
+    {
+      "id": 4,
+      "topic": "Lateral Movement — Room by Room",
+      "file": null,
+      "caption": "Day 7. They know your network better than your own IT team does.\n\nEvery domain. Every subnet. Every privileged account.\n\nLateral movement isn't hacking — it's walking. Once they have one set of valid credentials, moving through your network looks exactly like legitimate IT activity.\n\nServer by server. Domain by domain. Backup system by backup system.\n\nThey're not looking for data yet. They're looking for EVERYTHING — every pathway, every admin account, every backup, every failsafe.\n\nBecause when they finally encrypt, they want to make sure you have no way out.\n\nMean time to detect lateral movement in enterprise networks: 11 days.\nMean time for attacker to complete lateral movement: 3-5 days.\n\nThey'll be done before you start looking.\n\n#LateralMovement #NetworkSecurity #ActiveDirectory #IncidentResponse #CyberSecurity",
+      "hook": "The architectural floor plan metaphor — an attacker moving through a building room by room — makes abstract network lateral movement instantly understandable to every business executive, not just technical security professionals.",
+      "success": false
+    },
+    {
+      "id": 5,
+      "topic": "Silent Exfiltration — Terabytes Gone",
+      "file": null,
+      "caption": "Day 14. Your data is already gone.\n\nBefore they encrypt a single file, they steal everything.\n\nWhy? Because ransomware 2025 is a double extortion game. First they steal. Then they encrypt. Pay the ransom and you get your files back. Don't pay — and your client data, your financials, your IP gets published on their leak site.\n\nBetween Day 7 and Day 14, an average of 1.8TB of data was quietly compressed, encrypted, and sent to attacker-controlled cloud storage — disguised as normal HTTPS traffic.\n\nYour DLP tool? Didn't see it. The traffic looked like normal cloud backup activity. Because they used YOUR backup tools.\n\nThe average organization detects this exfiltration 194 days after it begins.\n\nDay 14. The data is gone. Day 21 is when you find out.\n\n2025 average ransom demand: $2.73M. Double extortion multiplier: 2.3x.\n\n#DataExfiltration #Ransomware #DoubleExtortion #DataBreach #CyberSecurity",
+      "hook": "The image of data physically leaving a building as a glowing river in the dead of night — while security guards sleep — makes data exfiltration emotionally devastating in a way that firewall logs never could.",
+      "success": false
+    },
+    {
+      "id": 6,
+      "topic": "Backup Destruction — Safety Net Removed",
+      "file": null,
+      "caption": "Most companies discover their backups are gone AFTER they need them.\n\nRansomware operators don't encrypt first. They hunt your backups. They find them. They destroy them. Then they wait.\n\nVeeam, Acronis, Windows VSS, tape libraries, cloud snapshots — all of it. Gone. Methodically. Silently. Days before encryption ever starts.\n\nYou had a safety net. They cut it while you were sleeping.\n\nThis is Stage 4 of 5. And by this point, the clock is already running.\n\n#Ransomware #CyberSecurity #BackupSecurity #IncidentResponse #CyberAwareness",
+      "hook": "The moment attackers delete your backups is the moment they own you — this image makes that invisible act viscerally real.",
+      "success": false
+    },
+    {
+      "id": 7,
+      "topic": "Encryption Day — Everything Goes Black",
+      "file": null,
+      "caption": "Day 18. 3:14 AM.\n\nEvery file. Every database. Every system. Simultaneously.\n\nAccounting. HR. Patient records. Manufacturing controls. Source code. Legal documents. Customer data. Encrypted. All of it. In under 4 hours.\n\nThe ransomware didn't arrive tonight. It arrived 18 days ago. It spent those 18 days learning your network, destroying your backups, and exfiltrating 40GB of your most sensitive data.\n\nTonight was just the detonation.\n\nThe average organization takes 21 DAYS to even detect a ransomware intrusion. By then, the encryption is the least of your problems.\n\nAverage ransom demand 2025: $2.73M. Average total recovery cost: $4.88M.\n\n#Ransomware #CyberSecurity #DataProtection #CyberAttack #InfoSec",
+      "hook": "A single cinematic wide-shot that shows the exact moment an entire organization's data vanishes — visceral, silent, inevitable.",
+      "success": false
+    },
+    {
+      "id": 8,
+      "topic": "The Ransom Note — $2.73M or Goodbye",
+      "file": null,
+      "caption": "You wake up. Open your laptop. This is what you see.\n\nEvery screen. Every device. Every server. The same message.\n\n$2,730,000. Cryptocurrency. 72 hours.\n\nAnd the worst part? They're not bluffing. They already have 47GB of your data. They'll publish it if you don't pay. They've done this 340 times before.\n\nThe average ransom demand in 2025 is $2.73 million.\nThe average recovery cost — even if you pay — is $4.88 million.\n\nPaying doesn't guarantee decryption. It guarantees they come back.\n\nThis is the moment that 18 days of silent infiltration was building toward.\n\nThe question is: what would you do at 3:17 AM with your entire business locked?\n\n#Ransomware #CyberSecurity #RansomNote #CyberRisk #CyberAwareness",
+      "hook": "A $2.73M ransom note rendered as brutal typographic art triggers the exact gut-punch moment every executive fears — making it instantly shareable.",
+      "success": false
+    },
+    {
+      "id": 9,
+      "topic": "72 Hours on the Clock — The Negotiation",
+      "file": null,
+      "caption": "72 hours. That's what they give you.\n\nYour legal team is on the phone. Your cyber insurer is on the phone. An incident response firm just landed. The FBI is cc'd on an email nobody wanted to send. The board wants answers you don't have.\n\nDo you pay? Do you negotiate? Do you refuse and try to rebuild?\n\nThere is no good answer. There are only less-bad ones.\n\n47% of organizations that pay still can't fully recover their data.\n68% of organizations hit by ransomware are hit again within 12 months if they pay.\n\nThe negotiation isn't about the money. It's about who has leverage. And they built that leverage over 18 days while you had no idea they were in your network.\n\nThis is what the failure of prevention looks like at 3 AM.\n\n#Ransomware #IncidentResponse #CyberSecurity #CrisisManagement #CyberRisk",
+      "hook": "A war-room crisis scene under a massive countdown clock captures the human cost of ransomware in a way that statistics alone never could.",
+      "success": false
+    },
+    {
+      "id": 10,
+      "topic": "What Would Have Stopped It",
+      "file": null,
+      "caption": "18 days. 5 stages. $4.88M in damage.\n\nHere's the painful truth: this attack was stoppable. Multiple times. At multiple points.\n\nMFA on every privileged account → Initial access fails.\nEDR with behavioral detection → Lateral movement triggers alert on Day 3.\nNetwork segmentation → Lateral movement stops at the perimeter.\nImmutable offsite backups → Backup destruction fails.\nZero Trust architecture → Exfiltration blocked at data boundary.\n\nRansomware isn't a technology failure. It's a control gap failure.\nMost gaps were known. Most were deprioritized. Most had a ticket open.\n\nThe $4.88M recovery bill is always more expensive than the security program that would have prevented it.\n\nWhich control gap exists in your environment right now?\n\n#Ransomware #CyberSecurity #ZeroTrust #MFA #CyberDefense",
+      "hook": "Showing the exact security controls that would have broken the attack chain transforms abstract advice into a specific, shareable prevention blueprint.",
+      "success": false
+    }
+  ],
+  "finished_at": "2026-03-27T08:12:03.926573",
+  "success": 0,
+  "failed": 10
+}

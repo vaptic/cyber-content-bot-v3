@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "topic": "The Spear Phish That Started Everything",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 2,
+    "topic": "Credential Harvested in 82 Seconds",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 3,
+    "topic": "Foothold \u2014 Living Off The Land",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 4,
+    "topic": "Lateral Movement \u2014 Room by Room",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 5,
+    "topic": "Silent Exfiltration \u2014 Terabytes Gone",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 6,
+    "topic": "Backup Destruction \u2014 Safety Net Removed",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 7,
+    "topic": "Encryption Day \u2014 Everything Goes Black",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 8,
+    "topic": "The Ransom Note \u2014 $2.73M or Goodbye",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 9,
+    "topic": "72 Hours on the Clock \u2014 The Negotiation",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  },
+  {
+    "id": 10,
+    "topic": "What Would Have Stopped It",
+    "error": "429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its spending cap.', 'status': 'RESOURCE_EXHAUSTED'}}"
+  }
+]
