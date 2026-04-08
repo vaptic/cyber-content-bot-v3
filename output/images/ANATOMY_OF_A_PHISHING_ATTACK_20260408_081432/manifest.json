@@ -1,0 +1,52 @@
+{
+  "series_title": "ANATOMY OF A PHISHING ATTACK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260408_081432",
+  "started_at": "2026-04-08T08:14:32.106129",
+  "results": [
+    {
+      "id": 6,
+      "topic": "Vishing — The Convincing Call",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260408_081432/image_06_Vishing___The_Convincing_Call.png",
+      "caption": "You answered the call. So did the attacker.\n\nVishing — voice phishing — doesn't need malware. It needs your voice, your trust, and 90 seconds of distraction.\n\nReal scenario: A caller claims to be from IT support. They know your name, your manager's name, your company VPN portal. They need you to 'verify' your credentials to restore access.\n\nYou comply. They own you.\n\nT1566.004 — Phishing via Voice. It's in the MITRE ATT&CK framework because it works. Every. Single. Time.\n\n🔴 82 seconds. That's all it takes.\n\n#CyberSecurity #Vishing #SocialEngineering #PhishingAwareness #ZeroTrust",
+      "hook": "The moment a human voice becomes a hacker's most dangerous tool — this image captures the eerie intimacy of social engineering in real time.",
+      "success": true
+    },
+    {
+      "id": 7,
+      "topic": "Smishing — The Text That Seemed Real",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260408_081432/image_07_Smishing___The_Text_That_Seemed_Real.png",
+      "caption": "It came from a number that looked official. It used your name. It had a tracking link. It seemed completely real.\n\nSmishing — SMS phishing — is the fastest-growing initial access vector in 2024. Threat actors spoof bank numbers, courier services, and HR systems. All they need is one tap.\n\nReal technique: Attacker sends fake parcel delivery failure SMS with a link resolving to a credential harvester cloned from a major courier brand. SSL certificate makes it look legitimate.\n\nT1566 — Phishing. No malware needed. Just a link and 82 seconds of distraction.\n\n📱 6.4 billion fake SMS messages are sent every day.\n\nCould your team recognize one?\n\n#Smishing #CyberSecurity #PhishingAttack #MobileSecurity #SecurityAwareness",
+      "hook": "A glowing rectangle in a dark room — this image makes the viewer feel the exact paranoid second they realized a 'real' text was bait.",
+      "success": true
+    },
+    {
+      "id": 8,
+      "topic": "MFA Fatigue — The Approval Flood",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260408_081432/image_08_MFA_Fatigue___The_Approval_Flood.png",
+      "caption": "Push. Push. Push. Push. APPROVE.\n\nMFA Fatigue attacks — also called MFA Bombing or Push Spam — overwhelm users with authentication requests until exhaustion or confusion triggers a single fatal 'Approve' tap.\n\nThis is exactly how Uber was breached in 2022. How Cisco was compromised. How Microsoft contractors were hit by Lapsus$.\n\nThere's no malware in this attack. Just psychology.\n\nT1621 — Multi-Factor Authentication Request Generation. It's in ATT&CK because it is devastatingly effective against standard push-based MFA.\n\nFix: Move to phishing-resistant MFA — FIDO2, hardware keys, passkeys. Push notifications are not enough.\n\n🔴 1 approval out of 100 requests. That's all they need.\n\n#MFAFatigue #CyberSecurity #MFA #PhishingResistant #IdentitySecurity",
+      "hook": "A wall of push notifications demanding approval — this image viscerally captures the psychological warfare of MFA fatigue attacks.",
+      "success": true
+    },
+    {
+      "id": 9,
+      "topic": "Spot a Phish in 30 Seconds",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260408_081432/image_09_Spot_a_Phish_in_30_Seconds.png",
+      "caption": "30 seconds. That's all it takes to catch a phish — if you know what to look for.\n\nHere are the 6 signals burned into every phishing email:\n\n🔴 Sender domain mismatch (looks right, reads wrong)\n🔴 Urgency language ('Act now', 'Account suspended')\n🔴 Mismatched hover URL vs displayed link\n🔴 Generic greeting ('Dear Customer')\n🔴 Unexpected attachment or credential request\n🔴 Subtle grammar errors in formal language\n\nAttackers spend weeks crafting spear phishing emails. You have 82 seconds before you click. Use 30 of them wisely.\n\nSave this. Share it. Train with it.\n\n#PhishingAwareness #CyberSecurity #SecurityTraining #EmailSecurity #CyberDefense",
+      "hook": "A high-stakes forensic breakdown of a real-looking phishing email — this image teaches a skill while looking like cinematic art.",
+      "success": true
+    },
+    {
+      "id": 10,
+      "topic": "Phishing-Resistant MFA — Your Last Line",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260408_081432/image_10_Phishing-Resistant_MFA___Your_Last_Line.png",
+      "caption": "95% of phishing attacks cannot bypass FIDO2 hardware keys.\n\nNot spear phishing. Not vishing. Not MFA fatigue. Not AiTM proxy attacks.\n\nThis is phishing-resistant MFA — and it is the single highest-impact control your organization can deploy today.\n\nThe options:\n🔑 FIDO2 Hardware Keys (YubiKey, Google Titan)\n🔑 Passkeys (device-bound)\n🔑 Certificate-Based Authentication (CBA)\n\nNIST SP 800-63B defines it. CISA mandates it for federal agencies. Your security team has been asking for budget to deploy it.\n\nThe question isn't whether FIDO2 works. It's whether you'll act before the next breach.\n\nEvery image in this series ends here. Because defense is the point.\n\n#FIDO2 #PhishingResistantMFA #CyberSecurity #ZeroTrust #IdentitySecurity",
+      "hook": "A glowing hardware key held like a holy relic against a collapsing digital threat — this image creates the emotional desire to actually implement the defense.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-04-08T08:20:24.646053",
+  "success": 5,
+  "failed": 0
+}
