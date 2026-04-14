@@ -16,6 +16,7 @@ Setup (2 minutes):
 Commands:
   python run.py                          # Full DragonForce 20-image series
   python run.py --test                   # Quick test: 3 images only
+  python run.py --topic ai_attacks       # AI Attack Playbook series (15 images)
   python run.py --topic phishing         # Different series
   python run.py --topic zero_trust       # Zero Trust series
   python run.py --platform instagram     # Instagram 1:1 format
@@ -196,6 +197,55 @@ Average ransom demand 2025: $2.73M. Average recovery cost: $4.88M.
             ("08", "The Ransom Note — $2.73M or Goodbye",          "4:5"),
             ("09", "72 Hours on the Clock — The Negotiation",      "4:5"),
             ("10", "What Would Have Stopped It",                   "4:5"),
+        ],
+    },
+
+    "ai_attacks": {
+        "title": "THE AI ATTACK PLAYBOOK",
+        "context": """
+AI has fundamentally broken the economics of cyberattacks. What took a skilled team
+weeks now takes a machine minutes. Attacks are hyper-personalized, autonomous, and
+operating at industrial scale — and most security tools were not built to fight them.
+
+KEY STATS (2025):
+• 87% of security professionals say AI makes phishing lures undetectable by humans
+• Deepfake fraud losses exceeded $200M in Q1 2025 alone — only reported cases
+• CEO fraud targets 400+ companies per day using AI voice cloning
+• WormGPT writes fully personalised BEC emails in under 2 seconds, zero spelling errors
+• AI-generated phishing has 60% higher click-through rate than human-written attacks
+• The Hong Kong Deepfake Heist: $25.6M transferred after employee joins video call
+  with an entire AI-generated "board" — CFO, directors, all synthetic, all convincing
+• Autonomous malware (no human-in-the-loop) detected in the wild since mid-2024
+• Agentic AI attackers can plan multi-step intrusions, adapt to defences in real time
+• 16% of confirmed 2025 breaches directly involved AI-enhanced attack techniques
+• FraudGPT available on dark web for $200/month — no jailbreak required
+• AI credential stuffing now tests 1 billion password combos per hour
+• Synthetic identity fraud (AI-generated people) caused $5B+ in financial losses 2025
+• Voice cloning from 3 seconds of audio — CEOs, CFOs, judges, all replicable
+
+MOST VIRAL REAL INCIDENTS:
+- Hong Kong firm: $25.6M lost to AI deepfake video conference (Feb 2024)
+- UK energy company: £220K transferred after deepfake CEO voice call
+- Finance worker transferred funds after deepfake "multiconference" with fake colleagues
+- AI-generated lawyer submitted fake case citations in US federal court
+- North Korean IT workers using AI-generated faces to pass remote job interviews
+""",
+        "topics": [
+            ("01", "The Phishing Email No Human Wrote",                    "4:5"),
+            ("02", "WormGPT & FraudGPT — The Dark Side of AI",            "4:5"),
+            ("03", "The $25.6M Deepfake Board Meeting",                    "4:5"),
+            ("04", "AI Voice Clone — Your CFO Never Made That Call",       "4:5"),
+            ("05", "Synthetic Identities — The Employee Who Never Existed","4:5"),
+            ("06", "Autonomous Malware — No Human Required",               "4:5"),
+            ("07", "Agentic Attacks — AI That Plans Its Own Moves",       "16:9"),
+            ("08", "1 Billion Passwords Per Hour — AI Credential Stuffing","4:5"),
+            ("09", "The 87% Problem — Why Humans Cannot Detect AI Phish",  "4:5"),
+            ("10", "AI Supply Chain Poison — The Trusted Update",          "4:5"),
+            ("11", "North Korea's AI Army — Fake Faces, Real Paychecks",   "4:5"),
+            ("12", "The $200M Quarter — Deepfake Fraud By The Numbers",   "16:9"),
+            ("13", "AI vs AI — The Defender Finally Gets a Weapon",        "4:5"),
+            ("14", "How To Spot a Deepfake Before It Costs You Millions",  "4:5"),
+            ("15", "The AI Defense Stack — Your 5-Layer Counter-Strike",  "16:9"),
         ],
     },
 }
