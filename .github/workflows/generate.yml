@@ -4,6 +4,7 @@ on:
   # ── Scheduled runs ───────────────────────────────────────────────────────
   schedule:
     - cron: "0 7 * * 1"    # Every Monday    07:00 UTC — DragonForce series
+    - cron: "0 7 * * 2"    # Every Tuesday   07:00 UTC — AI Attack Playbook
     - cron: "0 7 * * 3"    # Every Wednesday 07:00 UTC — Phishing series
     - cron: "0 7 * * 5"    # Every Friday    07:00 UTC — Ransomware series
 
@@ -17,6 +18,7 @@ on:
         type: choice
         options:
           - dragonforce
+          - ai_attacks
           - phishing
           - zero_trust
           - ransomware
@@ -70,9 +72,10 @@ jobs:
         run: |
           # Scheduled runs use fixed topics per day
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            DAY=$(date +%u)   # 1=Mon 3=Wed 5=Fri
+            DAY=$(date +%u)   # 1=Mon 2=Tue 3=Wed 5=Fri
             case $DAY in
               1) TOPIC="dragonforce" ;;
+              2) TOPIC="ai_attacks"  ;;
               3) TOPIC="phishing"    ;;
               5) TOPIC="ransomware"  ;;
               *) TOPIC="dragonforce" ;;
