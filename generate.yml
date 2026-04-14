@@ -12,16 +12,9 @@ on:
   workflow_dispatch:
     inputs:
       topic:
-        description: "Series to generate"
+        description: "Series to generate (dragonforce, ai_attacks, phishing, zero_trust, ransomware)"
         required: true
         default: "dragonforce"
-        type: choice
-        options:
-          - dragonforce
-          - ai_attacks
-          - phishing
-          - zero_trust
-          - ransomware
       platform:
         description: "Target platform (affects aspect ratio)"
         required: true
