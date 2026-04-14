@@ -1,0 +1,132 @@
+{
+  "series_title": "THE AI ATTACK PLAYBOOK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216",
+  "started_at": "2026-04-14T09:02:16.044734",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Phishing Email No Human Wrote",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_01_The_Phishing_Email_No_Human_Wrote.png",
+      "caption": "An AI wrote this email in 1.9 seconds. No spelling errors. No awkward phrasing. No red flags a human would catch.\n\nIt knew your name. Your manager's name. The project you're working on. The exact tone your company uses in internal comms.\n\nAnd it sent 40,000 variations — simultaneously — to companies just like yours.\n\nAI-generated phishing has a 60% higher click-through rate than anything a human attacker could write.\n87% of security professionals say they can no longer detect these lures by eye.\n\nThe email sitting in your inbox right now? You won't know. That's the point.\n\n#CyberSecurity #AIThreats #PhishingAttack #CyberAwareness #InfoSec",
+      "hook": "Showing the mechanical, inhuman factory behind a perfectly crafted deceptive email triggers visceral unease and compels security professionals to share as a warning.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "WormGPT & FraudGPT — The Dark Side of AI",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_02_WormGPT___FraudGPT___The_Dark_Side_of_AI.png",
+      "caption": "ChatGPT has guardrails. WormGPT does not.\n\nFor $200/month — less than a Netflix family plan — anyone can access an AI built specifically to help criminals:\n\n→ Write undetectable Business Email Compromise attacks\n→ Generate custom malware with zero prior coding skill\n→ Craft blackmail, fraud, and social engineering scripts at scale\n→ No jailbreak. No restrictions. No questions asked.\n\nFraudGPT. WormGPT. DarkBERT. These are not hypothetical.\nThey are live. They are cheap. They are being used right now.\n\nThe adversary just got a co-pilot. Does your defence?\n\n#CyberSecurity #DarkWeb #WormGPT #AIAttacks #ThreatIntelligence",
+      "hook": "Visualising dark web AI tools as physical weapons on a criminal's workbench makes an abstract threat feel immediate, purchasable, and terrifyingly real.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The $25.6M Deepfake Board Meeting",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_03_The__25_6M_Deepfake_Board_Meeting.png",
+      "caption": "He thought he was on a video call with his CFO, his directors, and three senior board members.\n\nEvery face was real. Every voice was familiar. Every instruction was clear:\n\n'Transfer the funds. This is urgent. Do not discuss this with anyone.'\n\nHe transferred $25.6 million.\n\nEvery person on that call was an AI. The CFO. The directors. The entire board. Synthetic. Generated. Controlled by attackers in real time.\n\nThis happened. Hong Kong. February 2024.\n\nDeepfake video conferencing attacks are not a future threat. They happened yesterday. They are happening today.\n\nWhat does your organisation do when you can't trust what you see?\n\n#Deepfake #CyberSecurity #AIFraud #BEC #CyberCrime",
+      "hook": "Recreating the exact moment a lone employee faces a room full of AI-generated executives hits the psychological horror note that makes viewers stop scrolling and share immediately.",
+      "success": true
+    },
+    {
+      "id": 4,
+      "topic": "AI Voice Clone — Your CFO Never Made That Call",
+      "file": null,
+      "caption": "Your CFO called. The voice was perfect.\nThe tone was right. The urgency was real.\n\n'I need you to authorise a £220,000 transfer immediately. This is sensitive — do not log it through normal channels.'\n\nThe CFO never made that call.\n\nAll an attacker needed was 3 seconds of audio — pulled from a podcast, a conference recording, a LinkedIn video — and an AI rebuilt their voice completely.\n\nThis exact attack cost a UK energy company £220,000.\nCEO fraud targets 400+ companies every single day.\n\nIf your authorisation process relies on recognising a voice, you no longer have an authorisation process.\n\n#VoiceCloning #CEOFraud #Deepfake #CyberSecurity #SocialEngineering",
+      "hook": "The image of a phone call being physically dissected to reveal an AI puppeteer behind the voice triggers the primal fear that no communication channel is safe.",
+      "success": false
+    },
+    {
+      "id": 5,
+      "topic": "Synthetic Identities — The Employee Who Never Existed",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_05_Synthetic_Identities___The_Employee_Who_.png",
+      "caption": "He interviewed well. His LinkedIn was thorough. His GitHub had three years of commits.\nHis references checked out. His face matched his passport.\n\nHe never existed.\n\nNorth Korean state-sponsored operatives are using AI-generated faces, fabricated work histories, and synthetic identities to pass remote job interviews at Western tech firms — and then exfiltrating data from the inside.\n\nAI-generated synthetic identities caused $5B+ in financial losses in 2025.\nYour next hire could be a nation-state actor with a face that was never born.\n\nHiring is now a cybersecurity problem.\n\n#SyntheticIdentity #InsiderThreat #NorthKorea #CyberSecurity #IdentityFraud",
+      "hook": "A hiring manager's desk covered in perfectly real-looking credentials for a person who does not exist exposes a vulnerability every HR and security team fears but rarely prepares for.",
+      "success": true
+    },
+    {
+      "id": 6,
+      "topic": "Autonomous Malware — No Human Required",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_06_Autonomous_Malware___No_Human_Required.png",
+      "caption": "It launched at 2:47 AM. No human gave the order.\n\nAutonomous malware detected in the wild since mid-2024 needs no operator. It plans. It pivots. It persists. It exfiltrates — all while your SOC team is asleep.\n\nThe attack lifecycle that used to require a skilled red team now runs headless, on a loop, at machine speed.\n\nYour perimeter was built to stop people. This isn't people.\n\n#CyberSecurity #AutonomousMalware #AIThreats #ZeroDay #ThreatIntelligence",
+      "hook": "A machine that attacks, adapts, and destroys while its creator sleeps — the visual proof that cybersecurity is now a war without soldiers.",
+      "success": true
+    },
+    {
+      "id": 7,
+      "topic": "Agentic Attacks — AI That Plans Its Own Moves",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_07_Agentic_Attacks___AI_That_Plans_Its_Own_.png",
+      "caption": "Your firewall blocked its first move. So it invented a new one.\n\nAgentic AI attackers don't follow scripts. They observe your defences, build a multi-step intrusion plan, adapt when blocked, and try again — autonomously, in real time.\n\nThis isn't a bot running a playbook. This is an adversary that thinks.\n\nMITRE ATT&CK was built to document what attackers do. Agentic AI is rewriting the document faster than humans can read it.\n\nThe question isn't whether your tools can detect known threats. It's whether they can handle an adversary that learns.\n\n#AIAttacks #AgenticAI #MITREATTACK #CyberDefense #ThreatHunting",
+      "hook": "A chess grandmaster that never sleeps, never panics, and rewrites its own strategy mid-game — against your security team — is the most terrifying threat visualization LinkedIn has ever seen.",
+      "success": true
+    },
+    {
+      "id": 8,
+      "topic": "1 Billion Passwords Per Hour — AI Credential Stuffing",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_08_1_Billion_Passwords_Per_Hour___AI_Creden.png",
+      "caption": "1,000,000,000 password attempts. Every hour. Against your login page.\n\nAI credential stuffing doesn't guess randomly. It prioritizes. It uses breach data, behavioural patterns, and password psychology models to work through combinations in optimal order.\n\nBy the time your SIEM fires an alert, it's tried 50 million combinations.\n\nBy the time a human analyst looks at the alert, it's found the one that works.\n\nMost accounts fall in the first 0.3% of attempts. AI knows this. Does your rate-limiter?\n\n#CredentialStuffing #AccountTakeover #PasswordSecurity #AIThreats #CyberSecurity",
+      "hook": "One billion combinations per hour rendered as a physical assault on a single door lock makes credential stuffing viscerally terrifying in a way statistics alone never could.",
+      "success": true
+    },
+    {
+      "id": 9,
+      "topic": "The 87% Problem — Why Humans Cannot Detect AI Phish",
+      "file": null,
+      "caption": "87% of security professionals say AI-generated phishing lures are undetectable by humans.\n\nNot undetectable by interns. Not undetectable by general users. By security professionals.\n\nWormGPT writes a fully personalised BEC email referencing your actual projects, your colleagues' real names, your company's real tone — in under 2 seconds. Zero spelling errors. Perfect grammar. Contextually flawless.\n\nThe 'spot the typo' training your staff did last year? That was for a threat that no longer exists.\n\nAI phishing has a 60% higher click-through rate than human-written attacks. The numbers don't lie.\n\n#Phishing #BEC #WormGPT #AIThreats #SecurityAwareness",
+      "hook": "A human brain visibly failing to distinguish a perfect forgery from reality — with an 87% failure rate burned into the image — is the kind of statistic that stops a LinkedIn scroll dead.",
+      "success": false
+    },
+    {
+      "id": 10,
+      "topic": "AI Supply Chain Poison — The Trusted Update",
+      "file": null,
+      "caption": "You clicked 'Install Update'. You trusted the certificate. You trusted the vendor.\n\nAI-enhanced supply chain attacks don't break your perimeter. They walk through the front door wearing your vendor's face.\n\nAI now helps attackers identify high-value dependencies, generate convincing typosquatted packages, poison legitimate build pipelines, and time the payload delivery for maximum spread before detection.\n\nSolarWinds was manual. What comes next is automated, adaptive, and running at machine speed.\n\nThe update you're about to approve — are you certain it is what it claims to be?\n\n#SupplyChainAttack #SoftwareSecurity #AIThreats #DevSecOps #CyberSecurity",
+      "hook": "The moment of complete betrayal — a trusted software update badge hiding a malicious payload — is a visual metaphor so universally understood it will stop every IT professional mid-scroll.",
+      "success": false
+    },
+    {
+      "id": 11,
+      "topic": "North Korea's AI Army — Fake Faces, Real Paychecks",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_11_North_Korea_s_AI_Army___Fake_Faces__Real.png",
+      "caption": "North Korea didn't hack the front door. They walked in through HR.\n\nAI-generated faces. Fabricated LinkedIn profiles. Stolen identities layered over synthetic ones. And once inside, they're not just collecting a paycheck — they're planting access, exfiltrating IP, and funding a weapons program.\n\nThis is state-sponsored infiltration at industrial scale. And your hiring process probably wasn't built to stop it.\n\nThe question isn't whether they've applied to your company. It's whether they already work there.\n\n#CyberSecurity #NorthKorea #AIThreats #InsiderThreat #SocialEngineering",
+      "hook": "The visual revelation that a foreign government is running a ghost workforce inside Western tech companies triggers instant professional paranoia and share compulsion.",
+      "success": true
+    },
+    {
+      "id": 12,
+      "topic": "The $200M Quarter — Deepfake Fraud By The Numbers",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_12_The__200M_Quarter___Deepfake_Fraud_By_Th.png",
+      "caption": "Two hundred million dollars. One quarter. Only the reported cases.\n\nDeepfake fraud didn't sneak up on us — it detonated. And the numbers from Q1 2025 are not a warning sign. They're a post-mortem.\n\nOne video call. One convincing voice. One moment where a trained professional trusted their own eyes and ears — and lost millions.\n\nThe attack surface isn't your firewall anymore. It's human trust itself.\n\nEvery company that hasn't briefed its finance team this month is already a target.\n\n#DeepfakeFraud #CyberSecurity #BEC #AIAttacks #FinancialCrime",
+      "hook": "A single concrete dollar figure attached to a single quarter of a single year stops any finance or security professional mid-scroll and forces them to confront the scale.",
+      "success": true
+    },
+    {
+      "id": 13,
+      "topic": "AI vs AI — The Defender Finally Gets a Weapon",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_13_AI_vs_AI___The_Defender_Finally_Gets_a_W.png",
+      "caption": "For two years, AI has been the attacker's weapon.\n\nAutonomous malware. Self-adapting intrusions. Phishing lures no human can detect. Attacks moving faster than any SOC analyst can respond.\n\nNow the defender gets to play.\n\nAI-native security platforms don't wait for signatures. They hunt behavior. They correlate signals across millions of endpoints in milliseconds. They see the pattern before the damage lands.\n\nThis isn't a product pitch. It's an arms race. And for the first time in this cycle — the defense has a weapon that matches the threat.\n\nThe question is whether your organization deploys it before the next attack hits.\n\n#AIDefense #CyberSecurity #ThreatDetection #SOC #ZeroTrust",
+      "hook": "The gladiatorial symmetry of AI fighting AI is the most visually and conceptually compelling frame in cybersecurity right now — security professionals feel it in their bones.",
+      "success": true
+    },
+    {
+      "id": 14,
+      "topic": "How To Spot a Deepfake Before It Costs You Millions",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_14_How_To_Spot_a_Deepfake_Before_It_Costs_Y.png",
+      "caption": "The Hong Kong employee wasn't careless. They weren't undertrained. They joined a video call with people they recognised — their CFO, their colleagues, their board.\n\nEvery single person on that call was AI-generated. $25.6 million was transferred.\n\nDeepfakes have crossed the threshold of human detectability. But AI detection tools and trained protocol haven't. Here's what the forensics show:\n\n🔴 Unnatural blinking or no blinking at all\n🔴 Facial edges that blur when the subject moves quickly\n🔴 Audio that's slightly ahead or behind lip movement\n🔴 Requests that bypass normal authorization channels\n🔴 Pressure to act fast, skip verification, stay on the call\n\nThe technology can fool your eyes. Your process doesn't have to let it.\n\nSave this. Share it with your finance team today.\n\n#Deepfake #CyberSecurity #SocialEngineering #BEC #CyberAwareness",
+      "hook": "Practical, visual, immediately actionable content with a direct financial consequence stops the scroll and gets saved and shared as a reference — the holy grail of LinkedIn engagement.",
+      "success": true
+    },
+    {
+      "id": 15,
+      "topic": "The AI Defense Stack — Your 5-Layer Counter-Strike",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_090216/image_15_The_AI_Defense_Stack___Your_5-Layer_Coun.png",
+      "caption": "The attackers have a stack. You need one too.\n\nAI-enhanced threats don't move through one attack surface — they cascade through five. And a single-layer defense doesn't stop a multi-vector autonomous attacker.\n\nHere's the counter-stack security teams are building in 2025:\n\n🛡️ Layer 1 — AI-Native Email & Comms Security (kills WormGPT BEC at the gate)\n🛡️ Layer 2 — Deepfake & Synthetic Media Detection (voice, video, identity)\n🛡️ Layer 3 — Behavioral AI (detects anomalies no signature can catch)\n🛡️ Layer 4 — Identity Verification & Liveness Detection (stops AI job fraud)\n🛡️ Layer 5 — AI-Powered SOC & Autonomous Response (fights fire with fire)\n\nNone of these layers existed at enterprise scale three years ago. All of them are table stakes now.\n\nWhich layer does your organization currently have? Be honest in the comments.\n\n#CyberSecurity #AIDefense #ZeroTrust #SOC #CyberStrategy",
+      "hook": "A concrete, numbered, actionable framework delivered with cinematic visual authority is the most saved and reshared format on LinkedIn — especially when the stakes are existential.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-04-14T09:26:52.044380",
+  "success": 12,
+  "failed": 3
+}
