@@ -1,0 +1,36 @@
+{
+  "series_title": "THE AI ATTACK PLAYBOOK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_054909",
+  "started_at": "2026-04-14T05:49:09.146376",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Phishing Email No Human Wrote",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_054909/image_01_The_Phishing_Email_No_Human_Wrote.png",
+      "caption": "An AI wrote this email in 1.9 seconds. Your employee clicked it in 4.\n\nNo typos. No awkward phrasing. No red flags your training ever taught them to spot.\n\nWormGPT doesn't get tired. It doesn't have an accent. It knows your CEO's name, your company's last press release, and the exact tone of your internal comms — scraped, synthesized, weaponized.\n\n87% of security professionals say AI phishing lures are now undetectable by humans.\n60% higher click-through rate than anything a human attacker wrote.\n\nThe phishing email your team will fall for hasn't been written by a person for a long time.\n\nHow are you training your people to fight something they literally cannot see coming?\n\n#CyberSecurity #AIThreats #Phishing #BEC #ZeroTrust",
+      "hook": "The visceral horror of watching a machine craft the perfect lie in real time triggers the exact professional dread that makes LinkedIn users stop scrolling and tag their security teams.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "WormGPT & FraudGPT — The Dark Side of AI",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_054909/image_02_WormGPT___FraudGPT___The_Dark_Side_of_AI.png",
+      "caption": "For $200 a month — less than a Netflix subscription — anyone can buy an AI that writes perfect fraud.\n\nNo jailbreak. No technical skill. No conscience.\n\nFraudGPT. WormGPT. EvilGPT. These aren't hypothetical. They're live. They're on Telegram right now. They have customer support, refund policies, and five-star reviews from people who used them to steal from your clients.\n\nWormGPT writes fully personalized BEC emails in under 2 seconds, zero spelling errors.\nFraudGPT generates fake invoices, malware, phishing kits — on demand, at scale.\nAI credential stuffing now tests 1 BILLION password combinations per hour.\n\nThe barrier to becoming a world-class cybercriminal just dropped to the price of a gym membership.\n\nSecurity tools built before 2023 were not designed for this world.\n\nWhat's your answer?\n\n#CyberSecurity #DarkWeb #FraudGPT #WormGPT #AIRisk",
+      "hook": "Showing the actual dark web marketplace UI for AI crime tools as a visceral product catalog makes the threat tangible and purchasable — the $200/month price tag next to a Starbucks-style subscription model is the detail that makes professionals repost in disbelief.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "The $25.6M Deepfake Board Meeting",
+      "file": "output/images/THE_AI_ATTACK_PLAYBOOK_20260414_054909/image_03_The__25_6M_Deepfake_Board_Meeting.png",
+      "caption": "He joined a Zoom call with his CFO, two directors, and the board.\n\nEvery single person on that call was AI-generated.\n\nHe transferred $25,600,000.\n\nThis is the Hong Kong Deepfake Heist — February 2024. A finance worker at a multinational was invited to a video conference. The voices were real. The faces moved naturally. The instructions were clear.\n\nNone of it was human.\n\nDeepfake video calls. Real-time AI voice synthesis. Synthetic faces trained on LinkedIn photos and earnings call recordings. This wasn't science fiction — this was a Tuesday afternoon in a Hong Kong office tower.\n\nCEO fraud now targets 400+ companies per day using AI voice cloning.\nVoice cloning from just 3 seconds of audio.\nDeepfake fraud losses exceeded $200M in Q1 2025 alone — and that's only what was reported.\n\nWhen you can no longer trust a face or a voice, what does verification even mean?\n\nThe conference call your team is about to join — are you certain?\n\n#Deepfake #CyberSecurity #CEOFraud #SocialEngineering #AIThreats",
+      "hook": "Recreating the exact Hong Kong boardroom moment — the employee's face as they realize every face on the video call was synthetic — turns a news story into a visceral, personal nightmare that finance and C-suite professionals cannot scroll past.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-04-14T05:52:53.271585",
+  "success": 3,
+  "failed": 0
+}
