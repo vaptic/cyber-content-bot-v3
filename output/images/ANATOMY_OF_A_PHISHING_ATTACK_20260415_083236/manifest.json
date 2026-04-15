@@ -1,0 +1,92 @@
+{
+  "series_title": "ANATOMY OF A PHISHING ATTACK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236",
+  "started_at": "2026-04-15T08:32:36.308265",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Perfect Spear Phish — Anatomy",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_01_The_Perfect_Spear_Phish___Anatomy.png",
+      "caption": "This email was crafted specifically for YOU. Your name. Your boss. Your company domain. Spear phishing isn't spray-and-pray — it's a surgical strike built from your LinkedIn, your press releases, and your out-of-office reply. 95% of breaches start exactly here. Know what you're looking at. ⬇️ \n\n#CyberSecurity #Phishing #SpearPhishing #InfoSec #ThreatAwareness",
+      "hook": "Dissecting a phishing email like a forensic exhibit forces professionals to confront how disturbingly legitimate a weaponized message looks.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "Pretexting — The Story They Told You",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_02_Pretexting___The_Story_They_Told_You.png",
+      "caption": "Before the link. Before the call. Before the email — there was a story. Attackers spend days, sometimes weeks, building a believable identity. A fake LinkedIn. A spoofed caller ID. A backstory pulled from your company's press releases. The breach didn't start when you clicked. It started when they started watching. 🎭\n\n#SocialEngineering #Pretexting #CyberSecurity #PhishingAwareness #HumanHacking",
+      "hook": "A staged crime scene of identity fabrication makes the invisible mechanics of social engineering suddenly, viscerally visible.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "Urgency Engineering — Why You Clicked",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_03_Urgency_Engineering___Why_You_Clicked.png",
+      "caption": "Your brain wasn't hacked. Your stress response was. Attackers don't need to crack your firewall — they need you distracted, rushing, and afraid. 'Your account will be suspended.' 'Respond before end of business.' 'CEO needs this NOW.' These aren't accidents. They're engineered. This is urgency as a weapon. ⏱️\n\n#CyberPsychology #Phishing #UrgencyBias #SecurityAwareness #SocialEngineering",
+      "hook": "Visualizing the psychological exploit as a literal pressure system makes viewers immediately recognize the exact sensation they've felt before clicking.",
+      "success": true
+    },
+    {
+      "id": 4,
+      "topic": "The Credential Harvest Page",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_04_The_Credential_Harvest_Page.png",
+      "caption": "It looked exactly like the real thing. Same logo. Same fonts. Same layout. The URL was the only tell — and you didn't check. Credential harvesting pages are indistinguishable from legitimate login portals to the human eye. Your browser knows. Your security stack knows. But when you're rushing, you don't check. This is what the trap looks like from the inside. 🪤\n\n#CredentialHarvesting #Phishing #CyberSecurity #ZeroTrust #InfoSec",
+      "hook": "Showing the fake login page forensically dissected — like an autopsy — transforms a familiar interface into a revealed weapon that stops scrollers cold.",
+      "success": true
+    },
+    {
+      "id": 5,
+      "topic": "Business Email Compromise — CEO Fraud",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_05_Business_Email_Compromise___CEO_Fraud.png",
+      "caption": "The email came from your CEO. Except it didn't. Business Email Compromise cost organizations $2.9 BILLION in 2023 alone. The attacker doesn't need malware. They need a convincing email and a distracted employee with wire transfer access. No links. No attachments. Just trust — weaponized. 💸\n\n#BEC #CEOFraud #BusinessEmailCompromise #CyberCrime #FinancialFraud",
+      "hook": "A split-screen forensic comparison of a real versus fake executive email — showing $47,000 disappearing in real-time — creates immediate visceral recognition and sharing urgency.",
+      "success": true
+    },
+    {
+      "id": 6,
+      "topic": "Vishing — The Convincing Call",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_06_Vishing___The_Convincing_Call.png",
+      "caption": "Your IT helpdesk called. Except it wasn't your IT helpdesk.\n\nVishing — voice phishing — is the most underestimated attack vector in cybersecurity today. Attackers use AI voice cloning, spoofed caller IDs, and social engineering scripts so polished they fool even security-aware employees.\n\nThe ask is always reasonable. Reset your password. Confirm your badge number. Read back that one-time code.\n\n82 seconds later, your credentials are gone.\n\nMITRE ATT&CK T1566.004 — Phishing via Voice. It's in the playbook. Is it in your training?\n\n#Vishing #SocialEngineering #CybersecurityAwareness #PhishingAttack #InfoSec",
+      "hook": "The phone call that sounded like IT support but was actually a criminal draining credentials in real time triggers visceral recognition in every professional who has ever answered an unknown number.",
+      "success": true
+    },
+    {
+      "id": 7,
+      "topic": "Smishing — The Text That Seemed Real",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_07_Smishing___The_Text_That_Seemed_Real.png",
+      "caption": "It arrived at 6:43 AM. Before coffee. Before defenses were up.\n\n'Your account has been suspended. Verify now to restore access.' — [Bank of America]\n\nExcept it wasn't Bank of America. It was a $0.003 SMS sent from a SIM farm in Eastern Europe, routed through a US carrier, crafted with a phishing kit that mirrored the real login page pixel for pixel.\n\nSmishing — SMS phishing — bypasses your email filters entirely. It lands on personal devices. It arrives when you're distracted. And it works.\n\nMITRE ATT&CK T1660. 300 billion smishing texts sent globally in 2023.\n\nYour phone is the new attack surface. Treat it like one.\n\n#Smishing #MobileSecurity #PhishingAwareness #CyberThreats #SecurityCulture",
+      "hook": "A glowing phone screen with a fake bank alert hits every viewer's muscle memory of checking their messages and creates immediate personal recognition of how close they have come to clicking.",
+      "success": true
+    },
+    {
+      "id": 8,
+      "topic": "MFA Fatigue — The Approval Flood",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_08_MFA_Fatigue___The_Approval_Flood.png",
+      "caption": "Push notification #1: Deny.\nPush notification #7: Deny.\nPush notification #23: ...Approve.\n\nThis is MFA Fatigue — also called MFA Bombing or Push Bombing. The attacker already has your password. Now they just need you to get tired.\n\nNo malware. No zero-days. Just relentless psychological pressure at 2 AM until your thumb slips.\n\nThis exact technique was used in the Uber breach (2022), the Cisco breach (2022), and the Microsoft breach (2023).\n\nMITRE ATT&CK T1621. And it works because our tools let it work.\n\nNumber-matching MFA. Phishing-resistant hardware keys. Context-aware authentication. These are not optional upgrades — they are the minimum.\n\nHow many pushes before your team breaks?\n\n#MFAFatigue #PushBombing #ZeroTrust #CybersecurityStrategy #IdentitySecurity",
+      "hook": "Dozens of push notification approvals flooding a phone screen at 2 AM visualizes the modern attacker's most ruthless tactic and makes security professionals feel the exact exhaustion that causes breaches.",
+      "success": true
+    },
+    {
+      "id": 9,
+      "topic": "Spot a Phish in 30 Seconds",
+      "file": null,
+      "caption": "30 seconds. That's all it takes to spot — or miss — a phishing email.\n\nHere are the 7 forensic markers your eyes should scan BEFORE you click anything:\n\n1️⃣ Sender domain — does it match exactly?\n2️⃣ Reply-To address — is it different from From?\n3️⃣ Urgency language — pressure = manipulation\n4️⃣ Hover the link — where does it ACTUALLY go?\n5️⃣ Generic greeting — 'Dear Customer' is a red flag\n6️⃣ Mismatched branding — logo slightly off? Font wrong?\n7️⃣ Unexpected attachment — .exe, .zip, .html in an email?\n\nNone of these require technical expertise. They require 30 seconds of deliberate attention.\n\nSave this. Share it with your team. One trained eye can stop a breach that costs millions.\n\nMITRE ATT&CK T1566.001 — Spearphishing Attachment.\n\n#PhishingAwareness #CyberHygiene #SecurityTraining #EmailSecurity #CyberDefense",
+      "hook": "A forensic detective-style dissection of a phishing email with labeled red callout arrows burns practical identification skills directly into the viewer's brain and gets saved and shared as a reference resource.",
+      "success": false
+    },
+    {
+      "id": 10,
+      "topic": "Phishing-Resistant MFA — Your Last Line",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260415_083236/image_10_Phishing-Resistant_MFA___Your_Last_Line.png",
+      "caption": "Every attack in this series — spear phishing, vishing, smishing, BEC, MFA fatigue — has one common defeat condition.\n\nPhishing-resistant MFA.\n\nNot SMS OTP. Not push notifications. Not email links.\n\nFIDO2 hardware keys. Passkeys. Certificate-based authentication. These cryptographically bind authentication to the legitimate domain — so even if the attacker has your password AND your push notification approval, they get nothing.\n\nThe key cannot be tricked. The key does not get tired. The key does not answer spoofed phone calls.\n\nThis is why CISA, NSA, and every major framework — NIST SP 800-63B, Zero Trust Architecture, CIS Control 6 — mandates phishing-resistant MFA for privileged access.\n\n95% of breaches start with phishing. FIDO2 stops 100% of credential phishing attacks. Do the math.\n\nThe anatomy lesson ends here. What changes in your organization on Monday?\n\n#PhishingResistantMFA #FIDO2 #ZeroTrust #CybersecurityLeadership #IdentityFirst",
+      "hook": "A glowing hardware security key held like a talisman against a backdrop of attacking code creates a powerful hero-versus-threat visual that makes viewers feel both the threat and the solution simultaneously.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-04-15T08:45:28.784234",
+  "success": 9,
+  "failed": 1
+}
