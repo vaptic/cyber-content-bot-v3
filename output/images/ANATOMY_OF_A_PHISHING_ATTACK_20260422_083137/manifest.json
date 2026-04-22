@@ -1,0 +1,92 @@
+{
+  "series_title": "ANATOMY OF A PHISHING ATTACK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137",
+  "started_at": "2026-04-22T08:31:37.632501",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Perfect Spear Phish — Anatomy",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_01_The_Perfect_Spear_Phish___Anatomy.png",
+      "caption": "This email looked EXACTLY like it came from your CFO.\n\nSame name. Same signature block. Same tone.\n\nBut one invisible header told a different story.\n\nSpear phishing isn't spray-and-pray — it's a surgical strike built from your LinkedIn, your org chart, and your calendar.\n\nThe attacker spent 3 days on you. You had 82 seconds to catch it.\n\nKnow the anatomy. Share this with your team.\n\n#CyberSecurity #Phishing #SecurityAwareness #InfoSec #ThreatIntelligence",
+      "hook": "Dissecting a real phishing email like a forensic specimen stops the scroll because it transforms abstract fear into visceral, labeled anatomy.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "Pretexting — The Story They Told You",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_02_Pretexting___The_Story_They_Told_You.png",
+      "caption": "Before they sent the email, they built the story.\n\nThey called your IT helpdesk pretending to be a new hire.\nThey checked your company's press release for names.\nThey cloned your CEO's LinkedIn photo.\n\nPretexting is the script written before the attack ever reaches your inbox.\n\nBy the time you receive the message — the attacker already knows your manager's name, your office location, and your deadlines.\n\nSecurity awareness isn't paranoia. It's pattern recognition.\n\n#SocialEngineering #Pretexting #Phishing #CyberSecurity #SecurityCulture",
+      "hook": "A figure in theatrical costume doing reconnaissance in a corporate lobby makes the invisible social engineering setup suddenly feel terrifyingly physical and real.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "Urgency Engineering — Why You Clicked",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_03_Urgency_Engineering___Why_You_Clicked.png",
+      "caption": "They didn't need to break your password.\n\nThey broke your nervous system instead.\n\n'YOUR ACCOUNT WILL BE SUSPENDED IN 15 MINUTES'\n'IMMEDIATE ACTION REQUIRED'\n'DO NOT IGNORE THIS MESSAGE'\n\nUrgency shuts down the prefrontal cortex — the part that thinks critically.\nFear activates the amygdala — the part that just reacts.\n\nEvery phishing email is a neuroscience experiment.\nAnd most of us fail it in under 82 seconds.\n\nSlow down. One breath before you click.\n\n#CyberPsychology #Phishing #SecurityAwareness #HumanFirewall #InfoSec",
+      "hook": "A human brain cross-section glowing with red urgency signals makes the neurological manipulation of a click feel devastatingly scientific and personal.",
+      "success": true
+    },
+    {
+      "id": 4,
+      "topic": "The Credential Harvest Page",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_04_The_Credential_Harvest_Page.png",
+      "caption": "It looked EXACTLY like the real Microsoft login page.\n\nSame logo. Same font. Same layout.\nPixel for pixel.\n\nBut the URL was: micros0ft-secure-login[.]ru\n\nEvilginx2 sat in the middle — harvesting your credentials AND your MFA token in real time.\nYou authenticated. The attacker authenticated as you. 11 seconds later.\n\nThe page vanished. The session was already theirs.\n\nCheck. The. URL. Every. Single. Time.\n\n#CredentialHarvesting #Phishing #MFA #ZeroTrust #CyberSecurity",
+      "hook": "A pixel-perfect fake Microsoft login page being dissected under forensic UV light exposes the invisible seams of digital deception in a way that makes every viewer paranoid about the last page they logged into.",
+      "success": true
+    },
+    {
+      "id": 5,
+      "topic": "Business Email Compromise — CEO Fraud",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_05_Business_Email_Compromise___CEO_Fraud.png",
+      "caption": "The CFO wired $2.3 million.\n\nThe CEO never sent that email.\n\nBusiness Email Compromise cost organizations $2.9 BILLION in 2023 — more than ransomware.\n\nNo malware. No exploit. Just a spoofed email, a wire transfer request, and an employee who trusted their CEO.\n\nThe FBI calls it the most financially damaging cybercrime in existence.\n\nAnd it starts with a single email that looks exactly like this.\n\n#BEC #CEOFraud #BusinessEmailCompromise #CyberCrime #CyberSecurity",
+      "hook": "An empty executive chair at the head of a boardroom table with a glowing compromised email thread projected on the wall creates instant dread because everyone knows someone this has happened to.",
+      "success": true
+    },
+    {
+      "id": 6,
+      "topic": "Vishing — The Convincing Call",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_06_Vishing___The_Convincing_Call.png",
+      "caption": "You didn't click a link. You didn't open an attachment. You just answered the phone.\n\nVishing (voice phishing) is the art of weaponizing trust through sound alone. A caller who knows your boss's name, your company's IT vendor, and exactly which words trigger compliance — that's not luck. That's reconnaissance.\n\nMITRE ATT&CK T1566.004. Real. Documented. Devastating.\n\nThe average vishing call lasts 4 minutes and 12 seconds before credentials are surrendered.\n\nHang up. Call back on a verified number. Every time.\n\n#CyberSecurity #Vishing #PhishingAwareness #SocialEngineering #SecurityAwareness",
+      "hook": "The eerie intimacy of a voice in your ear making you hand over the keys to your kingdom stops every scroll dead.",
+      "success": true
+    },
+    {
+      "id": 7,
+      "topic": "Smishing — The Text That Seemed Real",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_07_Smishing___The_Text_That_Seemed_Real.png",
+      "caption": "It arrived at 11:48 PM.\n\n'URGENT: Your account has been locked. Verify now to avoid suspension.'\n\nThe link looked right. The logo looked right. Even the sender ID said 'Chase Bank.'\n\nIt wasn't.\n\nSmishing attacks surged 328% in 2023. Attackers spoof legitimate sender IDs, clone real bank portals, and harvest credentials before you finish your coffee.\n\nMITRE ATT&CK T1660. One tap. Total compromise.\n\nRule: Never tap a link in a text. Go directly to the app or website yourself.\n\n#Smishing #CyberSecurity #PhishingAwareness #MobileSecurity #InfoSec",
+      "hook": "A glowing phone screen in a dark bedroom — the universal image of vulnerability — makes this immediately personal and impossible to ignore.",
+      "success": true
+    },
+    {
+      "id": 8,
+      "topic": "MFA Fatigue — The Approval Flood",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_08_MFA_Fatigue___The_Approval_Flood.png",
+      "caption": "Push notification #1: Deny.\nPush notification #12: Deny.\nPush notification #47: Fine. APPROVE.\n\nThat's MFA Fatigue. Also called MFA Bombing or Push Bombing. It's not a technical exploit — it's a patience exploit. The attacker already has your password. They just need you to get tired.\n\nIt took down Uber in 2022. It's taken down dozens of organizations since.\n\nMITRE ATT&CK T1621. The vulnerability isn't the software. It's the human saying 'just make it stop.'\n\nThe fix: Number matching MFA. FIDO2 passkeys. Phishing-resistant authentication. Not a push notification.\n\n#MFAFatigue #PushBombing #CyberSecurity #MFA #ZeroTrust",
+      "hook": "A screen exploding with 47 identical authentication prompts is the kind of visual horror that cybersecurity professionals and executives alike will stop and share immediately.",
+      "success": true
+    },
+    {
+      "id": 9,
+      "topic": "Spot a Phish in 30 Seconds",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_09_Spot_a_Phish_in_30_Seconds.png",
+      "caption": "30 seconds is all it takes to save your organization.\n\nBefore you click ANYTHING in your inbox, run this mental checklist:\n\n🔴 Sender domain doesn't match the company name\n🔴 Urgency language: 'ACT NOW', 'ACCOUNT SUSPENDED', 'FINAL WARNING'\n🔴 Generic greeting: 'Dear Customer' instead of your name\n🔴 Hover the link — does it match where it claims to go?\n🔴 Unexpected attachment, especially .zip, .html, .docx with macros\n🔴 Request for credentials, payment, or wire transfer\n\nOne of these = suspicious. Two or more = phish. Report it.\n\n95% of breaches begin with a single email. This checklist ends them.\n\n#PhishingAwareness #CyberSecurity #EmailSecurity #SecurityTraining #InfoSec",
+      "hook": "A visual 'red flags checklist' burned directly into a cinematic scene transforms abstract advice into a shareable tactical weapon that professionals will screenshot and repost.",
+      "success": true
+    },
+    {
+      "id": 10,
+      "topic": "Phishing-Resistant MFA — Your Last Line",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260422_083137/image_10_Phishing-Resistant_MFA___Your_Last_Line.png",
+      "caption": "Passwords are broken. SMS codes are breakable. Push notifications are fatigueable.\n\nBut a FIDO2 hardware security key? A passkey bound to your device? These cannot be phished. They cannot be replicated. They require physical presence.\n\nThis is phishing-resistant MFA — and it's the last line between an attacker who already has your password and everything behind it.\n\nYubiKey 5. Google Titan. Platform passkeys. WebAuthn. FIDO2.\n\nNIST SP 800-63B mandates it for high-assurance systems. CISA recommends it for everyone.\n\nThe question isn't whether you can afford phishing-resistant MFA.\nIt's whether you can afford not to have it.\n\n#FIDO2 #PhishingResistantMFA #YubiKey #CyberSecurity #ZeroTrust",
+      "hook": "A physical security key glowing like a sacred object against a storm of incoming attack vectors is the kind of iconic, hopeful cybersecurity image people save, share, and cite in board presentations.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-04-22T08:42:07.764519",
+  "success": 10,
+  "failed": 0
+}
