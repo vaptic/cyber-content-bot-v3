@@ -1,0 +1,92 @@
+{
+  "series_title": "ANATOMY OF A PHISHING ATTACK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260429_091039",
+  "started_at": "2026-04-29T09:10:39.429716",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Perfect Spear Phish — Anatomy",
+      "file": null,
+      "caption": "This email looked legitimate. The sender's name matched your colleague. The logo was pixel-perfect. The link destination? A cloned Microsoft login page registered 6 hours ago.\n\nSpear phishing isn't spam. It's a researched, targeted, weaponized message built from your LinkedIn profile, your company org chart, and your out-of-office reply.\n\nAverage time from click to credential theft: 82 seconds.\n\nKnowing the anatomy is your first defense.\n\n#CyberSecurity #PhishingAwareness #SecurityAwareness #InfoSec #ZeroTrust",
+      "hook": "Dissecting a real spear phish frame-by-frame triggers the visceral recognition every professional fears — 'I've seen this exact email.'",
+      "success": false
+    },
+    {
+      "id": 2,
+      "topic": "Pretexting — The Story They Told You",
+      "file": null,
+      "caption": "They didn't hack your system. They hacked your story.\n\nBefore the email was sent, an attacker spent 3 days building a pretext — a believable persona, a plausible reason, a fabricated urgency. They knew your boss's name. They knew your company was in the middle of an acquisition. They knew you were understaffed.\n\nPretexting is the invisible first act of every social engineering attack. By the time you receive the message, the trap was built weeks ago.\n\nTrust is the vulnerability. Verification is the patch.\n\n#SocialEngineering #Pretexting #CyberSecurity #PhishingAwareness #HumanFirewall",
+      "hook": "A lone actor in a suit constructing an elaborate fake identity makes viewers feel the uncomfortable truth that attackers study their targets like actors study a role.",
+      "success": false
+    },
+    {
+      "id": 3,
+      "topic": "Urgency Engineering — Why You Clicked",
+      "file": null,
+      "caption": "You didn't make a mistake. You were engineered to click.\n\nUrgency is not accidental in phishing attacks. It is a precision weapon. 'Your account will be suspended in 24 hours.' 'Immediate action required.' 'Your CEO is waiting on this.'\n\nAttackers exploit the amygdala — your brain's threat-detection center. Under urgency, critical thinking shuts down. Verification feels like a delay you can't afford.\n\nThe fastest way to beat urgency engineering: pause for 10 seconds before clicking any link in any unexpected email. That pause is a firewall.\n\n#PhishingAwareness #CyberPsychology #SecurityAwareness #CyberSecurity #SocialEngineering",
+      "hook": "Showing the psychological manipulation mechanics of urgency as a literal pressure system makes viewers physically feel the anxiety that causes clicks — and think twice next time.",
+      "success": false
+    },
+    {
+      "id": 4,
+      "topic": "The Credential Harvest Page",
+      "file": null,
+      "caption": "It looked exactly like Microsoft. Same logo. Same layout. Same font.\n\nThe URL was: 'microsoft-secure-login.verify-account.ru'\n\nThe credential harvest page is the endpoint of the phishing kill chain — the moment your username and password are silently copied to an attacker's server while you're redirected to the real website, unaware anything happened.\n\nReal Microsoft, Google, and corporate login pages will never arrive via an unexpected email link. Go direct. Always.\n\n82 seconds. Click to credential theft. Every time.\n\n#CredentialTheft #Phishing #CyberSecurity #InfoSec #IdentityProtection",
+      "hook": "A forensic autopsy of a fake login page — showing every pixel of deception — creates an unmistakable 'I would have fallen for that' reaction that drives massive shares.",
+      "success": false
+    },
+    {
+      "id": 5,
+      "topic": "Business Email Compromise — CEO Fraud",
+      "file": null,
+      "caption": "The email came from the CEO. The signature was right. The tone was right. The request was urgent and confidential — 'Don't loop in finance, I'll explain later.'\n\n$2.7 billion was lost to Business Email Compromise in 2023 alone. It is the highest-yield cybercrime category on earth.\n\nBEC doesn't need malware. It needs a spoofed email, a plausible pretext, and one employee who trusts the name in the FROM field.\n\nVerification protocol: Every wire transfer request — regardless of sender — requires a voice callback to a known number. No exceptions.\n\n#BEC #CEOFraud #BusinessEmailCompromise #CyberSecurity #FinancialFraud",
+      "hook": "The image of a CEO's identity being worn like a mask by an unseen attacker while a wire transfer executes makes the abstract financial devastation of BEC viscerally real and shareable.",
+      "success": false
+    },
+    {
+      "id": 6,
+      "topic": "Vishing — The Convincing Call",
+      "file": null,
+      "caption": "📞 The caller said they were from IT. They knew your name. Your manager's name. Your ticket number.\n\nAnd in 82 seconds, your credentials were gone.\n\nVishing — voice phishing — is the most personal form of social engineering. No malware. No links. Just a human voice weaponized with OSINT and urgency.\n\nThe attacker didn't need to break in. You let them in.\n\n🔒 Train your people to VERIFY before they COMPLY — every single time.\n\n#CyberSecurity #Vishing #SocialEngineering #PhishingAwareness #SecurityAwareness",
+      "hook": "A single phone call that sounds like IT support becomes the skeleton key to your entire organization — this image captures that chilling moment of misplaced trust.",
+      "success": false
+    },
+    {
+      "id": 7,
+      "topic": "Smishing — The Text That Seemed Real",
+      "file": null,
+      "caption": "📱 It looked exactly like a message from your bank.\n\nSame logo. Same tone. Same sense of urgency.\n\nSmishing (SMS phishing) exploits the one device your security team can't fully control — your personal phone. And unlike email, most people have no spam filter trained for it.\n\n➡ Fake delivery notifications\n➡ Fake bank fraud alerts\n➡ Fake 2FA reset requests\n\nOne tap. That's all it takes.\n\nForward suspicious texts to 7726 (SPAM). Never tap links in unsolicited messages. Verify through official apps only.\n\n#Smishing #MobileSecurity #PhishingAwareness #CyberSecurity #InfoSec",
+      "hook": "A text message on a personal phone — the one device IT security never fully controls — becomes the breach point nobody saw coming.",
+      "success": false
+    },
+    {
+      "id": 8,
+      "topic": "MFA Fatigue — The Approval Flood",
+      "file": null,
+      "caption": "🔔 Notification 1: 'Did you just try to sign in?' — No.\n🔔 Notification 2: 'Approve sign-in request?' — No.\n🔔 Notification 3: 'Approve sign-in request?' — No.\n🔔 Notification 47: 'Approve sign-in request?' — ...Fine. YES.\n\nMFA Fatigue (Push Bombing) is how attackers bypassed Uber, Microsoft, and Cisco in 2022.\n\nThey don't crack your MFA. They exhaust the human behind it.\n\nThe fix: Move to FIDO2 phishing-resistant MFA — TOTP and push notifications are not enough anymore.\n\nMITRE ATT&CK T1621 — Multi-Factor Authentication Request Generation\n\n#MFAFatigue #PushBombing #MFA #ZeroTrust #CyberSecurity",
+      "hook": "When attackers can't crack the password, they make the human break instead — this image shows the psychological siege of MFA push bombing in real time.",
+      "success": false
+    },
+    {
+      "id": 9,
+      "topic": "Spot a Phish in 30 Seconds",
+      "file": null,
+      "caption": "🎣 30 seconds. That's all you need to kill a phishing attack dead.\n\nBefore you click ANYTHING in an unexpected email, run these 5 checks:\n\n1️⃣ SENDER DOMAIN — Does it exactly match the real company?\n2️⃣ URGENCY LANGUAGE — Are they pressuring you to act NOW?\n3️⃣ HOVER THE LINK — Does the URL go where it claims?\n4️⃣ ATTACHMENT TYPE — .exe, .zip, .html attachments = red flag\n5️⃣ GREETING — Is it generic? 'Dear Customer' not 'Dear [Your Name]'\n\nPhishing works because it's designed to bypass your rational brain. Slow down. One pause saves everything.\n\nShare this with your team. It might save your organization.\n\n#PhishingAwareness #CyberSecurity #SecurityTraining #EmailSecurity #InfoSec",
+      "hook": "Turning the villain into a labeled diagram — an intelligence-briefing aesthetic that security professionals will screenshot and share with their entire team.",
+      "success": false
+    },
+    {
+      "id": 10,
+      "topic": "Phishing-Resistant MFA — Your Last Line",
+      "file": null,
+      "caption": "🛡️ Passwords fall. Push MFA can be bombed. SIM cards can be swapped.\n\nBut FIDO2 / Passkeys? Unphishable by design.\n\nPhishing-resistant MFA works because the cryptographic key is bound to the EXACT legitimate domain. There is no credential to steal. There is no push to approve. There is no human to manipulate.\n\nIf your organization is still on SMS OTP or push notifications — you are one tired employee away from a breach.\n\nThe CISA mandate is clear: move to phishing-resistant MFA now.\n\n✅ FIDO2 Hardware Keys (YubiKey, Google Titan)\n✅ Passkeys (device-bound cryptographic auth)\n✅ Certificate-Based Authentication (CBA)\n\nThis is your last line. Make it unbreakable.\n\n#PhishingResistantMFA #FIDO2 #Passkeys #ZeroTrust #CyberSecurity",
+      "hook": "After nine images of attack and chaos, this image delivers the definitive armor — a triumphant visual that security leaders will share as a call to action for their entire organization.",
+      "success": false
+    }
+  ],
+  "finished_at": "2026-04-29T09:15:56.380217",
+  "success": 0,
+  "failed": 10
+}
