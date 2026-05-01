@@ -1,0 +1,92 @@
+{
+  "series_title": "HOW RANSOMWARE REALLY WORKS",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301",
+  "started_at": "2026-05-01T09:03:01.297968",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Spear Phish That Started Everything",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_01_The_Spear_Phish_That_Started_Everything.png",
+      "caption": "It started with one email. Not a suspicious-looking one. A perfectly crafted, personalized message that referenced your CEO by first name, mentioned your Q3 audit, and arrived at 8:47 AM on a Tuesday.\n\nSpear phishing accounts for 65% of all ransomware initial access vectors.\n\nThe attacker spent 3 weeks studying your LinkedIn, your press releases, your job postings — before writing a single line.\n\nThis is how ransomware really begins. Not with a dramatic hack. With a click.\n\n#Ransomware #CyberSecurity #SpearPhishing #ThreatIntelligence #InfoSec",
+      "hook": "The single email that cost a company $4.88M is a gut-punch visual that makes every LinkedIn professional check their inbox twice.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "Credential Harvested in 82 Seconds",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_02_Credential_Harvested_in_82_Seconds.png",
+      "caption": "She clicked. 82 seconds later, her credentials were in Moscow.\n\nThe PDF opened a fake Microsoft 365 login portal — pixel-perfect replica. She typed her password. The attacker's C2 server received it before she finished her coffee.\n\nUsername. Password. MFA bypass token. Domain: bridgecorp.internal.\n\nGame over — and she had no idea.\n\nThis is Stage 2 of how ransomware really works. The clock started without anyone knowing.\n\n82 seconds. That's all it took.\n\n#CredentialTheft #Ransomware #CyberSecurity #ZeroTrust #IdentityProtection",
+      "hook": "82 seconds from click to complete domain compromise is a number so shockingly fast it stops mid-scroll and demands to be shared.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "Foothold — Living Off The Land",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_03_Foothold___Living_Off_The_Land.png",
+      "caption": "No malware was deployed. No alerts fired. No antivirus triggered.\n\nThe attacker used PowerShell. WMI. PsExec. Tools that were already there — trusted by your security stack, signed by Microsoft.\n\nThis technique — Living Off The Land (LotL) — makes the attacker invisible for days, sometimes weeks.\n\nFor 6 days after credential theft, Bridgecorp's SIEM showed: nothing.\n\nThis is Stage 3. The silent establishment of a permanent foothold.\n\nThe most dangerous hackers leave no footprints because they walk in your shoes.\n\n#LivingOffTheLand #LOTL #CyberSecurity #ThreatHunting #Ransomware",
+      "hook": "Showing that the most dangerous hackers use your own tools against you — no malware, no alerts, no trace — is a concept that stops security professionals cold.",
+      "success": true
+    },
+    {
+      "id": 4,
+      "topic": "Lateral Movement — Room by Room",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_04_Lateral_Movement___Room_by_Room.png",
+      "caption": "They weren't in your system. They were moving through it.\n\nOver 9 days, the attacker pivoted from Sarah's workstation to finance servers. Then HR. Then backup systems. Then domain controllers.\n\nPass-the-Hash. Kerberoasting. RDP. Each pivot was silent. Each new room gave them more power.\n\nBy Day 9, they had admin rights to everything.\n\nAnd your team was still looking at zero alerts.\n\nThis is Stage 4. The predator learns the building before they strike.\n\n#LateralMovement #Kerberoasting #CyberSecurity #RedTeam #Ransomware",
+      "hook": "Visualizing a hacker moving through a company's network as a physical predator stalking through rooms makes the abstract terror of lateral movement viscerally real.",
+      "success": true
+    },
+    {
+      "id": 5,
+      "topic": "Silent Exfiltration — Terabytes Gone",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_05_Silent_Exfiltration___Terabytes_Gone.png",
+      "caption": "Before they encrypted a single file, they took everything.\n\n4.7 terabytes. Employee records. Financial data. IP. Client contracts. Legal documents.\n\nTransferred over 11 days via encrypted HTTPS to a cloud storage endpoint that looked like normal web traffic.\n\nThis is the part that makes ransomware truly catastrophic. Even if you pay — or don't pay — they already have everything.\n\nDouble extortion. The encryption is the distraction.\n\nThis is Stage 5. The silent theft that happens before the bomb goes off.\n\n#DataExfiltration #DoubleExtortion #Ransomware #CyberSecurity #DataBreach",
+      "hook": "The image of terabytes of sensitive data silently streaming out of a company into darkness — before anyone suspects ransomware — reframes everything people think they know about these attacks.",
+      "success": true
+    },
+    {
+      "id": 6,
+      "topic": "Backup Destruction — Safety Net Removed",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_06_Backup_Destruction___Safety_Net_Removed.png",
+      "caption": "They didn't just encrypt your data. They burned your escape route first.\n\nBackup deletion is the move ransomware gangs make 48–72 hours before encryption begins. By the time the ransom note appears, your restore points are already gone.\n\nThis is calculated. This is deliberate. This is why 'we have backups' is no longer a complete answer.\n\nAsk yourself right now:\n→ Are your backups air-gapped or immutable?\n→ Can an attacker with domain admin reach your backup server?\n→ When did you last test a full restore?\n\nIf you hesitated on any of those — this post is for you.\n\n#Ransomware #CyberSecurity #BackupStrategy #IncidentResponse #ZeroTrust",
+      "hook": "The visceral image of a safety net being physically cut triggers the primal fear every IT leader feels when they realize backups were silently wiped days before encryption hit.",
+      "success": true
+    },
+    {
+      "id": 7,
+      "topic": "Encryption Day — Everything Goes Black",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_07_Encryption_Day___Everything_Goes_Black.png",
+      "caption": "Day 21. 9:03 AM. Every screen in the building goes dark at once.\n\nThis is what encryption day looks like. Not a slow failure. Not a warning. A synchronized blackout across every endpoint, server, and shared drive — simultaneously.\n\nThe attack started 21 days ago with a phishing email someone almost didn't click.\n\nIn the weeks that followed:\n✗ Credentials were harvested\n✗ Lateral movement reached the domain controller\n✗ 2.1TB of data was exfiltrated\n✗ Backups were silently destroyed\n✗ Encryption keys were pre-positioned\n\nAnd then, on a Tuesday morning at 9:03 AM — the trigger.\n\nThe encryption event is never the beginning. It's the finale of a 3-week heist you didn't know was happening.\n\nDetection has to happen earlier. Much earlier.\n\n#Ransomware #CyberAttack #IncidentResponse #ThreatDetection #CyberSecurity",
+      "hook": "A wall of simultaneous screen failures across an entire office floor is the nightmare image that makes every CISO share this post without hesitation.",
+      "success": true
+    },
+    {
+      "id": 8,
+      "topic": "The Ransom Note — $2.73M or Goodbye",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_08_The_Ransom_Note____2_73M_or_Goodbye.png",
+      "caption": "This is what $2.73 million looks like.\n\nIt's a text file. Left on every desktop. Sent to the CEO's inbox. Printed automatically on every networked printer in the building.\n\nThe average ransom demand in 2025 is $2.73M.\nThe average total recovery cost is $4.88M.\nThe average downtime is 24 days.\n\nAnd here's what most organizations don't know until it's too late:\n\nPaying the ransom doesn't guarantee decryption.\n41% of organizations that paid still lost significant data.\nPaying funds the next attack — possibly against you again.\n\nThe note is designed to feel inevitable. To make you feel like paying is the only logical move.\n\nIt's not. But your best time to plan your response is right now — not at 9:03 AM when the screens go red.\n\nWhat's your incident response plan?\n\n#Ransomware #CyberSecurity #IncidentResponse #DataProtection #CISO",
+      "hook": "A single ransom note rendered as a physical object — lit like evidence in a murder trial — makes the $2.73M statistic emotionally real in a way no infographic ever could.",
+      "success": true
+    },
+    {
+      "id": 9,
+      "topic": "72 Hours on the Clock — The Negotiation",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_09_72_Hours_on_the_Clock___The_Negotiation.png",
+      "caption": "72 hours. That's how long you have before they publish your data to the world.\n\nIn those 72 hours, your organization will:\n\n→ Convene an emergency crisis team at 2 AM\n→ Call your cyber insurer (and pray your policy covers ransomware)\n→ Engage a ransomware negotiation firm\n→ Brief the board, legal, and potentially the FBI\n→ Make a $2.73M decision with incomplete information\n→ Communicate to customers, regulators, and staff\n\nThis is not an IT problem anymore. This is a business continuity crisis — one that CEOs and board members need to be prepared for BEFORE it happens.\n\nHave you ever run a ransomware tabletop exercise?\nDoes your board know what decisions they'd face?\nDoes your cyber insurance actually cover the full cost?\n\nThe 72-hour clock doesn't care about your planning calendar.\n\n#Ransomware #CrisisManagement #CyberInsurance #CISO #BusinessContinuity",
+      "hook": "A war-room table at 2 AM — lawyers, cyber insurers, and exhausted IT staff staring at a countdown clock — is the image that makes every executive feel the weight of decisions they haven't prepared for.",
+      "success": true
+    },
+    {
+      "id": 10,
+      "topic": "What Would Have Stopped It",
+      "file": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260501_090301/image_10_What_Would_Have_Stopped_It.png",
+      "caption": "The hardest part of every post-incident review?\n\nRealizing it was stoppable.\n\nEvery major ransomware attack has multiple moments where the right control would have ended it. Here's where this one could have been stopped:\n\n🔴 Day 1 — Phishing email bypassed a gateway with no sandboxing\n🔴 Day 3 — Stolen credentials worked because MFA wasn't enforced\n🔴 Day 7 — Lateral movement went undetected — no EDR on legacy servers\n🔴 Day 14 — Exfiltration hit 2.1TB — no DLP, no anomaly alerting\n🔴 Day 17 — Backup deletion ran silently — backup access wasn't privileged\n🔴 Day 21 — Encryption deployed — no immutable backup to restore from\n\nSix moments. Six controls. Any one of them could have changed everything.\n\nSecurity isn't about being impenetrable. It's about making the attack too hard, too loud, or too slow — at enough points in the kill chain that you catch it before Day 21.\n\nSave this. Share it with your board.\n\n#Ransomware #CyberSecurity #ZeroTrust #MFA #IncidentResponse",
+      "hook": "A visual autopsy of a ransomware attack — showing the exact moments where simple controls would have broken the kill chain — gives security professionals a shareable framework they'll reference for months.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-05-01T09:12:58.980964",
+  "success": 10,
+  "failed": 0
+}
