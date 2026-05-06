@@ -1,0 +1,92 @@
+{
+  "series_title": "ANATOMY OF A PHISHING ATTACK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212",
+  "started_at": "2026-05-06T09:22:12.157209",
+  "results": [
+    {
+      "id": 1,
+      "topic": "The Perfect Spear Phish — Anatomy",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_01_The_Perfect_Spear_Phish___Anatomy.png",
+      "caption": "This email looked perfect. The logo was right. The name was right. The urgency was right. That's the point.\n\nSpear phishing isn't spray-and-pray. It's a surgical strike built from your LinkedIn profile, your company org chart, and your last public conference talk.\n\nThe attacker spent 3 hours on you. You had 82 seconds to spot it.\n\nBreak down how anatomy of a spear phish gets engineered — and why your brain is the vulnerability being exploited.\n\n#CyberSecurity #Phishing #SocialEngineering #InfoSec #ThreatIntelligence",
+      "hook": "Dissecting a real phishing email like a crime scene autopsy triggers visceral recognition — every security professional has seen this exact email.",
+      "success": true
+    },
+    {
+      "id": 2,
+      "topic": "Pretexting — The Story They Told You",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_02_Pretexting___The_Story_They_Told_You.png",
+      "caption": "They didn't hack your firewall. They hacked your empathy.\n\nPretexting is when an attacker builds a complete fictional identity — a fake vendor, a fake IT technician, a fake new colleague — and uses that story to extract information you'd never hand to a stranger.\n\nThey study you for days. They know your boss's name, your company's ticketing system, and what your IT team's email signature looks like.\n\nThen they call. And you help them, because that's what helpful people do.\n\nThis is MITRE T1264. This is how 43% of social engineering attacks begin.\n\n#Phishing #SocialEngineering #Pretexting #CyberAwareness #SecurityCulture",
+      "hook": "Showing the attacker as a costume-wearing actor building a false identity transforms an abstract concept into a chilling, shareable human story.",
+      "success": true
+    },
+    {
+      "id": 3,
+      "topic": "Urgency Engineering — Why You Clicked",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_03_Urgency_Engineering___Why_You_Clicked.png",
+      "caption": "Your brain has a vulnerability. It's called urgency.\n\nWhen cortisol spikes — when you see 'URGENT,' 'FINAL WARNING,' 'YOUR ACCOUNT WILL BE SUSPENDED IN 15 MINUTES' — your prefrontal cortex goes offline. Pattern recognition drops. Critical thinking slows.\n\nAttackers know this. They engineer it deliberately.\n\nUrgency + Authority + Scarcity = Click.\n\nThis is the psychological formula behind 78% of successful phishing attacks. You're not gullible. You're human. And that's exactly the exploit.\n\n#Phishing #CyberPsychology #SocialEngineering #HumanRisk #CyberSecurity",
+      "hook": "Visualizing the psychological countdown clock of urgency as a literal bomb defusal scenario makes the neuroscience of phishing viscerally tangible.",
+      "success": true
+    },
+    {
+      "id": 4,
+      "topic": "The Credential Harvest Page",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_04_The_Credential_Harvest_Page.png",
+      "caption": "You typed your password. Congratulations — so did the attacker.\n\nA credential harvest page can be a 1:1 clone of Microsoft, Google, Okta, or your corporate VPN. Built in under 4 minutes using open-source phishing kits like EvilGinx2 or Modlishka.\n\nThe URL looked close. The logo was perfect. The SSL padlock was green.\n\nAnd in 82 seconds, your credentials were in a Telegram channel in Eastern Europe.\n\nHere's what the forensics look like on the other side of that fake login.\n\n#Phishing #CredentialTheft #CyberSecurity #ZeroTrust #IdentityProtection",
+      "hook": "Showing a pixel-perfect fake login page alongside the real one — with forensic markers revealing the differences — makes every viewer immediately check what they're logging into.",
+      "success": true
+    },
+    {
+      "id": 5,
+      "topic": "Business Email Compromise — CEO Fraud",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_05_Business_Email_Compromise___CEO_Fraud.png",
+      "caption": "The wire transfer was $2.3M. The CEO 'sent' the email. Except the CEO never sent anything.\n\nBusiness Email Compromise (BEC) is the #1 most financially damaging cybercrime — $2.9 BILLION lost in 2023 alone (FBI IC3).\n\nNo malware. No ransomware. Just an email from 'your CEO' asking finance to process an urgent wire to a new vendor. And a finance manager who trusted it, because the email looked exactly right.\n\nThe FBI calls it the '29 Billion Dollar Scam.' Your CFO is the target. Your finance team is the mechanism. Your email system is the weapon.\n\nThis is MITRE T1566 + T1534. This is BEC.\n\n#BEC #CEOFraud #BusinessEmailCompromise #CyberSecurity #FinancialCrime",
+      "hook": "Framing CEO fraud as a puppeteer controlling the entire corporate hierarchy from the shadows creates an unforgettable metaphor that CFOs and executives will share immediately.",
+      "success": true
+    },
+    {
+      "id": 6,
+      "topic": "Vishing — The Convincing Call",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_06_Vishing___The_Convincing_Call.png",
+      "caption": "A threat actor never touched a keyboard. They just called.\n\nVishing — voice phishing — is social engineering at its most intimate. A caller pretends to be IT support, your bank, or a government agency. They build trust in under 60 seconds. Then they ask for one small thing.\n\nYour credentials. Your OTP. Your access.\n\nAnd the worst part? It feels completely normal.\n\n🔴 MITRE ATT&CK T1566.004 — Phishing via Voice\n🔴 Average call duration before credential handoff: 4 minutes 12 seconds\n🔴 67% of vishing victims report the caller 'seemed completely legitimate'\n\nTrain your people. Verify out-of-band. Never give credentials over a phone call — ever.\n\n#CyberSecurity #Vishing #SocialEngineering #PhishingAwareness #ZeroTrust",
+      "hook": "The moment a human voice becomes a hacker's most lethal exploit — viewers feel the trap closing in real time.",
+      "success": true
+    },
+    {
+      "id": 7,
+      "topic": "Smishing — The Text That Seemed Real",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_07_Smishing___The_Text_That_Seemed_Real.png",
+      "caption": "It arrived between meetings. Between breaths.\n\nA text message. Official-looking. Urgent. Familiar.\n\n'Your account has been locked. Verify now or lose access.'\n\nOne tap. That's all it took.\n\nSmishing — SMS phishing — bypasses every email filter you've ever deployed. It lands directly in the most trusted channel humans have: their personal phone.\n\n🔴 MITRE ATT&CK T1660 — Phishing via SMS\n🔴 98% of SMS messages are opened. 90% within 3 minutes.\n🔴 Fake banking texts up 328% in 2023–2024\n\nIf a text asks you to click, call, or confirm — verify through a separate, known channel first.\n\nNo exceptions.\n\n#Smishing #MobileSecurity #CyberAwareness #PhishingAttack #InfoSec",
+      "hook": "A glowing phone screen in a dark moment — viewers instantly recognize their own vulnerability in the scene.",
+      "success": true
+    },
+    {
+      "id": 8,
+      "topic": "MFA Fatigue — The Approval Flood",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_08_MFA_Fatigue___The_Approval_Flood.png",
+      "caption": "Push. Push. Push. Push. Push.\n\nAt 2:47 AM, groggy and half-asleep, they tapped 'Approve' just to make it stop.\n\nThat's MFA Fatigue — also called MFA Bombing or Prompt Bombing. Attackers flood your authentication app with push notifications until exhaustion, confusion, or frustration causes you to approve one.\n\nNo malware. No exploit code. Just relentless psychological pressure.\n\n🔴 MITRE ATT&CK T1621 — Multi-Factor Authentication Request Generation\n🔴 Used in the Uber breach (2022), Cisco breach (2022), Microsoft breach (2023)\n🔴 Average victim approves the fraudulent request within 12 push attempts\n\nThe fix? Number matching. Additional context. FIDO2 passkeys. Hardware tokens.\n\nFatigue is a feature of the attack — not a bug in your user.\n\n#MFAFatigue #MFABombing #ZeroTrust #CyberSecurity #IdentitySecurity",
+      "hook": "A screen erupting with approval requests captures the exact psychological overwhelm that attackers deliberately engineer.",
+      "success": true
+    },
+    {
+      "id": 9,
+      "topic": "Spot a Phish in 30 Seconds",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_09_Spot_a_Phish_in_30_Seconds.png",
+      "caption": "30 seconds. That's all you need — if you know what to look for.\n\nEvery phishing email leaves fingerprints. Most people just aren't trained to see them.\n\nHere's your 30-second checklist:\n\n🔍 1. CHECK THE SENDER DOMAIN — does it match exactly?\n🔍 2. HOVER THE LINK — where does it actually go?\n🔍 3. URGENCY + THREAT = RED FLAG — pressure is the weapon\n🔍 4. GENERIC GREETING — 'Dear Customer' is a tell\n🔍 5. MISMATCHED BRANDING — logos, fonts, colors slightly off\n🔍 6. UNEXPECTED ATTACHMENT — especially .zip, .html, .docm\n🔍 7. REPLY-TO DIFFERS FROM SENDER — classic spoofing signal\n\nYou don't need a security tool to catch most phishing attempts. You need 30 seconds and a suspicious mind.\n\nShare this with someone who needs it today.\n\n#PhishingAwareness #CyberHygiene #SecurityTraining #InfoSec #CyberEducation",
+      "hook": "A forensic dissection of a real-looking phishing email transforms passive scrollers into active, empowered defenders.",
+      "success": true
+    },
+    {
+      "id": 10,
+      "topic": "Phishing-Resistant MFA — Your Last Line",
+      "file": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260506_092212/image_10_Phishing-Resistant_MFA___Your_Last_Line.png",
+      "caption": "When everything else fails — when the email slipped through, when the link was clicked, when the password was typed — one thing can still save you.\n\nPhishing-Resistant MFA.\n\nNot push notifications. Not SMS OTPs. Not TOTP codes.\n\nHardware security keys. FIDO2 passkeys. Certificate-based authentication.\n\nThese cannot be phished. The cryptographic binding to the legitimate domain means an attacker's fake site receives nothing — even if your user clicks every wrong thing.\n\n🔐 FIDO2 / WebAuthn — W3C Standard\n🔐 CISA Guidance: Phishing-Resistant MFA is mandatory for high-value targets\n🔐 0 successful phishing attacks against FIDO2 hardware keys — ever.\n\nThe attack ends here.\n\nDeploy FIDO2. Mandate hardware keys for privileged access. Make phishing cryptographically impossible.\n\nThis is the final image in our Phishing series. Which topic resonated most with your team?\n\n#FIDO2 #PhishingResistant #MFA #ZeroTrust #CyberDefense",
+      "hook": "A hardware security key glowing like a last beacon against darkness gives defenders a powerful, shareable symbol of protection.",
+      "success": true
+    }
+  ],
+  "finished_at": "2026-05-06T09:32:39.251460",
+  "success": 10,
+  "failed": 0
+}
