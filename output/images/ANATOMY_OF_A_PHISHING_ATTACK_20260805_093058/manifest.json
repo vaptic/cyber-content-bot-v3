@@ -1,0 +1,11 @@
+{
+  "series_title": "ANATOMY OF A PHISHING ATTACK",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/ANATOMY_OF_A_PHISHING_ATTACK_20260805_093058",
+  "started_at": "2026-08-05T09:30:58.142739",
+  "results": [],
+  "finished_at": "2026-08-05T09:30:58.142752",
+  "success": 0,
+  "failed": 0
+}
