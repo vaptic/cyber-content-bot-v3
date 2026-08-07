@@ -1,0 +1,11 @@
+{
+  "series_title": "HOW RANSOMWARE REALLY WORKS",
+  "platform": "linkedin",
+  "model": "gemini-3-pro-image-preview",
+  "output_dir": "output/images/HOW_RANSOMWARE_REALLY_WORKS_20260807_080815",
+  "started_at": "2026-08-07T08:08:15.244299",
+  "results": [],
+  "finished_at": "2026-08-07T08:08:15.244313",
+  "success": 0,
+  "failed": 0
+}
